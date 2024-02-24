@@ -6,6 +6,9 @@
             <div class="container-fluid">
                 <a class="navbar-brand">PT Jinyoung Sukses Indonesia</a>
                 <form class="d-flex" role="search">
+                    <button class="btn btn-primary me-2">
+                        <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
+                    </button>
                     <div class="dropdown me-2">
                         <button class="btn btn-secondary" data-bs-toggle="dropdown">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
