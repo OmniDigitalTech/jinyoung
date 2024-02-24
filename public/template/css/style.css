@@ -229,7 +229,6 @@
     }
 }
 @media(max-width:540px) {
-
     iframe[height] {
         height: 250px;
     }
@@ -243,7 +242,7 @@
         padding-bottom: 10px;
     }
     .nav {
-        --bs-nav-link-padding-x: 1rem;
+        --bs-nav-link-padding-x: 0.5rem;
         font-size: 0.5rem;
     }
     .navbar .container-fluid {

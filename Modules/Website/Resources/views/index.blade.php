@@ -680,7 +680,7 @@
     </section>
 
     <section>
-        <div class="container pt-5 pb-3">
+        <div class="container pt-5 pb-5">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <h1 class="mb-1">Contact Us</h1>
