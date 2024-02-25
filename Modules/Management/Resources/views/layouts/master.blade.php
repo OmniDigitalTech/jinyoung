@@ -17,6 +17,7 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/dropify.css') }}">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         <div class="main-content">
             <section class="section">
                 <div class="section-header">
-                    <h1>Blank Page</h1>
+                    <h1>{{ $title }}</h1>
                 </div>
 
                 <div class="section-body">
@@ -61,6 +62,11 @@
 <!-- Template JS File -->
 <script src="{{ asset('assets/js/scripts.js') }}"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
+<script src="{{ asset('assets/js/dropify.js') }}"></script>
+
+<script>
+    $('.dropify').dropify();
+</script>
 
 </body>
 

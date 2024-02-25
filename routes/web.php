@@ -19,10 +19,6 @@ Route::prefix('/')->group(function() {
     Route::get('/', [website::class, 'index'])->name('homepage');
 });
 
-Route::prefix('/login')->group(function() {
-    Route::get('/login', [website::class, 'login'])->name('login');
-});
-
 //Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function(){
 //    Route::get('/dashboard', management::class)->name('dashboard');
 //});

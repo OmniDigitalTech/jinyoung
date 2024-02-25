@@ -11,7 +11,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "nwidart/laravel-modules": "^10.0"
+        "nwidart/laravel-modules": "^10.0",
+        "spatie/laravel-permission": "^6.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9",
@@ -29,7 +30,13 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Modules\\": "Modules/"
-        }
+        },
+        "files": [
+            "app/Helpers/PictureHelper.php",
+            "app/Helpers/CurrencyHelper.php",
+            "app/Helpers/DateHelper.php",
+            "app/Helpers/UniversalHelper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
