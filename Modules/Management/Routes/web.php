@@ -38,4 +38,12 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::put('/update/{history}', 'HistoryController@update')->name('management.history.update');
         Route::get('/delete/{history}', 'HistoryController@destroy')->name('management.history.delete');
     });
+
+    Route::prefix('product-process')->group(function (){
+        Route::get('/', 'ProductProcessController@index')->name('management.product-process.index');
+        Route::post('/store', 'ProductProcessController@store')->name('management.product-process.store');
+        Route::get('/edit/{process}', 'ProductProcessController@edit')->name('management.product-process.edit');
+        Route::put('/update/{process}', 'ProductProcessController@update')->name('management.product-process.update');
+        Route::get('/delete/{process}', 'ProductProcessController@destroy')->name('management.product-process.delete');
+    });
 });
