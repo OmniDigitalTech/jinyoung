@@ -30,4 +30,12 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::put('/update/{vision}', 'VisionMissionController@update')->name('management.vision-mission.update');
         Route::get('/delete/{vision}', 'VisionMissionController@destroy')->name('management.vision-mission.delete');
     });
+
+    Route::prefix('histories')->group(function (){
+        Route::get('/', 'HistoryController@index')->name('management.history.index');
+        Route::post('/store', 'HistoryController@store')->name('management.history.store');
+        Route::get('/edit/{history}', 'HistoryController@edit')->name('management.history.edit');
+        Route::put('/update/{history}', 'HistoryController@update')->name('management.history.update');
+        Route::get('/delete/{history}', 'HistoryController@destroy')->name('management.history.delete');
+    });
 });
