@@ -1,4 +1,4 @@
-@extends('management::layouts.master', ['title' => 'Visi Misi'])
+@extends('management::layouts.master', ['title' => 'History'])
 
 @section('content')
     <div class="row">
@@ -8,22 +8,29 @@
                     <form action="{{ $updateLink }}" method="post" class="row" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label>Tahun</label>
-                                <input name="year" type="number" class="form-control" value="{{ $history->year }}" required>
+                                <input name="picture" type="file" class="dropify" data-height="150" data-allowed-file-extensions="png jpg jpeg" data-default-file="{{ $history->picture->url }}" />
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <label>Judul</label>
-                                <input name="title" type="text" class="form-control" value="{{ $history->title }}" required>
+                        <div class="col-md-9 row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Tahun</label>
+                                    <input name="year" type="number" class="form-control" value="{{ $history->year }}" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Deskripsi</label>
-                                <textarea name="description" class="form-control" required>{{ $history->description }}</textarea>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label>Judul</label>
+                                    <input name="title" type="text" class="form-control" value="{{ $history->title }}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Deskripsi</label>
+                                    <textarea name="description" class="form-control" required>{{ $history->description }}</textarea>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12 text-right">

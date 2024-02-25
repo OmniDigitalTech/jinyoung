@@ -38,7 +38,11 @@ class HistoryController extends Controller
      */
     public function store(Request $request)
     {
-        History::create($request->all());
+        $history = History::create($request->all());
+
+        if ($request->picture){
+            insert_picture($request->picture, $history, $request->title);
+        }
 
         return back();
     }
@@ -74,6 +78,10 @@ class HistoryController extends Controller
     public function update(History $history, Request $request)
     {
         $history->update($request->all());
+
+        if ($request->picture){
+            insert_picture($request->picture, $history, $request->title);
+        }
 
         return redirect()->route('management.history.index');
     }
