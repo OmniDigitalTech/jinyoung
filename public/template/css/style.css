@@ -125,6 +125,14 @@
     }
 }
 
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
 .curved {
     background-image: url("https://philippines.licas.news/wp-content/uploads/2019/11/000_Hkg616073-696x476.jpg");
     color: #FFFFFF;

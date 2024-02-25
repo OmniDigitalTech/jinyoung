@@ -279,9 +279,11 @@
             </div>
             <div class="row row-equal-height justify-content-center flex-nowrap" >
                 <div class="col-md-3 p_column text-center">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 1</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
                     <h3 class="fw-bold">STEP 2</h3>
@@ -317,6 +319,31 @@
                     <h3 class="fw-bold">STEP 4</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+{{--                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>--}}
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="product-grid">
+                            <div class="product-image">
+                            </div>
+                            <div class="product-content product-image">
+                                <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
+                            </div>
+                        </div>
+                    </div>
+{{--                    <div class="modal-footer">--}}
+{{--                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>--}}
+{{--                        <button type="button" class="btn btn-primary">Save changes</button>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
