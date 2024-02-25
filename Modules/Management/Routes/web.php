@@ -46,4 +46,12 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::put('/update/{process}', 'ProductProcessController@update')->name('management.product-process.update');
         Route::get('/delete/{process}', 'ProductProcessController@destroy')->name('management.product-process.delete');
     });
+
+    Route::prefix('product')->group(function (){
+        Route::get('/', 'ProductController@index')->name('management.product.index');
+        Route::post('/store', 'ProductController@store')->name('management.product.store');
+        Route::get('/edit/{product}', 'ProductController@edit')->name('management.product.edit');
+        Route::put('/update/{product}', 'ProductController@update')->name('management.product.update');
+        Route::get('/delete/{product}', 'ProductController@destroy')->name('management.product.delete');
+    });
 });
