@@ -46,7 +46,7 @@
                                 <th>Gambar</th>
                                 <th>Judul</th>
                                 <th>Sub Judul</th>
-                                <th>Action</th>
+                                <th>Aksi</th>
                             </tr>
                             @foreach($sliders as $slider)
                                 <tr>
@@ -57,9 +57,9 @@
                                     <td>{{ $slider->title }}</td>
                                     <td>{{ $slider->subtitle }}</td>
                                     <td>
-                                        <a href="{{ route('management.slider.up', $slider) }}" class="btn btn-lg btn-success"><i class="fa fa-arrow-up"></i></a>
-                                        <a href="{{ route('management.slider.edit', $slider) }}" class="btn btn-lg btn-warning"><i class="fa fa-pen"></i></a>
-                                        <a href="{{ route('management.slider.delete', $slider) }}" class="btn btn-lg btn-danger"><i class="fa fa-trash"></i></a>
+                                        <a href="{{ route('management.slider.up', $slider) }}" class="btn btn-sm btn-success"><i class="fa fa-arrow-up"></i></a>
+                                        <a href="{{ route('management.slider.edit', $slider) }}" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i></a>
+                                        <a href="{{ route('management.slider.delete', $slider) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                     </td>
                             @endforeach
                         </table>

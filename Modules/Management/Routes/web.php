@@ -22,4 +22,12 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::get('/up/{slider}', 'SliderController@update')->name('management.slider.up');
         Route::get('/delete/{slider}', 'SliderController@destroy')->name('management.slider.delete');
     });
+
+    Route::prefix('vision-mission')->group(function (){
+        Route::get('/', 'VisionMissionController@index')->name('management.vision-mission.index');
+        Route::post('/store', 'VisionMissionController@store')->name('management.vision-mission.store');
+        Route::get('/edit/{vision}', 'VisionMissionController@edit')->name('management.vision-mission.edit');
+        Route::put('/update/{vision}', 'VisionMissionController@update')->name('management.vision-mission.update');
+        Route::get('/delete/{vision}', 'VisionMissionController@destroy')->name('management.vision-mission.delete');
+    });
 });

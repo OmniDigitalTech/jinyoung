@@ -8,6 +8,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="active"><a class="nav-link" href="{{ route('management.slider.index') }}"><i class="far fa-square"></i><span>Slider</span></a></li>
+            <li class="active"><a class="nav-link" href="{{ route('management.vision-mission.index') }}"><i class="far fa-square"></i><span>Visi Misi</span></a></li>
             <li class="active"><a class="nav-link" href="blank.html"><i class="far fa-square"></i><span>Blank Page</span></a></li>
         </ul>
 
