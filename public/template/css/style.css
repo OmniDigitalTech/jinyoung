@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 767px){
     .main-timeline_one .timeline_one{
-        padding-top: 120px;
+        /*padding-top: 120px;*/
         margin-bottom: 30px;
     }
     .main-timeline_one .timeline_one:last-child{ margin-bottom: 0; }
@@ -782,7 +782,19 @@
     text-decoration: line-through;
 }
 @media screen and (max-width: 990px){
-    .curved{
+    .curved-pb {
+        padding-bottom: 4rem !important;
+    }
+    .curved-pt {
+        padding-top: 0rem !important;
+    }
+    .curved {
+        background-image: none;
+    }
+    .curved-svg {
+        background-image: none;
+    }
+    .dummy {
         display: none;
     }
     .nav-link {
@@ -791,7 +803,7 @@
     .curved h1 {
         font-size: 3rem;
     }
-        .p_column {
+    .p_column {
         margin: 0 0 0 0;
     }
     .row-equal-height {

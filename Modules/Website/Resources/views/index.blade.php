@@ -36,9 +36,9 @@
     <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="#" class="nav-link fw-bold" aria-current="page">HOME</a></li>
-            <li class="nav-item"><a href="#" class="nav-link fw-bold">ABOUT</a></li>
-            <li class="nav-item"><a href="#" class="nav-link fw-bold">PRODUCT</a></li>
-            <li class="nav-item"><a href="#" class="nav-link fw-bold">CONTACT</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link fw-bold">ABOUT</a></li>
+            <li class="nav-item"><a href="#product" class="nav-link fw-bold">PRODUCT</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link fw-bold">CONTACT</a></li>
         </ul>
     </div>
 
@@ -92,16 +92,16 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="curved">
             <div class="curved-svg">
                 <div class="container">
-                    <div class="row pt-5">
-                        <div class="col-md-12 pt-5 pb-5"></div>
-                        <div class="col-md-12 pt-5 pb-5"></div>
-                        <div class="col-md-12 pt-5 pb-5"></div>
+                    <div class="row pt-5 curved-pt curved-pb">
+                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
+                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
+                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
                         <div class="col-md-12 pt-5 pb-5">
-                            <div class="main-timeline_one pt-5">
+                            <div class="main-timeline_one pt-5 curved-pt">
                                 <div class="timeline_one pb-5">
                                     <div class="timeline_one-content">
                                         <h1 class="display-2 fw-bold text-primary">VISION</h1>
@@ -120,8 +120,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 pt-5 pb-5"></div>
-                        <div class="col-md-12 pt-5 pb-5"></div>
+                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
+                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="product">
         <div class="container pt-5 pb-5">
             <div class="section-header">
                 <h2>PRODUCTION PROCESS FLOW</h2>
@@ -286,39 +286,53 @@
                     </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 2</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 3</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 4</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
             </div>
             <div class="row row-equal-height justify-content-center flex-nowrap" >
                 <div class="col-md-3 p_column text-center">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 1</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 2</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 3</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
                 <div class="col-md-3 p_column text-center ">
+                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h3 class="fw-bold">STEP 4</h3>
                     <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -742,7 +756,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <div class="container">
             <footer class="py-6">
                 <div class="row">
