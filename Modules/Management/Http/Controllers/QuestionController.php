@@ -1,14 +1,13 @@
 <?php
 
-namespace Modules\Website\Http\Controllers;
+namespace Modules\Management\Http\Controllers;
 
-use App\Models\Product;
 use App\Models\Question;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class WebsiteController extends Controller
+class QuestionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,13 +15,9 @@ class WebsiteController extends Controller
      */
     public function index()
     {
-        $products = Product::get()->sortBy('name');
+        $questions = Question::get();
 
-        return view('website::index', compact('products'));
-    }
-    public function login()
-    {
-        return view('website::login');
+        return view('management::question.index', compact('questions'));
     }
 
     /**
@@ -31,7 +26,7 @@ class WebsiteController extends Controller
      */
     public function create()
     {
-        return view('website::create');
+        return view('management::create');
     }
 
     /**
@@ -49,9 +44,9 @@ class WebsiteController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function show($id)
+    public function show(Question $question)
     {
-        return view('website::show');
+        return view('management::question.detail', compact('question'));
     }
 
     /**
@@ -61,7 +56,7 @@ class WebsiteController extends Controller
      */
     public function edit($id)
     {
-        return view('website::edit');
+        return view('management::edit');
     }
 
     /**
@@ -83,15 +78,5 @@ class WebsiteController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function ask(Request $request){
-        $request->merge([
-            'product' => json_encode($request->products)
-        ]);
-
-        Question::create($request->all());
-
-        return back();
     }
 }

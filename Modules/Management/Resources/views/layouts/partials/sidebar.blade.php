@@ -12,7 +12,8 @@
             <li class="active"><a class="nav-link" href="{{ route('management.history.index') }}"><i class="far fa-square"></i><span>History</span></a></li>
             <li class="active"><a class="nav-link" href="{{ route('management.product-process.index') }}"><i class="far fa-square"></i><span>Product Process</span></a></li>
             <li class="active"><a class="nav-link" href="{{ route('management.product.index') }}"><i class="far fa-square"></i><span>Produk</span></a></li>
-            <li class="active"><a class="nav-link" href="blank.html"><i class="far fa-square"></i><span>Blank Page</span></a></li>
+            <li class="active"><a class="nav-link" href="{{ route('management.question.index') }}"><i class="far fa-square"></i><span>Pertanyaan</span></a></li>
+            <li class="active"><a class="nav-link" href="{{ route('management.contact.index') }}"><i class="far fa-square"></i><span>Kontak</span></a></li>
         </ul>
 
 {{--        <div class="mt-4 mb-4 p-3 hide-sidebar-mini">--}}

@@ -54,4 +54,16 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::put('/update/{product}', 'ProductController@update')->name('management.product.update');
         Route::get('/delete/{product}', 'ProductController@destroy')->name('management.product.delete');
     });
+
+    Route::prefix('question')->group(function (){
+        Route::get('/', 'QuestionController@index')->name('management.question.index');
+        Route::get('/detail/{question}', 'QuestionController@show')->name('management.question.show');
+    });
+
+    Route::prefix('setting')->group(function (){
+        Route::prefix('contact')->group(function (){
+            Route::get('/', 'ContactController@index')->name('management.contact.index');
+            Route::post('/update', 'ContactController@update')->name('management.contact.update');
+        });
+    });
 });

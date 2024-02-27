@@ -731,16 +731,26 @@
                 <div class="col-lg-12 text-center">
                     <h1 class="mb-1">Contact Us</h1>
                     <p class="fw-bold pb-3">if you have any question please fill form below</p>
-                    <form>
+                    <form action="{{ route('website.ask') }}" method="POST">
+                        @csrf
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <input placeholder="Full Name" type="text" class="form-control" id="your-name" name="your-name" required>
+                                <input placeholder="Full Name" type="text" class="form-control" id="your-name" name="name" required>
                             </div>
                             <div class="col-md-6">
-                                <input placeholder="Email Address" type="text" class="form-control" id="your-surname" name="your-surname" required>
+                                <input placeholder="Email Address" type="text" class="form-control" id="your-surname" name="email" required>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select class="select2 form-control" name="products[]" multiple>
+                                        @foreach($products as $product)
+                                            <option value="{{ $product->id }}">{{ $product->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <textarea placeholder="Message" class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                                <textarea placeholder="Message" class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="row text-center">
