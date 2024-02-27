@@ -2,8 +2,12 @@
 
 namespace Modules\Website\Http\Controllers;
 
+use App\Models\History;
 use App\Models\Product;
 use App\Models\Question;
+use App\Models\Setting;
+use App\Models\Slider;
+use App\Models\VisionMission;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -16,9 +20,18 @@ class WebsiteController extends Controller
      */
     public function index()
     {
+        $sliders = Slider::latest()->get();
+        $histories = History::get()->sortBy('year');
+
+        $visionmission = VisionMission::latest()->first();
+
         $products = Product::get()->sortBy('name');
 
-        return view('website::index', compact('products'));
+        $address = Setting::where('name', 'ADDRESS')->first();
+        $email = Setting::where('name', 'EMAIL')->first();
+        $phone = Setting::where('name', 'PHONE')->first();
+
+        return view('website::index', compact('products', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories'));
     }
     public function login()
     {

@@ -50,30 +50,16 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-one.jpg" class="d-block w-100" alt="...">
-                    <div class="background-overlay"></div>
-                    <div class="carousel-caption">
-                        <p class="h1 mb-1 font-weight-normal">WELCOME</p>
-                        <p class="h1">PT. SUKSES JINYOUNG INDONESIA</p>
-                        <p class="h5 mb-5 pt-3 pb-3"><em>ABOUT SPORT GLOVES</em></p>
+                @foreach($sliders as $key => $slider)
+                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                        <img src="{{ $slider->picture->url }}" class="d-block w-100" alt="...">
+                        <div class="background-overlay"></div>
+                        <div class="carousel-caption">
+                            <p class="h1">{{ $slider->title }}</p>
+                            <p class="h5 mb-5 pt-3 pb-3"><em>{{ $slider->subtitle }}</em></p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-two.jpg" class="d-block w-100" alt="...">
-                    <div class="background-overlay"></div>
-                    <div class="carousel-caption">
-                        <p class="h1 mb-1 font-weight-normal">WELCOME</p>
-                        <p class="h3">PT. SUKSES JINYOUNG INDONESIA</p>
-                        <p class="h5 mb-5 pb-3"><em>ABOUT SPORT GLOVES</em></p>
-                    </div>
-                </div>
-                <div class="carousel-item"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-three.jpg" class="d-block w-100" alt="...">
-                    <div class="background-overlay"></div>
-                    <div class="carousel-caption">
-                        <p class="h1 mb-1 font-weight-normal">WELCOME</p>
-                        <p class="h3">PT. SUKSES JINYOUNG INDONESIA</p>
-                        <p class="h5 mb-5 pb-3"><em>ABOUT SPORT GLOVES</em></p>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,7 +92,7 @@
                                     <div class="timeline_one-content">
                                         <h1 class="display-2 fw-bold text-primary">VISION</h1>
                                         <p class="description lead fw-normal">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                            {{ $visionmission->vision }}
                                         </p>
                                     </div>
                                 </div>
@@ -114,7 +100,7 @@
                                     <div href="#" class="timeline_one-content">
                                         <h1 class="display-2 fw-bold">MISSION</h1>
                                         <p class="description lead fw-normal">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                            {{ $visionmission->mission }}
                                         </p>
                                     </div>
                                 </div>
@@ -137,97 +123,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-timeline">
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="content">
-                                    <h3 class="title">2024 Production</h3>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        @foreach($histories as $history)
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <div class="timeline-icon">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
+                                        <p class="description">
+                                            {{ $history->description }}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -775,11 +685,17 @@
                         <ul class="nav flex-column pt-1">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Please fill out the form below to send us an email</a></li>
                             <li class="nav-item mb-2 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Address</a></li>
+                            @foreach(json_decode($address->value, true) as $item)
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                            @endforeach
                             <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Email:</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">jinyoungindonesia@jinyoung.com</a></li>
+                            @foreach(json_decode($email->value, true) as $item)
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                            @endforeach
                             <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Phone:</a></li>
-                            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-black">(0271) XXXXXXXXXX</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">(+62) XXXXXXXXXX</a></li>
+                            @foreach(json_decode($phone->value, true) as $item)
+                                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
 
@@ -795,3 +711,24 @@
         </div>
     </section>
 @endsection
+
+<script>
+    $(document).on('click', '#acceptButton', function(event) {
+        var url = $(this).data('url');
+        var account = $(this).data('account');
+
+        event.preventDefault();
+        $('#acceptForm').attr('action', url);
+        var selectElement = document.getElementById('credit_account');
+
+        for (var i = 0; i < selectElement.options.length; i++) {
+            if (selectElement.options[i].value === account) {
+                selectElement.options[i].selected = true;
+                break;
+            }
+        }
+        $('#credit_account').val(account).trigger('change');
+
+        $('#acceptModal').modal("show");
+    });
+</script>
