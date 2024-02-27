@@ -4,6 +4,7 @@ namespace Modules\Website\Http\Controllers;
 
 use App\Models\History;
 use App\Models\Product;
+use App\Models\ProductProcess;
 use App\Models\Question;
 use App\Models\Setting;
 use App\Models\Slider;
@@ -24,6 +25,7 @@ class WebsiteController extends Controller
         $histories = History::get()->sortBy('year');
 
         $visionmission = VisionMission::latest()->first();
+        $processes = ProductProcess::get()->sortBy('step');
 
         $products = Product::get()->sortBy('name');
 
@@ -31,7 +33,7 @@ class WebsiteController extends Controller
         $email = Setting::where('name', 'EMAIL')->first();
         $phone = Setting::where('name', 'PHONE')->first();
 
-        return view('website::index', compact('products', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories'));
+        return view('website::index', compact('products', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories', 'processes'));
     }
     public function login()
     {

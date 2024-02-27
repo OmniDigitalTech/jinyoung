@@ -63,6 +63,7 @@
         </ul>
     </div>
 
+    @if(count($sliders) > 0)
     <section>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -92,6 +93,7 @@
             </button>
         </div>
     </section>
+    @endif
 
     <section>
         <div class="embed-responsive embed-responsive-16by9 p-4">
@@ -209,62 +211,14 @@
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="row row-equal-height justify-content-center flex-nowrap" >
-                <div class="col-md-3 p_column text-center">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 1</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 2</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 3</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 4</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
-            </div>
-            <div class="row row-equal-height justify-content-center flex-nowrap" >
-                <div class="col-md-3 p_column text-center">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 1</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 2</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 3</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
-                <div class="col-md-3 p_column text-center ">
-                    <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h3 class="fw-bold">STEP 4</h3>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                    </a>
-                </div>
+                @foreach($processes as $process)
+                    <div class="col-md-3 p_column text-center">
+                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
+                            <h3 class="fw-bold">STEP {{ $process->step }}</h3>
+                            <p>{{ $process->description }}</p>
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
 
@@ -281,7 +235,7 @@
                             <div class="product-image">
                             </div>
                             <div class="product-content product-image">
-                                <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
+                                <img id="image-process" src="">
                             </div>
                         </div>
                     </div>
@@ -733,23 +687,16 @@
     </section>
 @endsection
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
-    $(document).on('click', '#acceptButton', function(event) {
-        var url = $(this).data('url');
-        var account = $(this).data('account');
+    $(document).on('click', '#btnModalProduct', function(event) {
+        console.log('ok');
+        var image = $(this).data('image');
 
         event.preventDefault();
-        $('#acceptForm').attr('action', url);
-        var selectElement = document.getElementById('credit_account');
+        $("#image-process").attr("src", image);
 
-        for (var i = 0; i < selectElement.options.length; i++) {
-            if (selectElement.options[i].value === account) {
-                selectElement.options[i].selected = true;
-                break;
-            }
-        }
-        $('#credit_account').val(account).trigger('change');
 
-        $('#acceptModal').modal("show");
+        $('#exampleModal').modal("show");
     });
 </script>

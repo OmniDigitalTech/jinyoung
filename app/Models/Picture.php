@@ -28,11 +28,7 @@ class Picture extends Model
             return asset('images/logo_watermark.jpg');
         }
 
-        if($this->is_local == false){
-            return env('DO_SPACES_URL').'/'.$this->path. '/'. $this->file_name;
-        }
-
-        return asset($this->path.'/'.$this->file_name);
+        return asset('storage/'.$this->path.'/'.$this->file_name);
 
     }
 }
