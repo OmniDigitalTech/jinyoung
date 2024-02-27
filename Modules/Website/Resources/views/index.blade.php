@@ -256,172 +256,11 @@
         <div class="row p-5 pt-0 pb-2">
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row p-5 pt-3">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-{{--                        <a href="#" class="image">--}}
-{{--                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        </a>--}}
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    <div class="product-content product-image">
-                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    </div>
+                    @foreach($bestproducts as $product)
+                        <div class="product-content product-image">
+                            <img src="{{ $product->picture->url }}">
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -431,180 +270,13 @@
         <div class="row p-5 pt-3 pb-2">
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
+                    @foreach($products as $product)
                     <div class="product-image">
                         <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
+                            <img src="{{ $product->picture->url }}">
                         </a>
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
                     </div>
-{{--                    <div class="product-content product-image">--}}
-{{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-{{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-{{--                    <div class="product-content product-image">--}}
-{{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-{{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-{{--                    <div class="product-content product-image">--}}
-{{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-{{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-{{--                        <span class="product-discount-label">-23%</span>--}}
-{{--                        <ul class="product-links">--}}
-{{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-{{--                        </ul>--}}
-{{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-{{--                    <div class="product-content product-image">--}}
-{{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-{{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-{{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-{{--                    </div>--}}
-                </div>
-            </div>
-        </div>
-        <div class="row p-5 pt-3 pb-3">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-                        {{--                        <span class="product-discount-label">-23%</span>--}}
-                        {{--                        <ul class="product-links">--}}
-                        {{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-                        {{--                        </ul>--}}
-                        {{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    {{--                    <div class="product-content product-image">--}}
-                    {{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-                    {{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-                        {{--                        <span class="product-discount-label">-23%</span>--}}
-                        {{--                        <ul class="product-links">--}}
-                        {{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-                        {{--                        </ul>--}}
-                        {{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    {{--                    <div class="product-content product-image">--}}
-                    {{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-                    {{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-                        {{--                        <span class="product-discount-label">-23%</span>--}}
-                        {{--                        <ul class="product-links">--}}
-                        {{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-                        {{--                        </ul>--}}
-                        {{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    {{--                    <div class="product-content product-image">--}}
-                    {{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-                    {{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">
-                        </a>
-                        {{--                        <span class="product-discount-label">-23%</span>--}}
-                        {{--                        <ul class="product-links">--}}
-                        {{--                            <li><a href="#"><i class="fa fa-search"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--}}
-                        {{--                            <li><a href="#"><i class="fa fa-random"></i></a></li>--}}
-                        {{--                        </ul>--}}
-                        {{--                        <a href="" class="add-to-cart">Add to Cart</a>--}}
-                    </div>
-                    {{--                    <div class="product-content product-image">--}}
-                    {{--                        <img src="https://weldingsupply.com/IMGS/602/A61-LG.gif">--}}
-                    {{--                        <h3 class="title"><a href="#">Women's Blouse Top</a></h3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>3>--}}
-                    {{--                        <div class="price">$53.55 <span>$68.88</span></div>--}}
-                    {{--                    </div>--}}
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -680,7 +352,7 @@
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-2">
-                    <p>© 2024 Copy Rights - Omnitechnology</p>
+{{--                    <p>© 2024 Copy Rights - Omnitechnology</p>--}}
                 </div>
             </footer>
         </div>
@@ -690,7 +362,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
     $(document).on('click', '#btnModalProduct', function(event) {
-        console.log('ok');
         var image = $(this).data('image');
 
         event.preventDefault();

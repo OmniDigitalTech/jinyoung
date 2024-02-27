@@ -27,13 +27,14 @@ class WebsiteController extends Controller
         $visionmission = VisionMission::latest()->first();
         $processes = ProductProcess::get()->sortBy('step');
 
-        $products = Product::get()->sortBy('name');
+        $bestproducts = Product::where('is_best', 1)->latest()->get();
+        $products = Product::where('is_best', 0)->latest()->get();
 
         $address = Setting::where('name', 'ADDRESS')->first();
         $email = Setting::where('name', 'EMAIL')->first();
         $phone = Setting::where('name', 'PHONE')->first();
 
-        return view('website::index', compact('products', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories', 'processes'));
+        return view('website::index', compact('products', 'bestproducts', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories', 'processes'));
     }
     public function login()
     {
