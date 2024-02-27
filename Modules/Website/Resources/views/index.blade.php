@@ -92,7 +92,7 @@
                                     <div class="timeline_one-content">
                                         <h1 class="display-2 fw-bold text-primary">VISION</h1>
                                         <p class="description lead fw-normal">
-                                            {{ $visionmission->vision }}
+                                            {{ @$visionmission->vision }}
                                         </p>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                     <div href="#" class="timeline_one-content">
                                         <h1 class="display-2 fw-bold">MISSION</h1>
                                         <p class="description lead fw-normal">
-                                            {{ $visionmission->mission }}
+                                            {{ @$visionmission->mission }}
                                         </p>
                                     </div>
                                 </div>
