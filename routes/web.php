@@ -17,6 +17,9 @@ use Modules\Website\Http\Controllers\WebsiteController as website;
 
 Route::prefix('/')->group(function() {
     Route::get('/', [website::class, 'index'])->name('homepage');
+    Route::get('/authenticated-admin', function () {
+        return redirect()->route('management.index');
+    });
 });
 
 //Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function(){

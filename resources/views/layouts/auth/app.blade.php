@@ -20,18 +20,18 @@
 <body>
 <div id="app">
     <section class="section">
-        <div class="container mt-5">
+        <div class="container mt-5 pt-5">
             <div class="row">
                 <div
-                    class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                    class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
                     <div class="login-brand">
-                        <h1 class="text-danger">OMNI<span class="text-primary">DITECH</span></h1>
+                        <h2>SUKSES JINYOUNG INDONESIA</h2>
                     </div>
 
                     @yield('content')
-                    <div class="simple-footer">
-                        Copyright &copy; Omni Digital Technology {{ date('Y') }}
-                    </div>
+{{--                    <div class="simple-footer">--}}
+{{--                        Copyright &copy; Omni Digital Technology {{ date('Y') }}--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
