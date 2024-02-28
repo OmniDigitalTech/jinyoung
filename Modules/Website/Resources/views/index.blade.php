@@ -206,13 +206,13 @@
 
     <section id="product">
         <div class="container pt-5 pb-5">
-            <div class="section-header">
+            <div class="section-header mb-0">
                 <h2>PRODUCTION PROCESS FLOW</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
-            <div class="row row-equal-height justify-content-center flex-nowrap" >
+            <div class="row row-equal-height justify-content-center flex-nowrap p-5" >
                 @foreach($processes as $process)
-                    <div class="col-md-3 p_column text-center">
+                    <div class="col-md-3 p_column text-center mt-3">
                         <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
                             <h3 class="fw-bold">STEP {{ $process->step }}</h3>
                             <p>{{ $process->description }}</p>
