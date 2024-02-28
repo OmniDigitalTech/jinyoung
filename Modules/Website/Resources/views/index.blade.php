@@ -4,7 +4,9 @@
     <header>
         <nav class="navbar nav-head">
             <div class="container-fluid">
-                <a class="navbar-brand">PT Jinyoung Sukses Indonesia</a>
+                <a class="navbar-brand">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="260">
+                </a>
                 <form class="d-flex mb-0" role="search">
                     <button class="btn btn-primary me-2">
                         <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
