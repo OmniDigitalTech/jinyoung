@@ -2,32 +2,35 @@
 
 @section('content')
     <header>
-        <nav class="navbar nav-head">
+        <nav class="navbar nav-head bg-body-tertiary">
             <div class="container-fluid align-content-around">
                 <a class="navbar-brand">
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="400">
                 </a>
-                <form class="d-flex mb-0" role="search">
+
+                <form class="d-flex mb-0 align-items-center" role="search">
+                    <button class="flag us me-2"></button>
+                    <button class="flag id me-2"></button>
+{{--                    <div class="dropdown me-2">--}}
+{{--                        <button class="btn btn-secondary" data-bs-toggle="dropdown">--}}
+{{--                            <img src="https://cdn.parcellab.com/img/flags/id.png" width="25" height="22">--}}
+{{--                        </button>--}}
+{{--                        <ul class="dropdown-menu">--}}
+{{--                            <li>--}}
+{{--                                <a class="dropdown-item" href="#">--}}
+{{--                                    <img src="https://cdn.parcellab.com/img/flags/us.png"> EN--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a class="dropdown-item" href="#">--}}
+{{--                                    <img src="https://cdn.parcellab.com/img/flags/id.png"> IN--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                     <button class="btn btn-primary me-2">
                         <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
                     </button>
-                    <div class="dropdown me-2">
-                        <button class="btn btn-secondary" data-bs-toggle="dropdown">
-                            <img src="https://cdn.parcellab.com/img/flags/id.png" width="25" height="22">
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="https://cdn.parcellab.com/img/flags/us.png"> EN
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="https://cdn.parcellab.com/img/flags/id.png"> IN
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 {{--                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">--}}
 {{--                    <button class="btn btn-outline-primary" type="submit">--}}
 {{--                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">--}}
