@@ -324,38 +324,40 @@
     </section>
 
     <section id="contact">
-        <div class="container">
-            <footer class="py-6">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="fw-bold">Contact</h1>
-                        <ul class="nav flex-column pt-1">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Please fill out the form below to send us an email</a></li>
-                            <li class="nav-item mb-2 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Address</a></li>
-                            @foreach(json_decode($address->value, true) as $item)
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
-                            @endforeach
-                            <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Email:</a></li>
-                            @foreach(json_decode($email->value, true) as $item)
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
-                            @endforeach
-                            <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Phone:</a></li>
-                            @foreach(json_decode($phone->value, true) as $item)
-                                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
-                            @endforeach
-                        </ul>
+        <footer class="bg-body-tertiary p-5">
+            <div class="container">
+                <footer class="py-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="fw-bold">Contact</h1>
+                            <ul class="nav flex-column pt-1">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Please fill out the form below to send us an email</a></li>
+                                <li class="nav-item mb-2 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Address</a></li>
+                                @foreach(json_decode($address->value, true) as $item)
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                                @endforeach
+                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Email:</a></li>
+                                @foreach(json_decode($email->value, true) as $item)
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                                @endforeach
+                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Phone:</a></li>
+                                @foreach(json_decode($phone->value, true) as $item)
+                                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.199070257947!2d110.44967897443283!3d-7.768703077058045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5bedc09521f7%3A0xe6514f4f75af8457!2sPT%20SUKSES%20JINYOUNG%20INDONESIA!5e0!3m2!1sen!2sid!4v1708438926532!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.199070257947!2d110.44967897443283!3d-7.768703077058045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5bedc09521f7%3A0xe6514f4f75af8457!2sPT%20SUKSES%20JINYOUNG%20INDONESIA!5e0!3m2!1sen!2sid!4v1708438926532!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-2">
+    {{--                    <p>© 2024 Copy Rights - Omnitechnology</p>--}}
                     </div>
-                </div>
-
-                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-2">
-{{--                    <p>© 2024 Copy Rights - Omnitechnology</p>--}}
-                </div>
-            </footer>
-        </div>
+                </footer>
+            </div>
+        </footer>
     </section>
 @endsection
 
