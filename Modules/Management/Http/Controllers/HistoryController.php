@@ -3,6 +3,7 @@
 namespace Modules\Management\Http\Controllers;
 
 use App\Models\History;
+use App\Models\Setting;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -16,10 +17,11 @@ class HistoryController extends Controller
     public function index()
     {
         $storeLink = route('management.history.store');
+        $setting = Setting::where('name', 'HISTORY')->first();
 
         $histories = History::get();
 
-        return view('management::histories.index', compact('storeLink', 'histories'));
+        return view('management::histories.index', compact('storeLink', 'histories', 'setting'));
     }
 
     /**
@@ -84,6 +86,15 @@ class HistoryController extends Controller
         }
 
         return redirect()->route('management.history.index');
+    }
+
+    public function updateSetting(Request $request){
+        $setting = Setting::where('name', 'HISTORY')->first();
+        $setting->update([
+            'value' => json_encode($request->display)
+        ]);
+
+        return back();
     }
 
     /**

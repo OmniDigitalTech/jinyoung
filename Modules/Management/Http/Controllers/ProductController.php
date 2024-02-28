@@ -3,6 +3,7 @@
 namespace Modules\Management\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Setting;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -16,10 +17,12 @@ class ProductController extends Controller
     public function index()
     {
         $storeLink = route('management.product.store');
+        $settingbest = Setting::where('name', 'BEST PRODUCT')->first();
+        $setting = Setting::where('name', 'PRODUCT')->first();
 
         $products = Product::get();
 
-        return view('management::product.index', compact('products', 'storeLink'));
+        return view('management::product.index', compact('products', 'storeLink', 'settingbest', 'setting'));
     }
 
     /**
@@ -89,6 +92,24 @@ class ProductController extends Controller
         }
 
         return redirect()->route('management.product.index');
+    }
+
+    public function updateSetting(Request $request){
+        if ($request->display_best){
+            $setting = Setting::where('name', 'BEST PRODUCT')->first();
+            $setting->update([
+                'value' => json_encode($request->display_best)
+            ]);
+        }
+
+        if ($request->display){
+            $setting = Setting::where('name', 'PRODUCT')->first();
+            $setting->update([
+                'value' => json_encode($request->display)
+            ]);
+        }
+
+        return back();
     }
 
     /**
