@@ -3,9 +3,9 @@
 @section('content')
     <header>
         <nav class="navbar nav-head">
-            <div class="container-fluid">
+            <div class="container-fluid align-content-around">
                 <a class="navbar-brand">
-                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="260">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="400">
                 </a>
                 <form class="d-flex mb-0" role="search">
                     <button class="btn btn-primary me-2">
