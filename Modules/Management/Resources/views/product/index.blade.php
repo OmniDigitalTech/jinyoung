@@ -45,7 +45,27 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Produk</h4>
+                    <div class="row w-100">
+                        <div class="col-md-6 pt-2">
+                            <h3>Produk</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="{{ route('management.product.update-setting') }}" method="GET" class="row justify-content-end">
+                                @csrf
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <label class="mt-1">Display Best</label>
+                                        <input name="display_best[]" type="number" class="form-control mx-4 mt-1" value="{{ json_decode($settingbest->value)[0] }}">
+                                        <label class="mt-1">Display</label>
+                                        <input name="display[]" type="number" class="form-control mx-4 mt-1" value="{{ json_decode($setting->value)[0] }}">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" type="submit">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">

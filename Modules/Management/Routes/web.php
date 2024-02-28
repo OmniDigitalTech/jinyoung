@@ -19,6 +19,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::post('/store', 'SliderController@store')->name('management.slider.store');
         Route::get('/edit/{slider}', 'SliderController@edit')->name('management.slider.edit');
         Route::put('/update/{slider}', 'SliderController@update')->name('management.slider.update');
+        Route::get('/update-setting', 'SliderController@updateSetting')->name('management.slider.update-setting');
         Route::get('/up/{slider}', 'SliderController@update')->name('management.slider.up');
         Route::get('/delete/{slider}', 'SliderController@destroy')->name('management.slider.delete');
     });
@@ -36,6 +37,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::post('/store', 'HistoryController@store')->name('management.history.store');
         Route::get('/edit/{history}', 'HistoryController@edit')->name('management.history.edit');
         Route::put('/update/{history}', 'HistoryController@update')->name('management.history.update');
+        Route::get('/update-setting', 'HistoryController@updateSetting')->name('management.history.update-setting');
         Route::get('/delete/{history}', 'HistoryController@destroy')->name('management.history.delete');
     });
 
@@ -44,6 +46,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::post('/store', 'ProductProcessController@store')->name('management.product-process.store');
         Route::get('/edit/{process}', 'ProductProcessController@edit')->name('management.product-process.edit');
         Route::put('/update/{process}', 'ProductProcessController@update')->name('management.product-process.update');
+        Route::get('/update-setting', 'ProductProcessController@updateSetting')->name('management.product-process.update-setting');
         Route::get('/delete/{process}', 'ProductProcessController@destroy')->name('management.product-process.delete');
     });
 
@@ -52,6 +55,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::post('/store', 'ProductController@store')->name('management.product.store');
         Route::get('/edit/{product}', 'ProductController@edit')->name('management.product.edit');
         Route::put('/update/{product}', 'ProductController@update')->name('management.product.update');
+        Route::get('/update-setting', 'ProductController@updateSetting')->name('management.product.update-setting');
         Route::get('/delete/{product}', 'ProductController@destroy')->name('management.product.delete');
     });
 

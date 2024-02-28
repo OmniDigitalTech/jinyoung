@@ -2,6 +2,7 @@
 
 namespace Modules\Management\Http\Controllers;
 
+use App\Models\Setting;
 use App\Models\Slider;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
@@ -16,9 +17,10 @@ class SliderController extends Controller
     public function index()
     {
         $storeLink = route('management.slider.store');
+        $setting = Setting::where('name', 'SLIDER')->first();
 
         $sliders = Slider::latest()->get();
-        return view('management::slider.index', compact('sliders', 'storeLink'));
+        return view('management::slider.index', compact('sliders', 'storeLink', 'setting'));
     }
 
     /**
@@ -80,6 +82,15 @@ class SliderController extends Controller
         $slider->update($request->all());
 
         return redirect()->route('management.slider.index');
+    }
+
+    public function updateSetting(Request $request){
+        $setting = Setting::where('name', 'SLIDER')->first();
+        $setting->update([
+            'value' => json_encode($request->display)
+        ]);
+
+        return back();
     }
 
     /**

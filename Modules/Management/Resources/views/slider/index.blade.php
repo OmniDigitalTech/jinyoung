@@ -36,7 +36,25 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Slider</h4>
+                    <div class="row w-100">
+                        <div class="col-md-6 pt-2">
+                            <h3>Slider</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="{{ route('management.slider.update-setting') }}" method="GET" class="row justify-content-end">
+                                @csrf
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <label class="mt-1">Display</label>
+                                        <input name="display[]" type="number" class="form-control mx-4 mt-1" value="{{ json_decode($setting->value)[0] }}">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" type="submit">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">

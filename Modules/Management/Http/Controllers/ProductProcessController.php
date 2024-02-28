@@ -3,6 +3,7 @@
 namespace Modules\Management\Http\Controllers;
 
 use App\Models\ProductProcess;
+use App\Models\Setting;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -16,10 +17,11 @@ class ProductProcessController extends Controller
     public function index()
     {
         $storeLink = route('management.product-process.store');
+        $setting = Setting::where('name', 'PRODUCT PROCESS')->first();
 
         $processes = ProductProcess::get();
 
-        return view('management::product_process.index', compact('storeLink', 'processes'));
+        return view('management::product_process.index', compact('storeLink', 'processes', 'setting'));
     }
 
     /**
@@ -84,6 +86,15 @@ class ProductProcessController extends Controller
         }
 
         return redirect()->route('management.product-process.index');
+    }
+
+    public function updateSetting(Request $request){
+        $setting = Setting::where('name', 'PRODUCT PROCESS')->first();
+        $setting->update([
+            'value' => json_encode($request->display)
+        ]);
+
+        return back();
     }
 
     /**

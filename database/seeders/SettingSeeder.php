@@ -15,6 +15,26 @@ class SettingSeeder extends Seeder
     {
         $items = [
             [
+                'name' => 'SLIDER',
+                'value' => json_encode([3]),
+            ],
+            [
+                'name' => 'HISTORY',
+                'value' => json_encode([6]),
+            ],
+            [
+                'name' => 'PRODUCT PROCESS',
+                'value' => json_encode([6]),
+            ],
+            [
+                'name' => 'BEST PRODUCT',
+                'value' => json_encode([8]),
+            ],
+            [
+                'name' => 'PRODUCT',
+                'value' => json_encode([8]),
+            ],
+            [
                 'name' => 'ADDRESS',
                 'value' => json_encode(['Jl. Melati, Kadirojo II, Purwomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571']),
             ],
@@ -27,6 +47,8 @@ class SettingSeeder extends Seeder
                 'value' => json_encode(['081246835357', '08276542563']),
             ],
         ];
+
+        Setting::truncate();
 
         foreach ($items as $item) {
             Setting::create([
