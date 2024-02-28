@@ -11,23 +11,6 @@
                 <form class="d-flex mb-0 align-items-center" role="search">
                     <button class="flag us me-2"></button>
                     <button class="flag id me-2"></button>
-{{--                    <div class="dropdown me-2">--}}
-{{--                        <button class="btn btn-secondary" data-bs-toggle="dropdown">--}}
-{{--                            <img src="https://cdn.parcellab.com/img/flags/id.png" width="25" height="22">--}}
-{{--                        </button>--}}
-{{--                        <ul class="dropdown-menu">--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="#">--}}
-{{--                                    <img src="https://cdn.parcellab.com/img/flags/us.png"> EN--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="#">--}}
-{{--                                    <img src="https://cdn.parcellab.com/img/flags/id.png"> IN--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
                     <button class="btn btn-primary me-2">
                         <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
                     </button>
@@ -302,14 +285,12 @@
                             <div class="col-md-6">
                                 <input placeholder="Email Address" type="text" class="form-control" id="your-surname" name="email" required>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <select class="select2 form-control" name="products[]" multiple>
-                                        @foreach($products as $product)
-                                            <option value="{{ $product->id }}">{{ $product->name }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                            <div class="col-12 form-group">
+                                <select class="select2 form-control" name="products[]" multiple>
+                                    @foreach($products as $product)
+                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="col-12">
                                 <textarea placeholder="Message" class="form-control" id="message" name="message" rows="5" required></textarea>
