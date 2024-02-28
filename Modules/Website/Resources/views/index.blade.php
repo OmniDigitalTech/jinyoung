@@ -9,7 +9,7 @@
                     <button class="btn btn-primary me-2">
                         <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
                     </button>
-                    <div class="dropdown">
+                    <div class="dropdown me-2">
                         <button class="btn btn-secondary" data-bs-toggle="dropdown">
                             <img src="https://cdn.parcellab.com/img/flags/id.png" width="25" height="22">
                         </button>
