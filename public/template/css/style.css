@@ -181,7 +181,7 @@
 }
 
 .carousel-caption {
-    top: 33%;
+    top: 43%;
 }
 .carousel-item {
     position: relative;
@@ -264,7 +264,7 @@
         font-size: 0.8rem;
     }
     .carousel-caption {
-        top: 5%;
+        top: 30%;
     }
     .carousel-caption p {
         font-size: 0.8rem !important;

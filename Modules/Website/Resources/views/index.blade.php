@@ -76,11 +76,11 @@
             <div class="carousel-inner">
                 @foreach($sliders as $key => $slider)
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                        <img src="{{ $slider->picture->url }}" class="d-block w-100" alt="...">
+                        <img src="{{ $slider->picture->url }}" class="d-block w-100 h-110" alt="...">
                         <div class="background-overlay"></div>
                         <div class="carousel-caption">
                             <p class="h1">{{ $slider->title }}</p>
-                            <p class="h5 mb-5 pt-3 pb-3"><em>{{ $slider->subtitle }}</em></p>
+                            <p class="h5 mb-5 pb-3"><em>{{ $slider->subtitle }}</em></p>
                         </div>
                     </div>
                 @endforeach
