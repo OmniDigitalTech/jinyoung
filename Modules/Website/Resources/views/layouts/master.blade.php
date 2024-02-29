@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+    <link rel="shortcut icon" href="{{ URL::asset('template/img/SJI.svg') }}">
 
     <script src="https://kit.fontawesome.com/6d3db1e240.js" crossorigin="anonymous"></script>
 </head>
