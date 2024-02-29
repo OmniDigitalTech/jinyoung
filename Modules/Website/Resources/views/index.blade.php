@@ -23,33 +23,117 @@
                 </form>
             </div>
         </nav>
+        <nav class="position-relative bg-nav">
+            <div class="wrapper flex-column justify-content-center">
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li>
+                        <a href="#" class="desktop-item fw-bold">HOME</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">HOME</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item fw-bold">ABOUT</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">ABOUT</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item fw-bold">PRODUCT</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">PRODUCT</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item fw-bold">CONTACT</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">CONTACT</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                                <div class="row">
+                                    <header><a href="#">Lorem Ipsum</a></header>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
     </header>
 
-    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills">
-            <li class="dropdown nav-item">
-                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">HOME</a>
-                <ul class="dropdown-menu show-home">
-                    <li><a class="dropdown-item" href="#">Home</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">ABOUT</a>
-                <ul class="dropdown-menu show-about">
-                    <li><a class="dropdown-item" href="#about">About</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">PRODUCT</a>
-                <ul class="dropdown-menu show-product">
-                    <li><a class="dropdown-item" href="#product">Product</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">CONTACT</a>
-                <ul class="dropdown-menu show-contact">
-                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+
+
+{{--    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">--}}
+{{--        <ul class="nav nav-pills">--}}
+{{--            <li class="dropdown nav-item">--}}
+{{--                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">HOME</a>--}}
+{{--                <ul class="dropdown-menu show-home">--}}
+{{--                    <li><a class="dropdown-item" href="#">Home</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">ABOUT</a>--}}
+{{--                <ul class="dropdown-menu show-about">--}}
+{{--                    <li><a class="dropdown-item" href="#about">About</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">PRODUCT</a>--}}
+{{--                <ul class="dropdown-menu show-product">--}}
+{{--                    <li><a class="dropdown-item" href="#product">Product</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">CONTACT</a>--}}
+{{--                <ul class="dropdown-menu show-contact">--}}
+{{--                    <li><a class="dropdown-item" href="#contact">Contact</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--        </ul>--}}
+{{--    </div>--}}
 
     @if(count($sliders) > 0)
     <section>
