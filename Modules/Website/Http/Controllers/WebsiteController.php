@@ -12,6 +12,7 @@ use App\Models\VisionMission;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\App;
 
 class WebsiteController extends Controller
 {
@@ -19,8 +20,19 @@ class WebsiteController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
+        if (in_array($request->segment(1), ['en', 'id'])){
+            session(['locale' => $request->segment(1)]);
+        }
+
+        if ($request->session()->exists('locale')) {
+            App::setLocale(session('locale'));
+        }else{
+            session(['locale' => 'id']);
+            App::setLocale(session('locale'));
+        }
+
         $getSlider = Setting::where('name', 'SLIDER')->first();
         $countSlider = json_decode($getSlider->value)[0] ?? 1;
 

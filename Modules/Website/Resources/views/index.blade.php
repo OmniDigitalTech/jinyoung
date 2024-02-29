@@ -4,13 +4,13 @@
     <header>
         <nav class="navbar nav-head bg-body-tertiary">
             <div class="container-fluid align-content-around">
-                <a class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="400">
                 </a>
 
                 <form class="d-flex mb-0 align-items-center" role="search">
-                    <button class="flag us me-2"></button>
-                    <button class="flag id me-2"></button>
+                    <a href="en" class="flag us me-2"></a>
+                    <a href="id" class="flag id me-2"></a>
                     <button class="btn btn-primary me-2">
                         <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
                     </button>
@@ -23,117 +23,33 @@
                 </form>
             </div>
         </nav>
-        <nav class="position-relative bg-nav">
-            <div class="wrapper flex-column justify-content-center">
-                <input type="radio" name="slider" id="menu-btn">
-                <input type="radio" name="slider" id="close-btn">
-                <ul class="nav nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li>
-                        <a href="#" class="desktop-item fw-bold">HOME</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">HOME</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item fw-bold">ABOUT</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">ABOUT</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item fw-bold">PRODUCT</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">PRODUCT</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item fw-bold">CONTACT</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">CONTACT</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-            </div>
-        </nav>
     </header>
 
-
-
-{{--    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">--}}
-{{--        <ul class="nav nav-pills">--}}
-{{--            <li class="dropdown nav-item">--}}
-{{--                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">HOME</a>--}}
-{{--                <ul class="dropdown-menu show-home">--}}
-{{--                    <li><a class="dropdown-item" href="#">Home</a></li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">ABOUT</a>--}}
-{{--                <ul class="dropdown-menu show-about">--}}
-{{--                    <li><a class="dropdown-item" href="#about">About</a></li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">PRODUCT</a>--}}
-{{--                <ul class="dropdown-menu show-product">--}}
-{{--                    <li><a class="dropdown-item" href="#product">Product</a></li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">CONTACT</a>--}}
-{{--                <ul class="dropdown-menu show-contact">--}}
-{{--                    <li><a class="dropdown-item" href="#contact">Contact</a></li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--        </ul>--}}
-{{--    </div>--}}
+    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+            <li class="dropdown nav-item">
+                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+                <ul class="dropdown-menu show-home">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+                <ul class="dropdown-menu show-about">
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+                <ul class="dropdown-menu show-product">
+                    <li><a class="dropdown-item" href="#product">Product</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
+                <ul class="dropdown-menu show-contact">
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
     @if(count($sliders) > 0)
     <section>
@@ -185,7 +101,7 @@
                             <div class="main-timeline_one pt-5 curved-pt">
                                 <div class="timeline_one pb-5">
                                     <div class="timeline_one-content">
-                                        <h1 class="display-2 fw-bold text-primary">VISION</h1>
+                                        <h1 class="display-2 fw-bold text-primary">{{ strtoupper(__('translation.vision')) }}</h1>
                                         <p class="description lead fw-normal">
                                             {{ @$visionmission->vision }}
                                         </p>
@@ -193,7 +109,7 @@
                                 </div>
                                 <div class="timeline_one">
                                     <div href="#" class="timeline_one-content">
-                                        <h1 class="display-2 fw-bold">MISSION</h1>
+                                        <h1 class="display-2 fw-bold">{{ strtoupper(__('translation.mission')) }}</h1>
                                         <p class="description lead fw-normal">
                                             {{ @$visionmission->mission }}
                                         </p>
@@ -212,7 +128,7 @@
     <section>
         <div class="container">
             <div class="section-header">
-                <h2>HISTORY</h2>
+                <h2>{{ strtoupper(__('translation.history')) }}</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="row">
@@ -279,7 +195,7 @@
     <section id="product">
         <div class="container pt-5 pb-5">
             <div class="section-header mb-0">
-                <h2>PRODUCTION PROCESS FLOW</h2>
+                <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="row row-equal-height justify-content-center flex-nowrap p-5" >
@@ -322,7 +238,7 @@
 
     <section>
         <div class="section-header pt-4">
-            <h2>BEST PRODUCT</h2>
+            <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <div class="row p-5 pt-0 pb-2">
@@ -358,16 +274,16 @@
         <div class="container pt-5 pb-5">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
-                    <h1 class="mb-1">Contact Us</h1>
+                    <h1 class="mb-1">{{ ucwords(__('translation.contact_us')) }}</h1>
                     <p class="fw-bold pb-3">if you have any question please fill form below</p>
                     <form action="{{ route('website.ask') }}" method="POST">
                         @csrf
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <input placeholder="Full Name" type="text" class="form-control" id="your-name" name="name" required>
+                                <input placeholder="{{ ucwords(__('translation.full_name')) }}" type="text" class="form-control" id="your-name" name="name" required>
                             </div>
                             <div class="col-md-6">
-                                <input placeholder="Email Address" type="text" class="form-control" id="your-surname" name="email" required>
+                                <input placeholder="{{ ucwords(__('translation.email_address')) }}" type="text" class="form-control" id="your-surname" name="email" required>
                             </div>
                             <div class="col-12 form-group">
                                 <select class="select2 form-control" name="products[]" multiple>
@@ -377,12 +293,12 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea placeholder="Message" class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <textarea placeholder="{{ ucwords(__('translation.message')) }}" class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="row text-center">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary">{{ strtoupper(__('translation.submit')) }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -399,18 +315,18 @@
                 <footer class="py-6">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="fw-bold">Contact</h1>
+                            <h1 class="fw-bold">{{ ucwords(__('translation.contact')) }}</h1>
                             <ul class="nav flex-column pt-1">
                                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Please fill out the form below to send us an email</a></li>
-                                <li class="nav-item mb-2 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Address</a></li>
+                                <li class="nav-item mb-2 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">{{ ucwords(__('translation.address')) }}</a></li>
                                 @foreach(json_decode($address->value, true) as $item)
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
                                 @endforeach
-                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Email:</a></li>
+                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">{{ ucwords(__('translation.email')) }} :</a></li>
                                 @foreach(json_decode($email->value, true) as $item)
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
                                 @endforeach
-                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">Phone:</a></li>
+                                <li class="nav-item mb-1 pt-2"><a href="#" class="nav-link p-0 text-black fw-bold">{{ ucwords(__('translation.phone')) }} :</a></li>
                                 @foreach(json_decode($phone->value, true) as $item)
                                     <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-black">{{ $item }}</a></li>
                                 @endforeach
