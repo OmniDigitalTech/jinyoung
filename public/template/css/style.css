@@ -214,7 +214,22 @@
 }
 .carousel > .carousel-inner > .carousel-item > img{
     width:240px; /* Yeap you can change the width and height*/
-    height:760px;
+    height:800px;
+}
+.show-home{
+    transform: translate(9px, 42px) !important;
+}
+.show-about{
+    transform: translate(11px, 42px) !important;
+}
+.show-product{
+    transform: translate(20px, 42px) !important;
+}
+.show-contact{
+    transform: translate(18px, 42px) !important;
+}
+.dropdown-item {
+    text-align: center;
 }
 @media(max-width:1180px) {
     .carousel > .carousel-inner > .carousel-item > img {

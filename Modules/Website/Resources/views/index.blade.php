@@ -29,23 +29,23 @@
         <ul class="nav nav-pills">
             <li class="dropdown nav-item">
                 <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">HOME</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dummy</a></li>
+                <ul class="dropdown-menu show-home">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
                 </ul>
             </li>
             <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">ABOUT</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dummy</a></li>
+                <ul class="dropdown-menu show-about">
+                    <li><a class="dropdown-item" href="#about">About</a></li>
                 </ul>
             </li>
             <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">PRODUCT</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dummy</a></li>
+                <ul class="dropdown-menu show-product">
+                    <li><a class="dropdown-item" href="#product">Product</a></li>
                 </ul>
             </li>
             <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">CONTACT</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dummy</a></li>
+                <ul class="dropdown-menu show-contact">
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
                 </ul>
             </li>
         </ul>
@@ -83,9 +83,9 @@
     </section>
     @endif
 
-    <section>
+    <section class="bg-body-tertiary">
         <div class="embed-responsive embed-responsive-16by9 p-4">
-            <iframe class="embed-responsive-item w-100" height="550" src="https://drive.google.com/file/d/1dfFpyTSW3Nevkv1_Ma3xTTMIuRfrufIO/preview" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1dfFpyTSW3Nevkv1_Ma3xTTMIuRfrufIO/preview" allowfullscreen></iframe>
         </div>
     </section>
 
