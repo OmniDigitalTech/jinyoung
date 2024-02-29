@@ -2,7 +2,7 @@
 return [
     "home" => "home",
     "about" => "tentang",
-    "product" => "product",
+    "product" => "produk",
     "contact" => "kontak",
 
     "vision" => "visi",

@@ -4,7 +4,7 @@
     <header>
         <nav class="navbar nav-head bg-body-tertiary">
             <div class="container-fluid align-content-around">
-                <a class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="400">
                 </a>
 

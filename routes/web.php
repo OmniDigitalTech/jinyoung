@@ -15,10 +15,16 @@ use Modules\Website\Http\Controllers\WebsiteController as website;
 |
 */
 
-Route::get('/{locale}', [website::class, 'index'])->name('homepage');
+Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
+    Route::get('/', [management::class, 'index'])->name('management.index');
+});
 
-Route::get('/authenticated-admin', function () {
-    return redirect()->route('management.index');
+Route::domain(config('app.domain'))->middleware(['auth', 'management'])->group(function () {
+    Route::get('/{locale}', [website::class, 'index'])->name('homepage');
+
+    Route::get('/authenticated-admin', function () {
+        return redirect()->route('management.index');
+    });
 });
 
 //Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function(){
