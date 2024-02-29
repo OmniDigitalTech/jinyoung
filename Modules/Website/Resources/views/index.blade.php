@@ -30,9 +30,9 @@
                 <ul class="nav nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">HOME</a>
+                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.home')) }}</a>
                         <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">HOME</label>
+                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
                         <div class="mega-box">
                             <div class="content">
                                 <div class="row">
@@ -48,9 +48,9 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">ABOUT</a>
+                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.about')) }}</a>
                         <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">ABOUT</label>
+                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.about')) }}</label>
                         <div class="mega-box">
                             <div class="content">
                                 <div class="row">
@@ -66,9 +66,9 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">PRODUCT</a>
+                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.product')) }}</a>
                         <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">PRODUCT</label>
+                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.product')) }}</label>
                         <div class="mega-box">
                             <div class="content">
                                 <div class="row">
@@ -84,9 +84,9 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">CONTACT</a>
+                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.contact')) }}</a>
                         <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">CONTACT</label>
+                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.contact')) }}</label>
                         <div class="mega-box">
                             <div class="content">
                                 <div class="row">
@@ -107,31 +107,31 @@
         </nav>
     </header>
 
-    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills">
-            <li class="dropdown nav-item">
-                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
-                <ul class="dropdown-menu show-home">
-                    <li><a class="dropdown-item" href="#">Home</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
-                <ul class="dropdown-menu show-about">
-                    <li><a class="dropdown-item" href="#about">About</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
-                <ul class="dropdown-menu show-product">
-                    <li><a class="dropdown-item" href="#product">Product</a></li>
-                </ul>
-            </li>
-            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
-                <ul class="dropdown-menu show-contact">
-                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+{{--    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">--}}
+{{--        <ul class="nav nav-pills">--}}
+{{--            <li class="dropdown nav-item">--}}
+{{--                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-home">--}}
+{{--                    <li><a class="dropdown-item" href="#">Home</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-about">--}}
+{{--                    <li><a class="dropdown-item" href="#about">About</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-product">--}}
+{{--                    <li><a class="dropdown-item" href="#product">Product</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-contact">--}}
+{{--                    <li><a class="dropdown-item" href="#contact">Contact</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--        </ul>--}}
+{{--    </div>--}}
 
     @if(count($sliders) > 0)
     <section>
