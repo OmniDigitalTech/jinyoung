@@ -19,7 +19,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
     Route::get('/', [management::class, 'index'])->name('management.index');
 });
 
-Route::domain(config('app.domain'))->middleware(['auth', 'management'])->group(function () {
+Route::domain(config('app.domain'))->group(function () {
     Route::get('/{locale}', [website::class, 'index'])->name('homepage');
 
     Route::get('/authenticated-admin', function () {
