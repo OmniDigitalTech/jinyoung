@@ -225,26 +225,26 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="single-process first text-center">
-                            <i class="fas fa-search"></i>
-                            <h4>Discover</h4>
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation</h4>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single-process text-center">
-                            <i class="fas fa-cog"></i>
-                            <h4>Discover</h4>
+                            <i class="fas fa-users"></i>
+                            <h4>Transparency</h4>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single-process thard text-center">
-                            <i class="fas fa-globe"></i>
-                            <h4>Discover</h4>
+                            <i class="fas fa-scale-balanced"></i>
+                            <h4>Sustainbility</h4>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single-process last text-center">
-                            <i class="fas fa-sync-alt"></i>
-                            <h4>Discover</h4>
+                            <i class="fas fa-medal"></i>
+                            <h4>Quality</h4>
                         </div>
                     </div>
                 </div>
