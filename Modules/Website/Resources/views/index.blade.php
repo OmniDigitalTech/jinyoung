@@ -41,13 +41,13 @@
                         <div class="mega-box">
                             <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <a href="#">Vision & Mission</a>
+                                    <a href="#vision-mission">Vision & Mission</a>
                                 </div>
                                 <div class="row">
-                                    <a href="#">History</a>
+                                    <a href="#history">History</a>
                                 </div>
                                 <div class="row">
-                                    <a href="#">Value</a>
+                                    <a href="#value">Value</a>
                                 </div>
                             </div>
                         </div>
@@ -59,10 +59,10 @@
                         <div class="mega-box">
                             <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <a href="#">Production Process</a>
+                                    <a href="#product-process">Production Process</a>
                                 </div>
                                 <div class="row">
-                                    <a href="#">Product</a>
+                                    <a href="#product">Product</a>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                         <div class="mega-box">
                             <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <header><a href="#">Address</a></header>
+                                    <a href="#contact">Address</a>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="vision-mission">
         <div class="curved">
             <div class="curved-svg">
                 <div class="container">
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="history">
         <div class="container">
             <div class="section-header">
                 <h2>{{ strtoupper(__('translation.history')) }}</h2>
@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <section class="work-porcess-area">
+    <section class="work-porcess-area" id="value">
         <div class="container pt-5 pb-5">
             <div class="section-header">
                 <h2>VALUE</h2>
@@ -252,7 +252,7 @@
         </div>
     </section>
 
-    <section id="product">
+    <section id="product-process">
         <div class="container pt-5 pb-5">
             <div class="section-header mb-0">
                 <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
@@ -296,7 +296,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="product">
         <div class="section-header pt-4 mb-0">
             <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
