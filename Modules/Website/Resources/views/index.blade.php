@@ -33,34 +33,21 @@
                         <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.home')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
-                        <div class="mega-box">
-                            <div class="content">
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                            </div>
-                        </div>
                     </li>
                     <li>
                         <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.about')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.about')) }}</label>
                         <div class="mega-box">
-                            <div class="content">
+                            <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <a href="#">Vision & Mission</a>
                                 </div>
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <a href="#">History</a>
                                 </div>
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <a href="#">Value</a>
                                 </div>
                             </div>
                         </div>
@@ -70,15 +57,12 @@
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.product')) }}</label>
                         <div class="mega-box">
-                            <div class="content">
+                            <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <a href="#">Production Process</a>
                                 </div>
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <a href="#">Product</a>
                                 </div>
                             </div>
                         </div>
@@ -88,15 +72,9 @@
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.contact')) }}</label>
                         <div class="mega-box">
-                            <div class="content">
+                            <div class="content text-center justify-content-around">
                                 <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
-                                </div>
-                                <div class="row">
-                                    <header><a href="#">Lorem Ipsum</a></header>
+                                    <header><a href="#">Address</a></header>
                                 </div>
                             </div>
                         </div>

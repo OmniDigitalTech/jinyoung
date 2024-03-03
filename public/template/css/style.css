@@ -969,7 +969,7 @@ nav .wrapper{
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .mega-box .content .row{
-    width: calc(25% - 30px);
+    width: calc(30% - 30px);
     line-height: 45px;
 }
 .content .row img{
