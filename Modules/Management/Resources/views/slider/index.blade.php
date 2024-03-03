@@ -12,13 +12,22 @@
                                 <input name="picture" type="file" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg"  />
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Bahasa</label>
+                                <select name="language" class="form-control">
+                                    <option value="id">Indonesia</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Judul</label>
                                 <input name="title" type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label>Sub Judul</label>
                                 <input name="subtitle" type="text" class="form-control">

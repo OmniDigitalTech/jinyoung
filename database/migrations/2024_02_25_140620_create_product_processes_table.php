@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('product_processes', function (Blueprint $table) {
             $table->id();
+            $table->string('language');
             $table->integer('step');
             $table->string('description');
             $table->timestamps();

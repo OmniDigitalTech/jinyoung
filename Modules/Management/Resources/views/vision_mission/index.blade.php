@@ -7,13 +7,22 @@
                 <div class=" card-body">
                     <form action="{{ $storeLink }}" method="post" class="row" enctype="multipart/form-data">
                         @csrf
-                        <div class="col-md-12">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Bahasa</label>
+                                <select name="language" class="form-control">
+                                    <option value="id">Indonesia</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label>Visi</label>
                                 <input name="vision" type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label>Misi</label>
                                 <input name="mission" type="text" class="form-control">

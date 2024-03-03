@@ -11,6 +11,7 @@ class Slider extends Model
     use HasFactory, WithPictures;
 
     protected $fillable = [
+        'language',
         'title',
         'subtitle'
     ];

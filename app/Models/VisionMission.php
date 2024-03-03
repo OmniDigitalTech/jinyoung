@@ -10,6 +10,7 @@ class VisionMission extends Model
     use HasFactory;
 
     protected $fillable = [
+        'language',
         'vision',
         'mission',
     ];

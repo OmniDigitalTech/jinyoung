@@ -11,6 +11,7 @@ class Product extends Model
     use HasFactory, WithPictures;
 
     protected $fillable = [
+        'language',
         'name',
         'description',
         'is_best'

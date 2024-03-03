@@ -33,33 +33,33 @@ class WebsiteController extends Controller
             App::setLocale(session('locale'));
         }
 
-        $getSlider = Setting::where('name', 'SLIDER')->first();
-        $countSlider = json_decode($getSlider->value)[0] ?? 1;
+        $getSlider          = Setting::where('name', 'SLIDER')->first();
+        $countSlider        = json_decode($getSlider->value)[0] ?? 1;
 
-        $getHistory = Setting::where('name', 'HISTORY')->first();
-        $countHistory = json_decode($getHistory->value)[0] ?? 1;
+        $getHistory         = Setting::where('name', 'HISTORY')->first();
+        $countHistory       = json_decode($getHistory->value)[0] ?? 1;
 
-        $getProcess = Setting::where('name', 'PRODUCT PROCESS')->first();
-        $countProcess = json_decode($getProcess->value)[0] ?? 1;
+        $getProcess         = Setting::where('name', 'PRODUCT PROCESS')->first();
+        $countProcess       = json_decode($getProcess->value)[0] ?? 1;
 
-        $getBestProduct = Setting::where('name', 'BEST PRODUCT')->first();
-        $countBestProduct = json_decode($getBestProduct->value)[0] ?? 1;
+        $getBestProduct     = Setting::where('name', 'BEST PRODUCT')->first();
+        $countBestProduct   = json_decode($getBestProduct->value)[0] ?? 1;
 
-        $getProduct = Setting::where('name', 'PRODUCT')->first();
-        $countProduct = json_decode($getProduct->value)[0] ?? 1;
+        $getProduct         = Setting::where('name', 'PRODUCT')->first();
+        $countProduct       = json_decode($getProduct->value)[0] ?? 1;
 
-        $sliders = Slider::latest()->take($countSlider)->get();
-        $histories = History::take($countHistory)->get()->sortBy('year');
+        $sliders            = Slider::where('language', session('locale'))->latest()->take($countSlider)->get();
+        $histories          = History::where('language', session('locale'))->take($countHistory)->get()->sortBy('year');
 
-        $visionmission = VisionMission::latest()->first();
-        $processes = ProductProcess::take($countProcess)->get()->sortBy('step');
+        $visionmission      = VisionMission::where('language', session('locale'))->latest()->first();
+        $processes          = ProductProcess::where('language', session('locale'))->take($countProcess)->get()->sortBy('step');
 
-        $bestproducts = Product::where('is_best', 1)->latest()->take($countBestProduct)->get();
-        $products = Product::where('is_best', 0)->latest()->take($countProduct)->get();
+        $bestproducts       = Product::where(['is_best' => 1, 'language' => session('locale')])->latest()->take($countBestProduct)->get();
+        $products           = Product::where(['is_best' => 0, 'language' => session('locale')])->latest()->take($countProduct)->get();
 
-        $address = Setting::where('name', 'ADDRESS')->first();
-        $email = Setting::where('name', 'EMAIL')->first();
-        $phone = Setting::where('name', 'PHONE')->first();
+        $address            = Setting::where('name', 'ADDRESS')->first();
+        $email              = Setting::where('name', 'EMAIL')->first();
+        $phone              = Setting::where('name', 'PHONE')->first();
 
         return view('website::index', compact('products', 'bestproducts', 'address', 'email', 'phone', 'visionmission', 'sliders', 'histories', 'processes'));
     }

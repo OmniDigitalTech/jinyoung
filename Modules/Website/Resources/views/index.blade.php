@@ -2,18 +2,18 @@
 
 @section('content')
     <header>
-        <nav class="navbar nav-head bg-body-tertiary">
+        <nav class="navbar nav-head bg-body-tertiary p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="400">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="320">
                 </a>
 
                 <form class="d-flex mb-0 align-items-center" role="search">
                     <a href="en" class="flag us me-2"></a>
                     <a href="id" class="flag id me-2"></a>
-                    <button class="btn btn-primary me-2">
-                        <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>
-                    </button>
+{{--                    <button class="btn btn-primary me-2">--}}
+{{--                        <a class="text-white text-decoration-none" href="{{ route('login') }}">Login</a>--}}
+{{--                    </button>--}}
 {{--                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">--}}
 {{--                    <button class="btn btn-outline-primary" type="submit">--}}
 {{--                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">--}}
@@ -319,38 +319,40 @@
     </section>
 
     <section>
-        <div class="section-header pt-4">
+        <div class="section-header pt-4 mb-0">
             <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
-        <div class="row p-5 pt-0 pb-2">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    @foreach($bestproducts as $product)
+        <div class="row p-5">
+            @foreach($bestproducts as $product)
+                <div class="col-md-3 col-sm-6 my-2">
+                    <div class="product-grid">
                         <div class="product-content product-image">
                             <img src="{{ $product->picture->url }}">
                         </div>
-                    @endforeach
+                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
+    @if(count($products) > 0)
     <section class="bg-secondary-subtle">
         <div class="row p-5 pt-3 pb-2">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    @foreach($products as $product)
-                    <div class="product-image">
-                        <a href="#" class="image">
-                            <img src="{{ $product->picture->url }}">
-                        </a>
+            @foreach($products as $product)
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img src="{{ $product->picture->url }}">
+                            </a>
+                        </div>
                     </div>
-                    @endforeach
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
+    @endif
 
     <section>
         <div class="container pt-5 pb-5">

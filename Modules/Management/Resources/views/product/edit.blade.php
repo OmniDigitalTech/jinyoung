@@ -14,7 +14,16 @@
                             </div>
                         </div>
                         <div class="col-md-9 row">
-                            <div class="col-md-12">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Bahasa</label>
+                                    <select name="language" class="form-control">
+                                        <option value="id">Indonesia</option>
+                                        <option value="en">English</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
                                 <div class="form-group">
                                     <label>Nama</label>
                                     <input name="name" type="test" class="form-control" value="{{ $product->name }}" required >

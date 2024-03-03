@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
+            $table->string('language');
             $table->integer('year');
             $table->string('title');
             $table->string('description');

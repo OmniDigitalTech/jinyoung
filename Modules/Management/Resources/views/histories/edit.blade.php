@@ -14,13 +14,22 @@
                             </div>
                         </div>
                         <div class="col-md-9 row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Bahasa</label>
+                                    <select name="language" class="form-control">
+                                        <option value="id">Indonesia</option>
+                                        <option value="en">English</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Tahun</label>
                                     <input name="year" type="number" class="form-control" value="{{ $history->year }}" required>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Judul</label>
                                     <input name="title" type="text" class="form-control" value="{{ $history->title }}" required>

@@ -11,6 +11,7 @@ class ProductProcess extends Model
     use HasFactory, WithPictures;
 
     protected $fillable = [
+        'language',
         'step',
         'description'
     ];

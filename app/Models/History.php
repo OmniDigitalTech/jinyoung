@@ -11,6 +11,7 @@ class History extends Model
     use HasFactory, WithPictures;
 
     protected $fillable = [
+        'language',
         'year',
         'title',
         'description'
