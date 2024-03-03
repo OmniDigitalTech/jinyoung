@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dropify.css') }}">
+
+    <link rel="shortcut icon" href="{{ URL::asset('template/img/SJI.svg') }}">
 </head>
 
 <body>
