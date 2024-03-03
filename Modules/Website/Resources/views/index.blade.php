@@ -189,7 +189,6 @@
         <div class="container">
             <div class="section-header">
                 <h2>{{ strtoupper(__('translation.history')) }}</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -219,7 +218,6 @@
         <div class="container pt-5 pb-5">
             <div class="section-header">
                 <h2>VALUE</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="process-info">
                 <div class="row">
@@ -256,7 +254,6 @@
         <div class="container pt-5 pb-5">
             <div class="section-header mb-0">
                 <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
             <div class="row row-equal-height justify-content-center flex-nowrap p-5" >
                 @foreach($processes as $process)
@@ -299,7 +296,6 @@
     <section id="product">
         <div class="section-header pt-4 mb-0">
             <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <div class="row p-5">
             @foreach($bestproducts as $product)
