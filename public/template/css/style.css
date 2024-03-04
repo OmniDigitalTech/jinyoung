@@ -389,6 +389,10 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.fa {
+    line-height: inherit !important;
+}
+
 .main-timeline .timeline:nth-child(even):after{
     right: auto;
     left: 0;
@@ -1139,4 +1143,3 @@ dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0rem;
 }
-
