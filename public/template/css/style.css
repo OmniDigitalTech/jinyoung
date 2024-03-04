@@ -398,7 +398,10 @@
     left: 0;
     transform: translateX(0) translateY(-50%) rotate(180deg);
 }
-.main-timeline .timeline:nth-child(even) .content{float: right;}
+.main-timeline .timeline:nth-child(even) .content{
+    float: right;
+    text-align: end;
+}
 .main-timeline .timeline:nth-child(even) .timeline-icon{
     right: auto;
     left: 2%;
