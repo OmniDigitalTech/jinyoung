@@ -251,13 +251,12 @@
     </section>
 
     <section id="product-process">
-        <div class="container pt-5 pb-5">
             <div class="section-header mb-0">
                 <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
             </div>
-            <div class="row row-equal-height justify-content-center flex-nowrap p-5" >
+            <div class="row pt-3 justify-content-center">
                 @foreach($processes as $process)
-                    <div class="col-md-3 p_column text-center mt-3">
+                    <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3">
                         <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
                             <h3 class="fw-bold">STEP {{ $process->step }}</h3>
                             <p>{{ $process->description }}</p>
@@ -265,7 +264,6 @@
                     </div>
                 @endforeach
             </div>
-        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -294,7 +292,7 @@
     </section>
 
     <section id="product">
-        <div class="section-header pt-4 mb-0">
+        <div class="section-header pt-5 mb-0">
             <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
         </div>
         <div class="row p-5">

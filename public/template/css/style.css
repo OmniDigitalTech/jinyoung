@@ -641,6 +641,7 @@
     display: flex;
 }
 .p_column {
+    width: 20%;
     background: dodgerblue;
     color: #FFFFFF;
     font-size: 22px;
@@ -1016,6 +1017,9 @@ nav .wrapper{
 }
 
 @media screen and (max-width: 970px) {
+    .p_column {
+        width: 51%;
+    }
     .wrapper .btn{
         display: block;
     }
