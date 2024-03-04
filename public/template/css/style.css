@@ -308,13 +308,13 @@
 .main-timeline{ position: relative; }
 .main-timeline:before{
     content: '';
-    height: 90%;
+    height: 74%;
     width: 1px;
     border-left: 7px dotted #909090;
     transform: translatex(-50%);
     position: absolute;
     left: 50%;
-    top: 60px;
+    top: 63px;
 }
 .main-timeline .timeline{
     margin-bottom: 5px;
