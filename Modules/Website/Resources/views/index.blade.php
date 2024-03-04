@@ -219,7 +219,7 @@
             <div class="section-header">
                 <h2>VALUE</h2>
             </div>
-            <div class="process-info">
+            <div class="process-info pb-5">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="single-process first text-center">
