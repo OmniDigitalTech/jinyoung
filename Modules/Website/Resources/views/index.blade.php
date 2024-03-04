@@ -265,16 +265,6 @@
                     </div>
                 @endforeach
             </div>
-            <div class="row row-equal-height justify-content-center flex-nowrap p-5 pt-2" >
-                @foreach($processes as $process)
-                    <div class="col-md-3 p_column text-center mt-3">
-                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
-                            <h3 class="fw-bold">STEP {{ $process->step }}</h3>
-                            <p>{{ $process->description }}</p>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
         </div>
 
         <!-- Modal -->
