@@ -922,7 +922,7 @@ nav .wrapper{
     transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-    background: #3A3B3C;
+    background: none;
 }
 .nav-links .mobile-item{
     display: none;
@@ -1038,7 +1038,7 @@ nav .wrapper{
         background: #242526;
     }
     ::-webkit-scrollbar-thumb {
-        background: #3A3B3C;
+        background: none;
     }
     #menu-btn:checked ~ .nav-links{
         left: 0%;
@@ -1087,7 +1087,7 @@ nav .wrapper{
         transition: all 0.3s ease;
     }
     .nav-links .mobile-item:hover{
-        background: #3A3B3C;
+        background: none;
     }
     .drop-menu li{
         margin: 0;
