@@ -167,35 +167,26 @@
     </section>
 
     <section id="vision-mission">
-        <div class="curved">
-            <div class="curved-svg">
-                <div class="container">
-                    <div class="row pt-5 curved-pt curved-pb">
-                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
-                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
-                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
-                        <div class="col-md-12 pt-5 pb-5">
-                            <div class="main-timeline_one pt-5 curved-pt">
-                                <div class="timeline_one pb-5">
-                                    <div class="timeline_one-content">
-                                        <h1 class="display-2 fw-bold text-primary">{{ strtoupper(__('translation.vision')) }}</h1>
-                                        <p class="description lead fw-normal">
-                                            {{ @$visionmission->vision }}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline_one">
-                                    <div href="#" class="timeline_one-content">
-                                        <h1 class="display-2 fw-bold">{{ strtoupper(__('translation.mission')) }}</h1>
-                                        <p class="description lead fw-normal">
-                                            {{ @$visionmission->mission }}
-                                        </p>
-                                    </div>
-                                </div>
+        <div class="container">
+            <div class="row pt-5 curved-pt curved-pb">
+                <div class="col-md-12 pt-5 pb-5 curved">
+                    <div class="main-timeline_one pt-5 curved-pt">
+                        <div class="timeline_one pb-5">
+                            <div class="timeline_one-content">
+                                <h1 class="display-2 fw-bold text-primary">{{ strtoupper(__('translation.vision')) }}</h1>
+                                <p class="description lead fw-normal">
+                                    {{ @$visionmission->vision }}
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
-                        <div class="col-md-12 pt-5 pb-5 dummy"></div>
+                        <div class="timeline_one">
+                            <div href="#" class="timeline_one-content">
+                                <h1 class="display-2 fw-bold">{{ strtoupper(__('translation.mission')) }}</h1>
+                                <p class="description lead fw-normal">
+                                    {{ @$visionmission->mission }}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

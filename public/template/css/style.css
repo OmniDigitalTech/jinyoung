@@ -134,11 +134,11 @@
 }
 
 .curved {
-    background-image: url("../img/BannerProduction.jpg");
+    background-image: url("https://dentiq-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/07/map.png?id=11067");
     color: #FFFFFF;
     text-align: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 .curved-svg {
