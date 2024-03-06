@@ -9,7 +9,7 @@
                         @csrf
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input name="picture" type="file" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg"  />
+                                <input name="picture" type="file" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg mp4 mov"  />
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -71,6 +71,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Gambar</th>
+                                <th>Bahasa</th>
                                 <th>Judul</th>
                                 <th>Sub Judul</th>
                                 <th>Aksi</th>
@@ -79,8 +80,11 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>
-                                        <img src="{{ $slider->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
+                                        @if($slider->picture->path == 'images')
+                                            <img src="{{ $slider->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
+                                        @endif
                                     </td>
+                                    <td>{{ $slider->language }}</td>
                                     <td>{{ $slider->title }}</td>
                                     <td>{{ $slider->subtitle }}</td>
                                     <td>

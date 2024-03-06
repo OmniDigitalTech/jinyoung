@@ -24,10 +24,16 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Step</label>
-                                <input name="step" type="text" class="form-control" required>
+                                <input name="step" type="number" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-md-7">
+                            <div class="form-group">
+                                <label>Judul</label>
+                                <input name="title" type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Deskripsi</label>
                                 <textarea name="description" class="form-control" required></textarea>
@@ -71,7 +77,9 @@
                             <tr>
                                 <th>#</th>
                                 <th>Gambar</th>
+                                <th>Bahasa</th>
                                 <th>Step</th>
+                                <th>Judul</th>
                                 <th>Deskripsi</th>
                                 <th>Aksi</th>
                             </tr>
@@ -81,7 +89,9 @@
                                     <td>
                                         <img src="{{ $process->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
                                     </td>
+                                    <td>{{ $process->Language }}</td>
                                     <td>{{ $process->step }}</td>
+                                    <td>{{ $process->title }}</td>
                                     <td>{{ $process->description }}</td>
                                     <td>
                                         <a href="{{ route('management.product-process.edit', $process) }}" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i></a>

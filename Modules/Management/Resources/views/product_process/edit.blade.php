@@ -8,6 +8,11 @@
                     <form action="{{ $updateLink }}" method="POST" class="row" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input name="picture" type="file" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg" data-default-file="{{ $process->picture->url }}" />
+                            </div>
+                        </div>
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label>Bahasa</label>
@@ -17,11 +22,6 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input name="picture" type="file" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg" data-default-file="{{ $process->picture->url }}" />
-                            </div>
-                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Step</label>
@@ -29,6 +29,12 @@
                             </div>
                         </div>
                         <div class="col-md-7">
+                            <div class="form-group">
+                                <label>Judul</label>
+                                <input name="title" type="text" class="form-control" required value="{{ $process->title }}">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Deskripsi</label>
                                 <textarea name="description" class="form-control" required>{{ $process->description }}</textarea>

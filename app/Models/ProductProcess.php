@@ -13,6 +13,7 @@ class ProductProcess extends Model
     protected $fillable = [
         'language',
         'step',
+        'title',
         'description'
     ];
 }
