@@ -229,7 +229,7 @@
                 <h2>VALUE</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
                     <card class="single-process card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
                         <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center"></i>
                         <div class="card-body">
@@ -240,7 +240,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
                     <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
                         <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center"></i>
                         <div class="card-body text-justify">
@@ -251,7 +251,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
                     <card class="card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
                         <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center"></i>
                         <div class="card-body">
@@ -262,7 +262,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
                     <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
                         <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center"></i>
                         <div class="card-body">

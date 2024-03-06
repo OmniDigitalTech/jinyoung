@@ -309,6 +309,10 @@
     }
 }
 @media(max-width:540px) {
+    .card {
+        font-size: 11px;
+        width: 74%;
+    }
     .dropdown-menu {
         --bs-dropdown-min-width: 6rem;
     }
@@ -346,10 +350,10 @@
     .row>* {
         text-align: center;
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
         flex-wrap: inherit;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding-bottom: 10px;
     }
     .nav {
