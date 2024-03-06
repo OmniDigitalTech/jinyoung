@@ -333,6 +333,116 @@
     @endif
 
     <section>
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380" alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">PURE COTTON T-SHIRT</h5>
+                        <span class="subheading">Mens Formal T-Shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380" alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">STYLISH  T-SHIRT</h5>
+                        <span class="subheading">Mens Partywear Outfit</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+                <div class="card">
+                    <img class="card-img-top" src="//ecimg.cafe24img.com/pg226b94328145020/xnglove/file_data/gallery/2023/11/27/0a7f5ed55e240b9b863ff1422e71e67a.jpg" height="380"  alt="Card image cap">
+                    <div class="product-detail">
+                        <h5 class="card-title heading text-center">DESIGNER T-SHIRT</h5>
+                        <span class="subheading">Mens Fit T-shirt</span>
+                        <blockquote>
+                            <p>'Little Bit Of Description About The Product Like Size Color And Care.'</p>
+                        </blockquote>
+                        <button type="button" class="btn btn-outline-dark">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <div class="container pt-5 pb-5">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
