@@ -47,6 +47,7 @@
                         <table class="table table-striped table-md">
                             <tr>
                                 <th>#</th>
+                                <th>Bahasa</th>
                                 <th>Visi</th>
                                 <th>Misi</th>
                                 <th>Aksi</th>
@@ -54,6 +55,7 @@
                             @foreach($items as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $item->language }}</td>
                                     <td>{{ $item->vision }}</td>
                                     <td>{{ $item->mission }}</td>
                                     <td>

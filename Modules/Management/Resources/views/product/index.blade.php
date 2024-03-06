@@ -82,6 +82,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Gambar</th>
+                                <th>Bahasa</th>
                                 <th>Nama</th>
                                 <th>Deskripsi</th>
                                 <th>Best Produk</th>
@@ -93,6 +94,7 @@
                                     <td>
                                         <img src="{{ $product->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
                                     </td>
+                                    <td>{{ $product->language }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->description }}</td>
                                     <td>

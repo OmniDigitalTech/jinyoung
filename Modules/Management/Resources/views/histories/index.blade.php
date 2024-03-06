@@ -79,6 +79,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Icon</th>
+                                <th>Bahasa</th>
                                 <th>Tahun</th>
                                 <th>Judul</th>
                                 <th>Deskripsi</th>
@@ -90,6 +91,7 @@
                                     <td>
                                         <img src="{{ $history->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
                                     </td>
+                                    <td>{{ $history->language }}</td>
                                     <td>{{ $history->year }}</td>
                                     <td>{{ $history->title }}</td>
                                     <td>{{ $history->description }}</td>
