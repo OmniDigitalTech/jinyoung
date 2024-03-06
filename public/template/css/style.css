@@ -232,6 +232,10 @@
     width:100%; /* Yeap you can change the width and height*/
     height:800px;
 }
+.carousel > .carousel-inner > .carousel-item > video{
+    width:100%; /* Yeap you can change the width and height*/
+    height:800px;
+}
 .carousel-video {
     display: block;
     object-fit: cover;
@@ -268,6 +272,9 @@
     .carousel > .carousel-inner > .carousel-item > iframe {
         height: 660px;
     }
+    .carousel > .carousel-inner > .carousel-item > video {
+        height: 660px;
+    }
     .carousel-caption h1 {
         font-size: 2.5rem !important;
         margin-bottom:15px !important;
@@ -286,6 +293,9 @@
         height: 535px;
     }
     .carousel > .carousel-inner > .carousel-item > iframe {
+        height: 535px;
+    }
+    .carousel > .carousel-inner > .carousel-item > video {
         height: 535px;
     }
     .carousel-caption {
@@ -322,6 +332,9 @@
         height:310px;
     }
     .carousel > .carousel-inner > .carousel-item > iframe {
+        height: 310px;
+    }
+    .carousel > .carousel-inner > .carousel-item > video {
         height: 310px;
     }
     iframe[height] {
