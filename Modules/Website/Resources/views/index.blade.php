@@ -30,12 +30,12 @@
                 <ul class="nav nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.home')) }}</a>
+                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.home')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.about')) }}</a>
+                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.about')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.about')) }}</label>
                         <div class="mega-box">
@@ -53,7 +53,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.product')) }}</a>
+                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.product')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.product')) }}</label>
                         <div class="mega-box">
@@ -68,7 +68,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="desktop-item fw-bold">{{ strtoupper(__('translation.contact')) }}</a>
+                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.contact')) }}</a>
                         <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.contact')) }}</label>
                         <div class="mega-box">

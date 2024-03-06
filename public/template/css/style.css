@@ -919,6 +919,23 @@ img.flag.us {
     object-position: left center;
 }
 
+.cool-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
 
 *{
     margin: 0;
@@ -936,7 +953,7 @@ nav .wrapper{
     position: relative;
     max-width: 1300px;
     padding: 0px 30px;
-    height: 70px;
+    height: 75px;
     line-height: 70px;
     margin: auto;
     display: flex;
@@ -999,11 +1016,14 @@ nav .wrapper{
     left: 0;
     width: 100%;
     padding: 0 30px;
-    top: 85px;
+    top: 90px;
     opacity: 0;
     visibility: hidden;
 }
 .mega-box .content{
+    position: absolute;
+    left: 0;
+    top: 5px;
     background: darkblue;
     padding: 25px 20px;
     display: flex;
