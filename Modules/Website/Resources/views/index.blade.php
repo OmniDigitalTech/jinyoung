@@ -89,17 +89,17 @@
         <ul class="nav nav-pills">
             <li class="dropdown nav-item">
                 <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
-                <ul class="dropdown-menu show-home">
-                    <li><a class="dropdown-item" href="#">Home</a></li>
-                </ul>
             </li>
             <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                 <ul class="dropdown-menu show-about">
-                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#vision-mission">Visi & Misi</a></li>
+                    <li><a class="dropdown-item" href="#history">History</a></li>
+                    <li><a class="dropdown-item" href="#value">Value</a></li>
                 </ul>
             </li>
             <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                 <ul class="dropdown-menu show-product">
+                    <li><a class="dropdown-item" href="#product-processt">Production Flow</a></li>
                     <li><a class="dropdown-item" href="#product">Product</a></li>
                 </ul>
             </li>
@@ -222,7 +222,7 @@
         </div>
     </section>
 
-    <section class="bg-light pt-5 pb-5">
+    <section class="bg-light pt-5 pb-5" id="value">
         <div class="container">
             <div class="section-header mb-4">
                 <h2>VALUE</h2>
