@@ -160,15 +160,15 @@
     </section>
     @endif
 
-    <section class="bg-body-tertiary">
-        <div class="embed-responsive embed-responsive-16by9 p-4">
-            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1dfFpyTSW3Nevkv1_Ma3xTTMIuRfrufIO/preview" allowfullscreen></iframe>
-        </div>
-    </section>
+{{--    <section class="bg-body-tertiary">--}}
+{{--        <div class="embed-responsive embed-responsive-16by9 p-4">--}}
+{{--            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1dfFpyTSW3Nevkv1_Ma3xTTMIuRfrufIO/preview" allowfullscreen></iframe>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section id="vision-mission">
         <div class="container">
-            <div class="row pt-5 curved-pt curved-pb">
+            <div class="row pt-5 pb-5">
                 <div class="col-md-12 pt-5 pb-5 curved">
                     <div class="main-timeline_one pt-5 curved-pt">
                         <div class="timeline_one pb-5">
