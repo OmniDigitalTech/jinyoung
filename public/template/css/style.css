@@ -257,6 +257,9 @@
 .dropdown-item {
     text-align: center;
 }
+.mobile-header{
+    display: none!important;
+}
 @media(max-width:1180px) {
     .carousel > .carousel-inner > .carousel-item > img {
         width: 240px;
@@ -296,6 +299,12 @@
     }
 }
 @media(max-width:540px) {
+    .mobile-header{
+        display: flex!important;
+    }
+    .website-nav{
+        display: none;
+    }
     .carousel > .carousel-inner > .carousel-item > img{
         width:240px;
         height:310px;
@@ -305,6 +314,9 @@
     }
     iframe[height] {
         height: 250px;
+    }
+    img[width] {
+        width: 200px;
     }
     .row>* {
         text-align: center;
@@ -321,7 +333,7 @@
     }
     .navbar .container-fluid {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
