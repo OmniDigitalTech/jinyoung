@@ -1319,11 +1319,10 @@ dl, ol, ul {
     font-weight:400;
 }
 .product-detail {
+    width: 100%;
     position: absolute;
     height: 75px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
+    bottom: 0;
     overflow: hidden;
     padding: 16px;
     background-color: rgba(223, 217, 217, 0.75);
@@ -1354,7 +1353,7 @@ dl, ol, ul {
     font-size: 1em;
 }
 .card:hover .product-detail {
-    height: calc(92%);
+    height: calc(100%);
     padding-top: 100px;
 }
 
