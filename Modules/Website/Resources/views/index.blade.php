@@ -8,7 +8,7 @@
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="320">
                 </a>
 
-                <form class="d-flex mb-0 align-items-center" role="search">
+                <form class="d-flex mb-0 align-items-center p-3" role="search">
                     <a href="en" class="flag us me-2"></a>
                     <a href="id" class="flag id me-2"></a>
 {{--                    <button class="btn btn-primary me-2">--}}
@@ -31,8 +31,8 @@
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li>
                         <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.home')) }}</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
+                        <input type="checkbox">
+                        <label class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
                     </li>
                     <li>
                         <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.about')) }}</a>

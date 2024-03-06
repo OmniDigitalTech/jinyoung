@@ -493,8 +493,8 @@
         clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
     }
     .main-timeline .timeline:nth-child(even):after{left:auto;}
-    .main-timeline .timeline:nth-child(4n+1)after{
-        background: linear-gradient(to top,#01C0F7,#01C0F7,#01C0F7,#01C0F7,#01C0F7,transparent,#868686,#868686);
+    .main-timeline .timeline:nth-child(4n+1):after {
+        background: linear-gradient(to bottom, #868686, #868686, transparent, #01C0F7, #01C0F7, #01C0F7, #01C0F7, #01C0F7);
     }
     .main-timeline .timeline:nth-child(4n+2):after{
         background: linear-gradient(to bottom,#868686,#868686,transparent,#0076B0,#0076B0,#0076B0,#0076B0,#0076B0);
@@ -1106,8 +1106,8 @@ nav .wrapper{
 }
 .mega-box{
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: -25px;
+    width: 103.7%;
     padding: 0 30px;
     top: 90px;
     opacity: 0;
@@ -1266,6 +1266,7 @@ nav .wrapper{
         transition: all 0.3s ease;
     }
     .mega-box .content{
+        position: static;
         box-shadow: none;
         flex-direction: column;
         padding: 20px 20px 0 20px;
