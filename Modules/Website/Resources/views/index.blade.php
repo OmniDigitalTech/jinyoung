@@ -240,9 +240,9 @@
                     <card class="single-process card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
                         <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center"></i>
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>INNOVATION</strong></h5>
+                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
                             <p class="card-text" style="text-align: justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                {{ __('translation.innovation_value') }}
                             </p>
                         </div>
                     </card>
@@ -251,9 +251,9 @@
                     <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
                         <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center"></i>
                         <div class="card-body text-justify">
-                            <h5 class="card-title text-center"><strong>TRANSPARENCY</strong></h5>
+                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
                             <p class="card-text" style="text-align: justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                {{ __('translation.transparency_value') }}
                             </p>
                         </div>
                     </card>
@@ -262,9 +262,9 @@
                     <card class="card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
                         <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center"></i>
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>SUSTAINBILITY</strong></h5>
+                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
                             <p class="card-text" style="text-align: justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                {{ __('translation.sustainability_value') }}
                             </p>
                         </div>
                     </card>
@@ -273,9 +273,9 @@
                     <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
                         <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center"></i>
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>QUALITY</strong></h5>
+                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>
                             <p class="card-text" style="text-align: justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                {{ __('translation.quality_value') }}
                             </p>
                         </div>
                     </card>

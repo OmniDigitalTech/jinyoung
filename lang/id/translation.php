@@ -23,4 +23,16 @@ return [
     "phone" => "no. telp",
 
     "submit" => "kirim",
+
+    "innovation" => "inovasi",
+    "innovation_value" => "Inovasi produk adalah proses menciptakan dan memperkenalkan produk atau layanan baru, atau melakukan perubahan signifikan pada produk atau layanan yang sudah ada, untuk memenuhi kebutuhan pasar atau memberikan nilai tambah kepada pelanggan.",
+
+    "transparency" => "transparan",
+    "transparency_value" => "Transparansi dalam perusahaan merujuk pada praktik memberikan informasi dan akses yang jelas kepada karyawan, pelanggan, pemegang saham, dan pihak-pihak terkait lainnya tentang operasi, keuangan, dan kebijakan perusahaan. Ini melibatkan kejujuran, keterbukaan, dan akuntabilitas dalam segala aspek bisnis.",
+
+    "sustainability" => "keberlanjutan",
+    "sustainability_value" => "Keberlanjutan produk atau produk berkelanjutan adalah konsep di mana produk dan proses produksinya dirancang dan diimplementasikan untuk meminimalkan dampak negatif terhadap lingkungan, ekonomi, dan sosial.",
+
+    "quality" => "kualitas",
+    "quality_value" => "Kualitas dalam suatu perusahaan adalah faktor kritis yang mempengaruhi keberhasilan dan kepercayaan pelanggan.",
 ];
