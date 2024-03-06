@@ -23,70 +23,70 @@
                 </form>
             </div>
         </nav>
-        <nav class="position-relative bg-nav website-nav">
-            <div class="wrapper flex-column justify-content-center">
-                <input type="radio" name="slider" id="menu-btn">
-                <input type="radio" name="slider" id="close-btn">
-                <ul class="nav nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li>
-                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.home')) }}</a>
-                        <input type="checkbox">
-                        <label class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.about')) }}</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.about')) }}</label>
-                        <div class="mega-box">
-                            <div class="content text-center justify-content-around">
-                                <div class="row">
-                                    <a href="#vision-mission">Vision & Mission</a>
-                                </div>
-                                <div class="row">
-                                    <a href="#history">History</a>
-                                </div>
-                                <div class="row">
-                                    <a href="#value">Value</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.product')) }}</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.product')) }}</label>
-                        <div class="mega-box">
-                            <div class="content text-center justify-content-around">
-                                <div class="row">
-                                    <a href="#product-process">Production Process</a>
-                                </div>
-                                <div class="row">
-                                    <a href="#product">Product</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.contact')) }}</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.contact')) }}</label>
-                        <div class="mega-box">
-                            <div class="content text-center justify-content-around">
-                                <div class="row">
-                                    <a href="#contact">Address</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-            </div>
-        </nav>
+{{--        <nav class="position-relative bg-nav website-nav">--}}
+{{--            <div class="wrapper flex-column justify-content-center">--}}
+{{--                <input type="radio" name="slider" id="menu-btn">--}}
+{{--                <input type="radio" name="slider" id="close-btn">--}}
+{{--                <ul class="nav nav-links">--}}
+{{--                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>--}}
+{{--                    <li>--}}
+{{--                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.home')) }}</a>--}}
+{{--                        <input type="checkbox">--}}
+{{--                        <label class="mobile-item">{{ strtoupper(__('translation.home')) }}</label>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.about')) }}</a>--}}
+{{--                        <input type="checkbox" id="showMega">--}}
+{{--                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.about')) }}</label>--}}
+{{--                        <div class="mega-box">--}}
+{{--                            <div class="content text-center justify-content-around">--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#vision-mission">Vision & Mission</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#history">History</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#value">Value</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.product')) }}</a>--}}
+{{--                        <input type="checkbox" id="showMega">--}}
+{{--                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.product')) }}</label>--}}
+{{--                        <div class="mega-box">--}}
+{{--                            <div class="content text-center justify-content-around">--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#product-process">Production Process</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#product">Product</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="#" class="desktop-item cool-link fw-bold">{{ strtoupper(__('translation.contact')) }}</a>--}}
+{{--                        <input type="checkbox" id="showMega">--}}
+{{--                        <label for="showMega" class="mobile-item">{{ strtoupper(__('translation.contact')) }}</label>--}}
+{{--                        <div class="mega-box">--}}
+{{--                            <div class="content text-center justify-content-around">--}}
+{{--                                <div class="row">--}}
+{{--                                    <a href="#contact">Address</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>--}}
+{{--            </div>--}}
+{{--        </nav>--}}
     </header>
 
-    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse mobile-header" id="navbarSupportedContent">
-        <ul class="nav nav-pills mobile-header">
+    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
             <li class="dropdown nav-item">
                 <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
                 <ul class="dropdown-menu show-home">
