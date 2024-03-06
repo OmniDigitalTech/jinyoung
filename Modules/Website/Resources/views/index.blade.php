@@ -222,44 +222,98 @@
         </div>
     </section>
 
-    <section class="work-porcess-area" id="value">
-        <div class="container pt-5 pb-5">
-            <div class="section-header">
+    <section class="bg-light pt-5 pb-5">
+        <div class="container">
+            <div class="section-header mb-4">
                 <h2>VALUE</h2>
             </div>
-            <div class="process-info pb-5">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="single-process first text-center">
-                            <i class="fas fa-lightbulb"></i>
-                            <h4>Innovation</h4>
+            <div class="row">
+                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                    <card class="single-process card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
+                        <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>INNOVATION</strong></h5>
+                            <p class="card-text" style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-process text-center">
-                            <i class="fas fa-users"></i>
-                            <h4>Transparency</h4>
+                    </card>
+                </div>
+                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                    <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
+                        <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center"></i>
+                        <div class="card-body text-justify">
+                            <h5 class="card-title text-center"><strong>TRANSPARENCY</strong></h5>
+                            <p class="card-text" style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-process thard text-center">
-                            <i class="fas fa-scale-balanced"></i>
-                            <h4>Sustainbility</h4>
+                    </card>
+                </div>
+                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                    <card class="card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
+                        <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>SUSTAINBILITY</strong></h5>
+                            <p class="card-text" style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-process last text-center">
-                            <i class="fas fa-medal"></i>
-                            <h4>Quality</h4>
+                    </card>
+                </div>
+                <div class="col-lg-3 mb-3 d-flex align-items-stretch">
+                    <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
+                        <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>QUALITY</strong></h5>
+                            <p class="card-text" style="text-align: justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
                         </div>
-                    </div>
+                    </card>
                 </div>
             </div>
         </div>
     </section>
 
+{{--    <section class="work-porcess-area" id="value">--}}
+{{--        <div class="container pt-5 pb-5">--}}
+{{--            <div class="section-header">--}}
+{{--                <h2>VALUE</h2>--}}
+{{--            </div>--}}
+{{--            <div class="process-info pb-5">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-md-3">--}}
+{{--                        <div class="single-process first text-center">--}}
+{{--                            <i class="fas fa-lightbulb"></i>--}}
+{{--                            <h4>Innovation</h4>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3">--}}
+{{--                        <div class="single-process text-center">--}}
+{{--                            <i class="fas fa-users"></i>--}}
+{{--                            <h4>Transparency</h4>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3">--}}
+{{--                        <div class="single-process thard text-center">--}}
+{{--                            <i class="fas fa-scale-balanced"></i>--}}
+{{--                            <h4>Sustainbility</h4>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3">--}}
+{{--                        <div class="single-process last text-center">--}}
+{{--                            <i class="fas fa-medal"></i>--}}
+{{--                            <h4>Quality</h4>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+
     <section id="product-process">
-            <div class="section-header mb-0">
+            <div class="section-header pt-5 mb-0">
                 <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
             </div>
             <div class="row pt-3 justify-content-center">
