@@ -175,7 +175,7 @@
 }
 
 .nav-link {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -251,16 +251,16 @@
     /* pointer-events: none; */
 }
 .show-home{
-    transform: translate(9px, 42px) !important;
+    transform: translate(9px, 50px) !important;
 }
 .show-about{
-    transform: translate(21px, 42px) !important;
+    transform: translate(32px, 50px) !important;
 }
 .show-product{
-    transform: translate(20px, 42px) !important;
+    transform: translate(29px, 50px) !important;
 }
 .show-contact{
-    transform: translate(18px, 42px) !important;
+    transform: translate(26px, 50px) !important;
 }
 .dropdown-item {
     text-align: center;
