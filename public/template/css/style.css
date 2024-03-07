@@ -274,11 +274,10 @@
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
-
 .sticky + .content {
     padding-top: 60px;
 }
@@ -334,7 +333,7 @@
 }
 @media(max-width:540px) {
     .sticky {
-        position: fixed;
+        position: sticky;
         top: 20px;
         width: 100%;
     }
@@ -1564,4 +1563,8 @@ dl, ol, ul {
     .value-padding{
         padding: 3rem;
     }
+}
+@media (min-width: 1200px)
+.h1, h1 {
+    font-size: 3rem;
 }
