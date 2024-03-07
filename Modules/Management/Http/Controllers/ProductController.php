@@ -41,10 +41,22 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
+        if ($request->language == 'all'){
+            foreach (config('array.language') as $lang){
+                $request->merge([
+                    'language' => $lang
+                ]);
 
-        if ($request->picture){
-            insert_picture($request->picture, $product, $request->name);
+                $product = Product::create($request->all());
+                if ($request->picture){
+                    insert_picture($request->picture, $product, $request->name);
+                }
+            }
+        }else{
+            $product = Product::create($request->all());
+            if ($request->picture){
+                insert_picture($request->picture, $product, $request->name);
+            }
         }
 
         return back();

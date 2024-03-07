@@ -40,10 +40,22 @@ class ProductProcessController extends Controller
      */
     public function store(Request $request)
     {
-        $process = ProductProcess::create($request->all());
+        if ($request->language == 'all'){
+            foreach (config('array.language') as $lang){
+                $request->merge([
+                    'language' => $lang
+                ]);
 
-        if ($request->picture){
-            insert_picture($request->picture, $process);
+                $process = ProductProcess::create($request->all());
+                if ($request->picture){
+                    insert_picture($request->picture, $process);
+                }
+            }
+        }else{
+            $process = ProductProcess::create($request->all());
+            if ($request->picture){
+                insert_picture($request->picture, $process);
+            }
         }
 
         return back();

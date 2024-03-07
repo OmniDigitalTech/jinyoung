@@ -13,11 +13,13 @@ return [
     "best_product" => "best product",
 
     "contact_us" => "contact us",
+    "contact_us_value" => "if you have any question please fill form below",
     "full_name" => "full name",
     "email_address" => "email address",
     "message" => "message",
 
     "contact" => "contact",
+    "contact_value" => "Please fill out the form below to send us an email",
     "address" => "address",
     "email" => "email",
     "phone" => "phone",

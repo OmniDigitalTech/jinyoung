@@ -11,6 +11,7 @@
                             <div class="form-group">
                                 <label>Bahasa</label>
                                 <select name="language" class="form-control">
+                                    <option value="all">Semua</option>
                                     <option value="id">Indonesia</option>
                                     <option value="en">English</option>
                                 </select>
