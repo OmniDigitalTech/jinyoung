@@ -280,6 +280,10 @@
 .sticky + .content {
     padding-top: 60px;
 }
+.nav-link-custom {
+    font-size: 1.3rem;
+    color: white;
+}
 @media(max-width:1180px) {
     .link-none{
         display: none;
@@ -1578,7 +1582,4 @@ dl, ol, ul {
 .background-color {
     background-color: #f0f1f3;
 }
-.nav-link-custom {
-    font-size: 1.3rem!important;
-    color: white;
-}
+
