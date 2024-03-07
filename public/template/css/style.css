@@ -764,8 +764,8 @@
 .p_column {
     height: 234px;
     width: 20%;
-    /*background: dodgerblue;*/
-    /*color: #FFFFFF;*/
+    background: dodgerblue;
+    color: #FFFFFF;
     font-size: 22px;
     font-weight: 500;
     margin: 5px 15px 0;
@@ -780,10 +780,6 @@
 }
 /* Change color of your first-child */
 
-.p_column:first-child {
-    /*background: dodgerblue;*/
-    color: #fff;
-}
 /*Code for arrow*/
 
 .p_column:before,
@@ -806,7 +802,7 @@
 
 .p_column:before {
     right: -30px;
-    border-left-color: transparent;
+    border-left-color: dodgerblue;
     border-width: 15px;
 }
 /* Fill */
@@ -822,7 +818,7 @@
     margin-bottom: 0
 }
 .p_column:first-child:before {
-    border-left-color: transparent;
+    border-left-color: dodgerblue;
 }
 .p_column:first-child:after {
     border-left-color: transparent;
@@ -834,15 +830,15 @@
 /*color change hover*/
 
 .p_column:hover {
-    background: dodgerblue;
+    background: transparent;
     color: #fff;
-    border: solid 1px dodgerblue;
+    border: solid 1px transparent;
 }
 .p_column:hover:before {
     border-left-color: transparent;
 }
 .p_column:hover:after {
-    border-left-color: dodgerblue;
+    border-left-color: transparent;
 }
 
 .step-modal-grid{
