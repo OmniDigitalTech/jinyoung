@@ -1481,3 +1481,42 @@ dl, ol, ul {
     }
 }
 
+
+.value-icon-position {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.value-padding {
+
+}
+
+.value-card {
+    height: 16rem;
+}
+
+.text-line {
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 0;
+    -webkit-box-orient: vertical;
+}
+.value-detail {
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+    text-align: center;
+    box-sizing: border-box;
+}
+.card:hover .value-detail {
+    font-size: 0.8rem;
+    height: calc(100%);
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}

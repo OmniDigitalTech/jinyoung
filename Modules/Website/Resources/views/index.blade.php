@@ -229,45 +229,49 @@
                 <h2>VALUE</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
-                    <card class="single-process card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
-                        <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center"></i>
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
-                            <p class="card-text" style="text-align: justify">
+                <div class="col-md-3 col-sm-6 py-2">
+                    <card class="card shadow my-4 bg-primary text-white w-100">
+                        <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
+                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
+                        </i>
+                        <div class="value-detail pb-0 bg-primary">
+                            <p class="text-line">
                                 {{ __('translation.innovation_value') }}
                             </p>
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
-                    <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
-                        <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center"></i>
-                        <div class="card-body text-justify">
-                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
-                            <p class="card-text" style="text-align: justify">
+                <div class="col-md-3 col-sm-6 py-2">
+                    <card class="card shadow my-4 text-primary w-100">
+                        <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center value-icon-position value-card">
+                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
+                        </i>
+                        <div class="value-detail pb-0 bg-white">
+                            <p class="text-line">
                                 {{ __('translation.transparency_value') }}
                             </p>
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
-                    <card class="card shadow my-4 pt-3 align-self-stretch bg-primary text-white">
-                        <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center"></i>
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
-                            <p class="card-text" style="text-align: justify">
+                <div class="col-md-3 col-sm-6 py-2">
+                    <card class="card shadow my-4 bg-primary text-white w-100">
+                        <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center value-icon-position value-card">
+                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
+                        </i>
+                        <div class="value-detail pb-0 bg-primary">
+                            <p class="text-line">
                                 {{ __('translation.sustainability_value') }}
                             </p>
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 mb-3 d-flex align-items-stretch">
-                    <card class="card shadow my-4 pt-3 align-self-stretch text-primary">
-                        <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center"></i>
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>
-                            <p class="card-text" style="text-align: justify">
+                <div class="col-md-3 col-sm-6 py-2">
+                    <card class="card shadow my-4 text-primary w-100">
+                        <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center value-icon-position value-card">
+                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>
+                        </i>
+                        <div class="value-detail pb-0 bg-white">
+                            <p class="text-line">
                                 {{ __('translation.quality_value') }}
                             </p>
                         </div>
