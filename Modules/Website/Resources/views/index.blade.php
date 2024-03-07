@@ -15,7 +15,7 @@
         </nav>
     </header>
 
-    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 2">
+    <div class="d-flex bg-primary justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 2">
         <ul class="nav nav-pills">
             <li class="dropdown nav-item">
                 <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
