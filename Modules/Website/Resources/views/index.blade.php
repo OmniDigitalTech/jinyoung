@@ -155,7 +155,7 @@
                 <h2>VALUE</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 py-2">
+                <div class="col-md-3 col-sm-6 py-2 value-padding">
                     <card class="card shadow my-4 bg-primary text-white w-100">
                         <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
@@ -167,7 +167,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2">
+                <div class="col-md-3 col-sm-6 py-2 value-padding">
                     <card class="card shadow my-4 text-primary w-100">
                         <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
@@ -179,7 +179,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2">
+                <div class="col-md-3 col-sm-6 py-2 value-padding">
                     <card class="card shadow my-4 bg-primary text-white w-100">
                         <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
@@ -191,7 +191,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2">
+                <div class="col-md-3 col-sm-6 py-2 value-padding">
                     <card class="card shadow my-4 text-primary w-100">
                         <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>

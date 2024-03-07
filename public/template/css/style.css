@@ -1520,3 +1520,9 @@ dl, ol, ul {
     padding: 15px;
     align-items: center;
 }
+
+@media(max-width:540px) {
+    .value-padding{
+        padding: 3rem;
+    }
+}
