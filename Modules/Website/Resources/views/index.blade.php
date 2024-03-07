@@ -1,60 +1,60 @@
 @extends('website::layouts.master')
 
 @section('content')
-    <header class="fixed-top">
-        <nav id="main-nav" class="navbar nav-head bg-body-tertiary p-0">
+    <header>
+        <nav class="header navbar nav-head bg-body-tertiary p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="320">
                 </a>
-
                 <form class="d-flex mb-0 align-items-center p-3" role="search">
                     <a href="en" class="flag us me-2"></a>
                     <a href="id" class="flag id me-2"></a>
                 </form>
             </div>
         </nav>
-        <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav nav-pills">
-                <li class="dropdown nav-item">
-                    <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
-                </li>
-                <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
-                    <ul class="dropdown-menu show-about">
-                        <li><a class="dropdown-item" href="#vision-mission">Visi & Misi</a></li>
-                        <li><a class="dropdown-item" href="#history">History</a></li>
-                        <li><a class="dropdown-item" href="#value">Value</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
-                    <ul class="dropdown-menu show-product">
-                        <li><a class="dropdown-item" href="#product-processt">Production Flow</a></li>
-                        <li><a class="dropdown-item" href="#product">Product</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
-                    <ul class="dropdown-menu show-contact">
-                        <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
     </header>
+
+    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 2">
+        <ul class="nav nav-pills">
+            <li class="dropdown nav-item">
+                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+            </li>
+            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+                <ul class="dropdown-menu show-about">
+                    <li><a class="dropdown-item" href="#vision-mission">Visi & Misi</a></li>
+                    <li><a class="dropdown-item" href="#history">History</a></li>
+                    <li><a class="dropdown-item" href="#value">Value</a></li>
+                </ul>
+            </li>
+            <li class="link-none" style="width: 10rem"></li>
+            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+                <ul class="dropdown-menu show-product">
+                    <li><a class="dropdown-item" href="#product-processt">Production Flow</a></li>
+                    <li><a class="dropdown-item" href="#product">Product</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
+                <ul class="dropdown-menu show-contact">
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
     @if(count($sliders) > 0)
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 {{--            <div class="carousel-indicators">--}}
-{{--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>--}}
-{{--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>--}}
-{{--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>--}}
+{{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>--}}
+{{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>--}}
+{{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>--}}
 {{--            </div>--}}
             <div class="carousel-inner">
                 @foreach($sliders as $key => $slider)
                     @if($slider->picture->path == 'images')
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                             <img src="{{ $slider->picture->url }}" class="d-block w-100 h-110" alt="...">
-                            <div class="background-overlay"></div>
                             <div class="carousel-caption">
                                 <p class="h1 fw-bold">{{ $slider->title }}</p>
                                 <p class="h5 mb-5 pb-3"><em>{{ $slider->subtitle }}</em></p>
@@ -74,11 +74,11 @@
                     @endif
                 @endforeach
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

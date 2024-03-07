@@ -20,15 +20,17 @@
     <script src="{{ URL::asset('template/aos/aos.js')}}"></script>
     <script src="{{ URL::asset('template/js/aos/animation-aos.init.js')}}"></script>
     <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("main-nav").style.display = "flex";
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbarSupportedContent");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
             } else {
-                document.getElementById("main-nav").style.display = "none";
+                navbar.classList.remove("sticky");
             }
-            prevScrollpos = currentScrollPos;
         }
     </script>
     <script>
