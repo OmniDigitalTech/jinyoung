@@ -272,7 +272,6 @@
 .content {
     padding: 16px;
 }
-
 .sticky {
     position: sticky;
     top: 0;
@@ -1564,7 +1563,11 @@ dl, ol, ul {
         padding: 3rem;
     }
 }
-@media (min-width: 1200px)
-.h1, h1 {
+
+.h1 {
     font-size: 3rem;
+}
+
+.h5{
+    font-size: 1.6rem;
 }
