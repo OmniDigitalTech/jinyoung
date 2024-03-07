@@ -175,7 +175,7 @@
 }
 
 .nav-link {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -1577,4 +1577,8 @@ dl, ol, ul {
 }
 .background-color {
     background-color: #f0f1f3;
+}
+.nav-link-custom {
+    font-size: 1.3rem!important;
+    color: white;
 }
