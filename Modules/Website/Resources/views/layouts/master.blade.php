@@ -20,6 +20,18 @@
     <script src="{{ URL::asset('template/aos/aos.js')}}"></script>
     <script src="{{ URL::asset('template/js/aos/animation-aos.init.js')}}"></script>
     <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("main-nav").style.display = "flex";
+            } else {
+                document.getElementById("main-nav").style.display = "none";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
         $(document).ready(function () {
             $('.select2').select2();
         });
