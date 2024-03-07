@@ -10,7 +10,7 @@
                         @method('PUT')
                         <div class="col-md-3">
                             <div class="form-group">
-                                <input name="picture" type="file" class="dropify" data-height="150" data-allowed-file-extensions="png jpg jpeg" data-default-file="{{ $history->picture->url }}" />
+                                <input name="picture" type="file" class="dropify" data-height="210" data-allowed-file-extensions="png jpg jpeg" data-default-file="{{ $history->picture->url }}" />
                             </div>
                         </div>
                         <div class="col-md-9 row">
@@ -38,7 +38,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Deskripsi</label>
-                                    <textarea name="description" class="form-control" required>{{ $history->description }}</textarea>
+                                    <textarea name="description" class="form-control" id="ckeditor">{{ $history->description }}</textarea>
                                 </div>
                             </div>
                         </div>

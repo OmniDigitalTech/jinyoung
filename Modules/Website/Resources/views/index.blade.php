@@ -131,12 +131,16 @@
                             <div class="timeline" data-aos="fade-right">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-icon">
-                                        <i class="fa fa-globe"></i>
+                                        @if($history->pictureExist())
+                                            <img src="{{ $history->picture->url }}" style="width: 70px; height: 70px">
+                                        @else
+                                            <i class="fa fa-globe"></i>
+                                        @endif
                                     </div>
                                     <div class="content">
                                         <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
                                         <p class="description text-color">
-                                            {{ $history->description }}
+                                            {!! $history->description !!}
                                         </p>
                                     </div>
                                 </a>
@@ -242,7 +246,7 @@
 
     <section id="product">
         <div class="section-header pt-5 mb-0">
-            <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
+            <h2>{{ strtoupper(__('translation.product')) }}</h2>
         </div>
         <div class="row p-5 justify-content-center align-items-center align-content-center">
             @foreach($bestproducts as $product)

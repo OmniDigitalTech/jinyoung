@@ -9,7 +9,7 @@
                         @csrf
                         <div class="col-md-3">
                             <div class="form-group">
-                                <input name="picture" type="file" class="dropify" data-height="150" data-allowed-file-extensions="png jpg jpeg" data-default-file="" />
+                                <input name="picture" type="file" class="dropify" data-height="210" data-allowed-file-extensions="png jpg jpeg" data-default-file="" />
                             </div>
                         </div>
                         <div class="col-md-9 row">
@@ -38,7 +38,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Deskripsi</label>
-                                    <textarea name="description" class="form-control" required></textarea>
+                                    <textarea name="description" class="form-control" id="ckeditor"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                     <td>{{ $history->language }}</td>
                                     <td>{{ $history->year }}</td>
                                     <td>{{ $history->title }}</td>
-                                    <td>{{ $history->description }}</td>
+                                    <td>{!! substr($history->description, 0, 100) !!} ..... </td>
                                     <td>
                                         <a href="{{ route('management.history.edit', $history) }}" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i></a>
                                         <a href="{{ route('management.history.delete', $history) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
