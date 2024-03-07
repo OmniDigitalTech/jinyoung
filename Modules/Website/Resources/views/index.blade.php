@@ -216,11 +216,14 @@
             </div>
             <div class="row pt-3 justify-content-center">
                 @foreach($processes as $process)
-                    <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
-                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
+                    <div class="production-image-one col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
+{{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
+                        <div class="production-detail">
                             <h3 class="fw-bold">STEP {{ $process->step }}</h3>
-                            <p>{{ $process->description }}</p>
-                        </a>
+{{--                            <p>{{ $process->description }}</p>--}}
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                        </div>
+{{--                        </a>--}}
                     </div>
                 @endforeach
             </div>
