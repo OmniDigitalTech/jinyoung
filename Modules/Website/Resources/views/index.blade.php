@@ -2,7 +2,7 @@
 
 @section('content')
     <header>
-        <nav class="header navbar nav-head bg-body-tertiary p-0">
+        <nav class="header navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
                     <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="320">
@@ -318,7 +318,7 @@
     </section>
 
     <section id="contact">
-        <footer class="bg-body-tertiary p-5">
+        <footer class="background-color p-5">
             <div class="container">
                 <footer class="py-6">
                     <div class="row">
