@@ -175,7 +175,7 @@
 }
 
 .nav-link {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -609,7 +609,7 @@
     display: block;
     width: 60px;
     height: 5px;
-    background: #2246f8;
+    background: #0d6efd;
     bottom: 0;
     left: calc(50% - 25px);
 }
@@ -1577,4 +1577,8 @@ dl, ol, ul {
 }
 .background-color {
     background-color: #f0f1f3;
+}
+.nav-link-custom {
+    font-size: 1.3rem!important;
+    color: white;
 }

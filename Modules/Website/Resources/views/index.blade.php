@@ -15,12 +15,12 @@
         </nav>
     </header>
 
-    <div class="d-flex justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 2">
+    <div class="d-flex bg-primary justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 2">
         <ul class="nav nav-pills">
             <li class="dropdown nav-item">
-                <a href="#" class="nav-link fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+                <a href="#" class="nav-link nav-link-custom fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
             </li>
-            <li class="dropdown nav-item"><a href="#about" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+            <li class="dropdown nav-item"><a href="#about" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                 <ul class="dropdown-menu show-about">
                     <li><a class="dropdown-item" href="#vision-mission">Visi & Misi</a></li>
                     <li><a class="dropdown-item" href="#history">History</a></li>
@@ -28,13 +28,13 @@
                 </ul>
             </li>
             <li class="link-none" style="width: 10rem"></li>
-            <li class="dropdown nav-item"><a href="#product" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+            <li class="dropdown nav-item"><a href="#product" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                 <ul class="dropdown-menu show-product">
                     <li><a class="dropdown-item" href="#product-processt">Production Flow</a></li>
                     <li><a class="dropdown-item" href="#product">Product</a></li>
                 </ul>
             </li>
-            <li class="dropdown nav-item"><a href="#contact" class="nav-link fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
+            <li class="dropdown nav-item"><a href="#contact" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
                 <ul class="dropdown-menu show-contact">
                     <li><a class="dropdown-item" href="#contact">Contact</a></li>
                 </ul>
