@@ -1,4 +1,7 @@
-@extends('management::layouts.master', ['title' => 'Product Process'])
+@extends('management::layouts.master', [
+    'title' => 'Product Process',
+    'active' => 'product_process'
+])
 
 @section('content')
     <div class="row">

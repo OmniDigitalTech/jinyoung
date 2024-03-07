@@ -1,4 +1,7 @@
-@extends('management::layouts.master', ['title' => 'History'])
+@extends('management::layouts.master', [
+    'title' => 'History',
+    'active' => 'history'
+])
 
 @section('content')
     <div class="row">

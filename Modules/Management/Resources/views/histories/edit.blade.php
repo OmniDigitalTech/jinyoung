@@ -1,5 +1,7 @@
-@extends('management::layouts.master', ['title' => 'History'])
-
+@extends('management::layouts.master', [
+    'title' => 'Edit History',
+    'active' => 'history'
+])
 @section('content')
     <div class="row">
         <div class="col-md-12">

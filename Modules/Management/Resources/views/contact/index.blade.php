@@ -1,4 +1,7 @@
-@extends('management::layouts.master', ['title' => 'Kontak'])
+@extends('management::layouts.master', [
+    'title' => 'Kontak',
+    'active' => 'contact'
+])
 
 @section('content')
     <div class="row">
