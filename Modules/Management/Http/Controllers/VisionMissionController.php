@@ -38,7 +38,18 @@ class VisionMissionController extends Controller
      */
     public function store(Request $request)
     {
-        VisionMission::create($request->all());
+        if ($request->language == 'all'){
+            foreach (config('array.language') as $lang){
+                $request->merge([
+                    'language' => $lang
+                ]);
+
+                VisionMission::create($request->all());
+            }
+        }else{
+            VisionMission::create($request->all());
+        }
+
 
         return back();
     }

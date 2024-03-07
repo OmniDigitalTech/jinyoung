@@ -13,11 +13,13 @@ return [
     "best_product" => "produk terbaik",
 
     "contact_us" => "kontak kami",
+    "contact_us_value" => "jika anda mempunyai pertanyaan silahkan isi form dibawah ini",
     "full_name" => "nama lengkap",
     "email_address" => "alamat email",
     "message" => "pesan",
 
     "contact" => "kontak",
+    "contact_value" => "Silakan hubungi alamat di bawah ini untuk mengirim email kepada kami",
     "address" => "alamat",
     "email" => "email",
     "phone" => "no. telp",

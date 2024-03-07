@@ -40,10 +40,24 @@ class HistoryController extends Controller
      */
     public function store(Request $request)
     {
-        $history = History::create($request->all());
+        if ($request->language == 'all'){
+            foreach (config('array.language') as $lang){
+                $request->merge([
+                    'language' => $lang
+                ]);
 
-        if ($request->picture){
-            insert_picture($request->picture, $history, $request->title);
+                $history = History::create($request->all());
+
+                if ($request->picture){
+                    insert_picture($request->picture, $history, $request->title);
+                }
+            }
+        }else{
+            $history = History::create($request->all());
+
+            if ($request->picture){
+                insert_picture($request->picture, $history, $request->title);
+            }
         }
 
         return back();

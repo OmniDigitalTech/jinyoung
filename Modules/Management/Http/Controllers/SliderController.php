@@ -39,9 +39,19 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        $slider = Slider::create($request->all());
+        if ($request->language == 'all'){
+            foreach (config('array.language') as $lang){
+                $request->merge([
+                    'language' => $lang
+                ]);
 
-        insert_picture($request->picture, $slider, $request->title);
+                $slider = Slider::create($request->all());
+                insert_picture($request->picture, $slider, $request->title);
+            }
+        }else{
+            $slider = Slider::create($request->all());
+            insert_picture($request->picture, $slider, $request->title);
+        }
 
         return back();
     }
