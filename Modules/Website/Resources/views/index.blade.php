@@ -100,16 +100,16 @@
                     <div class="main-timeline_one pt-5 curved-pt">
                         <div class="timeline_one pb-5">
                             <div class="timeline_one-content">
-                                <h1 class="display-2 fw-bold text-primary">{{ strtoupper(__('translation.vision')) }}</h1>
-                                <p class="description lead fw-normal">
+                                <h1 class="display-2 fw-bold text-primary" data-aos="fade-right">{{ strtoupper(__('translation.vision')) }}</h1>
+                                <p class="description lead fw-normal" data-aos="fade-up">
                                     {{ @$visionmission->vision }}
                                 </p>
                             </div>
                         </div>
                         <div class="timeline_one">
                             <div href="#" class="timeline_one-content">
-                                <h1 class="display-2 fw-bold">{{ strtoupper(__('translation.mission')) }}</h1>
-                                <p class="description lead fw-normal">
+                                <h1 class="display-2 fw-bold" data-aos="fade-left">{{ strtoupper(__('translation.mission')) }}</h1>
+                                <p class="description lead fw-normal" data-aos="fade-up">
                                     {{ @$visionmission->mission }}
                                 </p>
                             </div>
@@ -129,7 +129,7 @@
                 <div class="col-md-12">
                     <div class="main-timeline">
                         @foreach($histories as $history)
-                            <div class="timeline">
+                            <div class="timeline" data-aos="fade-right">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-icon">
                                         <i class="fa fa-globe"></i>
@@ -155,7 +155,7 @@
                 <h2>VALUE</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 py-2 value-padding">
+                <div class="col-md-3 col-sm-6 py-2 value-padding" data-aos="fade-up">
                     <card class="card shadow my-4 bg-primary text-white w-100">
                         <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
@@ -167,7 +167,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 value-padding">
+                <div class="col-md-3 col-sm-6 py-2 value-padding" data-aos="fade-down">
                     <card class="card shadow my-4 text-primary w-100">
                         <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
@@ -179,7 +179,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 value-padding">
+                <div class="col-md-3 col-sm-6 py-2 value-padding" data-aos="fade-up">
                     <card class="card shadow my-4 bg-primary text-white w-100">
                         <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
@@ -191,7 +191,7 @@
                         </div>
                     </card>
                 </div>
-                <div class="col-md-3 col-sm-6 py-2 value-padding">
+                <div class="col-md-3 col-sm-6 py-2 value-padding" data-aos="fade-down">
                     <card class="card shadow my-4 text-primary w-100">
                         <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center value-icon-position value-card">
                             <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>
@@ -213,7 +213,7 @@
             </div>
             <div class="row pt-3 justify-content-center">
                 @foreach($processes as $process)
-                    <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3">
+                    <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
                         <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">
                             <h3 class="fw-bold">STEP {{ $process->step }}</h3>
                             <p>{{ $process->description }}</p>

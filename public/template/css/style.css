@@ -386,7 +386,7 @@
     content: '';
     height: 74%;
     width: 1px;
-    border-left: 7px dotted #909090;
+    /*border-left: 7px dotted #909090;*/
     transform: translatex(-50%);
     position: absolute;
     left: 50%;
