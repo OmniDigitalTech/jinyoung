@@ -44,7 +44,7 @@
 
     @if(count($sliders) > 0)
     <section>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
 {{--            <div class="carousel-indicators">--}}
 {{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>--}}
 {{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>--}}
