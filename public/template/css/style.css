@@ -335,7 +335,7 @@
 @media(max-width:540px) {
     .sticky {
         position: fixed;
-        top: 24px;
+        top: 20px;
         width: 100%;
     }
     .link-none{
