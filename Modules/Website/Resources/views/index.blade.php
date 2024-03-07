@@ -56,8 +56,8 @@
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                             <img src="{{ $slider->picture->url }}" class="d-block w-100 h-110" alt="...">
                             <div class="carousel-caption">
-                                <p class="h1 fw-bold">{{ $slider->title }}</p>
-                                <p class="h5 mb-5 pb-3"><em>{{ $slider->subtitle }}</em></p>
+                                <p class="h1 fw-bold text-color" data-aos="fade-up">{{ $slider->title }}</p>
+                                <p class="h5 mb-5 pb-3 text-color" data-aos="fade-down"><em>{{ $slider->subtitle }}</em></p>
                             </div>
                         </div>
                     @else
@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="content">
                                         <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
-                                        <p class="description">
+                                        <p class="description text-color">
                                             {{ $history->description }}
                                         </p>
                                     </div>
@@ -244,7 +244,7 @@
         <div class="section-header pt-5 mb-0">
             <h2>{{ strtoupper(__('translation.best_product')) }}</h2>
         </div>
-        <div class="row p-5">
+        <div class="row p-5 justify-content-center align-items-center align-content-center">
             @foreach($bestproducts as $product)
                 <div class="col-md-3 col-sm-6 my-2">
                     <div class="product-grid">
@@ -259,9 +259,9 @@
 
     @if(count($products) > 0)
     <section>
-        <div class="row ">
+        <div class="row justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
-            <div class="col-lg-3 col-md-6 col-sm-12 p-0">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0 justify-content-center">
                 <div class="card">
                     <img class="card-img-top" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
                     <div class="product-detail">
