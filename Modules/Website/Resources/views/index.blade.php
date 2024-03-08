@@ -216,7 +216,7 @@
         </div>
         <div class="row pt-3 justify-content-center">
             @foreach($processes as $process)
-                <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3 justify-content-center flex-column align-items-center align-content-center" data-aos="fade-right" data-aos-duration="2000">
                     {{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
                     <h3 class="fw-bold">STEP {{ $process->step }}</h3>
                     <p>{{ $process->description }}</p>
