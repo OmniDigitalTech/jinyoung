@@ -301,26 +301,45 @@
         </div>
     </section>
 
-    @if(count($products) > 0)
+{{--    @if(count($products) > 0)--}}
+{{--    <section>--}}
+{{--        <div class="row justify-content-center align-items-center align-content-center">--}}
+{{--            @foreach($products as $product)--}}
+{{--            <div class="col-lg-3 col-md-6 col-sm-12 p-0 justify-content-center">--}}
+{{--                <div class="card">--}}
+{{--                    <img class="card-img-top" src="{{ $product->picture->url }}" height="380" alt="Card image cap">--}}
+{{--                    <div class="product-detail">--}}
+{{--                        <h5 class="card-title heading text-center">{{ $product->name }}</h5>--}}
+{{--                        <span class="subheading">BEST GLOVES</span>--}}
+{{--                        <blockquote>--}}
+{{--                            <p>{{ $product->description }}</p>--}}
+{{--                        </blockquote>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            @endforeach--}}
+{{--        </div>--}}
+{{--    </section>--}}
+{{--    @endif--}}
+
     <section>
-        <div class="row justify-content-center align-items-center align-content-center">
-            @foreach($products as $product)
-            <div class="col-lg-3 col-md-6 col-sm-12 p-0 justify-content-center">
+        <div class="slick-wrapper">
+            <div class="slick1">
+                @foreach($products as $product)
                 <div class="card">
-                    <img class="card-img-top" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
+                    <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
                     <div class="product-detail">
                         <h5 class="card-title heading text-center">{{ $product->name }}</h5>
-{{--                        <span class="subheading">BEST GLOVES</span>--}}
+                        {{--                        <span class="subheading">BEST GLOVES</span>--}}
                         <blockquote>
                             <p>{{ $product->description }}</p>
                         </blockquote>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </section>
-    @endif
 
     <section>
         <div class="container pt-5 pb-5">

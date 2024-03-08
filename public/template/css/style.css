@@ -1616,4 +1616,7 @@ dl, ol, ul {
 .background-color {
     background-color: #f0f1f3;
 }
+.product-height-custom{
+    height: 50%!important;
+}
 
