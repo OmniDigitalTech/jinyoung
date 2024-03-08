@@ -22,21 +22,21 @@
             </li>
             <li class="dropdown nav-item"><a href="#about" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                 <ul class="dropdown-menu show-about">
-                    <li><a class="dropdown-item" href="#vision-mission">Visi & Misi</a></li>
-                    <li><a class="dropdown-item" href="#history">History</a></li>
+                    <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>
+                    <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>
                     <li><a class="dropdown-item" href="#value">Value</a></li>
                 </ul>
             </li>
             <li class="link-none" style="width: 10rem"></li>
             <li class="dropdown nav-item"><a href="#product" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                 <ul class="dropdown-menu show-product">
-                    <li><a class="dropdown-item" href="#product-processt">Production Flow</a></li>
-                    <li><a class="dropdown-item" href="#product">Product</a></li>
+                    <li><a class="dropdown-item" href="#product-processt">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
+                    <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
                 </ul>
             </li>
             <li class="dropdown nav-item"><a href="#contact" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
                 <ul class="dropdown-menu show-contact">
-                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                    <li><a class="dropdown-item" href="#contact">{{ ucfirst(__('translation.contact')) }}</a></li>
                 </ul>
             </li>
         </ul>
