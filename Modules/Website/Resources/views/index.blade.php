@@ -219,9 +219,8 @@
                 <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
                     {{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
                     <h3 class="fw-bold">STEP {{ $process->step }}</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                    <p>{{ $process->description }}</p>
                     <div class="production-detail production-image-one ">
-                        {{--                            <p>{{ $process->description }}</p>--}}
                     </div>
                     {{--                        </a>--}}
                 </div>
@@ -247,25 +246,25 @@
         </div>
     </section>
 
+    <!--
     <section id="product-process">
-            <div class="section-header pt-5 mb-0">
-                <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
-            </div>
-            <div class="row pt-3 justify-content-center">
-                @foreach($processes as $process)
-                    <div class="production-image-one col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="section-header pt-5 mb-0">
+            <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
+        </div>
+        <div class="row pt-3 justify-content-center">
+            @foreach($processes as $process)
+                <div class="production-image-one col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
 {{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
-                        <div class="production-detail">
-                            <h3 class="fw-bold">STEP {{ $process->step }}</h3>
+                    <div class="production-detail">
+                        <h3 class="fw-bold">STEP {{ $process->step }}</h3>
 {{--                            <p>{{ $process->description }}</p>--}}
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                        </div>
-{{--                        </a>--}}
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
                     </div>
-                @endforeach
-            </div>
+{{--                        </a>--}}
+                </div>
+            @endforeach
+        </div>
 
-        <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -283,6 +282,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <section id="product">
         <div class="section-header pt-5 mb-0">
