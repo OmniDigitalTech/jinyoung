@@ -56,8 +56,8 @@
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                             <img src="{{ $slider->picture->url }}" class="d-block w-100 h-110" alt="...">
                             <div class="carousel-caption">
-                                <p class="h1 fw-bold text-color" data-aos="fade-up">{{ $slider->title }}</p>
-                                <p class="h5 mb-5 pb-3 text-color" data-aos="fade-down"><em>{{ $slider->subtitle }}</em></p>
+                                <p class="h1 fw-bold text-white" data-aos="fade-up">{{ $slider->title }}</p>
+                                <p class="h5 mb-5 pb-3 text-white" data-aos="fade-down"><em>{{ $slider->subtitle }}</em></p>
                             </div>
                         </div>
                     @else
