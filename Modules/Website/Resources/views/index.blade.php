@@ -263,24 +263,24 @@
     </section>
 
     <section>
-            <div class="slick-slide">
-                @foreach($products as $product)
-                <div class="card">
-                    <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
-                    <div class="product-detail">
-                        <h5 class="card-title heading text-center">{{ $product->name }}</h5>
-                        {{--                        <span class="subheading">BEST GLOVES</span>--}}
-                        <blockquote>
-                            <p>{{ $product->description }}</p>
-                        </blockquote>
-                    </div>
+        <div class="slick1">
+            @foreach($products as $product)
+            <div class="card">
+                <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
+                <div class="product-detail">
+                    <h5 class="card-title heading text-center">{{ $product->name }}</h5>
+                    {{--                        <span class="subheading">BEST GLOVES</span>--}}
+                    <blockquote>
+                        <p>{{ $product->description }}</p>
+                    </blockquote>
                 </div>
-                @endforeach
             </div>
-            <div class="btn-wrap">
-                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
+            @endforeach
+        </div>
+        <div class="btn-wrap">
+            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
     </section>
 
     <section>

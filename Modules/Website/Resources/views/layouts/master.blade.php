@@ -24,7 +24,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.slick-slide').slick({
+            $('.slick1').slick({
                 autoplay: true,
                 rows: 2,
                 dots: false,
@@ -59,14 +59,14 @@
                         ]
             });
             $(".prev-btn").click(function () {
-                $(".slick-slide").slick("slickPrev");
+                $(".slick1").slick("slickPrev");
             });
 
             $(".next-btn").click(function () {
-                $(".slick-slide").slick("slickNext");
+                $(".slick1").slick("slickNext");
             });
             $(".prev-btn").addClass("slick-disabled");
-            $(".slick-slide").on("afterChange", function () {
+            $(".slick1").on("afterChange", function () {
                 if ($(".slick-prev").hasClass("slick-disabled")) {
                     $(".prev-btn").addClass("slick-disabled");
                 } else {
