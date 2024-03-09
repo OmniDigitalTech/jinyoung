@@ -323,7 +323,6 @@
 {{--    @endif--}}
 
     <section>
-        <div class="slick-wrapper">
             <div class="slick1">
                 @foreach($products as $product)
                 <div class="card">
@@ -338,7 +337,10 @@
                 </div>
                 @endforeach
             </div>
-        </div>
+            <div class="btn-wrap">
+                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
     </section>
 
     <section>

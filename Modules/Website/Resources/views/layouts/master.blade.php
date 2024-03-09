@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="{{ URL::asset('template/img/SJI.svg') }}">
     <link rel="stylesheet" href="{{ URL::asset('template/aos/aos.css')}}" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/6d3db1e240.js" crossorigin="anonymous"></script>
 </head>
 <body class="antialiased">
@@ -24,11 +25,12 @@
     <script>
         $(document).ready(function(){
             $('.slick1').slick({
+                autoplay: true,
                 rows: 2,
                 dots: false,
-                arrows: false,
+                arrows: true,
                 infinite: true,
-                speed: 300,
+                autoplaySpeed: 2000,
                 slidesToShow: 4,
                 slidesToScroll: 4,
                 responsive: [
@@ -55,6 +57,26 @@
                                 }
                             }
                         ]
+            });
+            $(".prev-btn").click(function () {
+                $(".slick1").slick("slickPrev");
+            });
+
+            $(".next-btn").click(function () {
+                $(".slick1").slick("slickNext");
+            });
+            $(".prev-btn").addClass("slick-disabled");
+            $(".slick1").on("afterChange", function () {
+                if ($(".slick-prev").hasClass("slick-disabled")) {
+                    $(".prev-btn").addClass("slick-disabled");
+                } else {
+                    $(".prev-btn").removeClass("slick-disabled");
+                }
+                if ($(".slick-next").hasClass("slick-disabled")) {
+                    $(".next-btn").addClass("slick-disabled");
+                } else {
+                    $(".next-btn").removeClass("slick-disabled");
+                }
             });
         });
     </script>
