@@ -220,8 +220,7 @@
                     {{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
                     <h3 class="fw-bold">STEP {{ $process->step }}</h3>
                     <p>{{ $process->description }}</p>
-                    <div class="production-detail production-image-one ">
-                    </div>
+                    <div class="production-detail production-image-one " style="background-image: url({{ $process->picture->url }});"></div>
                     {{--                        </a>--}}
                 </div>
             @endforeach
@@ -246,44 +245,6 @@
         </div>
     </section>
 
-    <!--
-    <section id="product-process">
-        <div class="section-header pt-5 mb-0">
-            <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
-        </div>
-        <div class="row pt-3 justify-content-center">
-            @foreach($processes as $process)
-                <div class="production-image-one col-md-3 col-sm-6 my-2 p_column text-center mt-3" data-aos="fade-right" data-aos-duration="2000">
-{{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
-                    <div class="production-detail">
-                        <h3 class="fw-bold">STEP {{ $process->step }}</h3>
-{{--                            <p>{{ $process->description }}</p>--}}
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                    </div>
-{{--                        </a>--}}
-                </div>
-            @endforeach
-        </div>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="step-modal-grid">
-                            <div class="step-modal-content step-modal-image">
-                                <img id="image-process" src="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
     <section id="product">
         <div class="section-header pt-5 mb-0">
             <h2>{{ strtoupper(__('translation.product')) }}</h2>
@@ -300,27 +261,6 @@
             @endforeach
         </div>
     </section>
-
-{{--    @if(count($products) > 0)--}}
-{{--    <section>--}}
-{{--        <div class="row justify-content-center align-items-center align-content-center">--}}
-{{--            @foreach($products as $product)--}}
-{{--            <div class="col-lg-3 col-md-6 col-sm-12 p-0 justify-content-center">--}}
-{{--                <div class="card">--}}
-{{--                    <img class="card-img-top" src="{{ $product->picture->url }}" height="380" alt="Card image cap">--}}
-{{--                    <div class="product-detail">--}}
-{{--                        <h5 class="card-title heading text-center">{{ $product->name }}</h5>--}}
-{{--                        <span class="subheading">BEST GLOVES</span>--}}
-{{--                        <blockquote>--}}
-{{--                            <p>{{ $product->description }}</p>--}}
-{{--                        </blockquote>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-{{--    </section>--}}
-{{--    @endif--}}
 
     <section>
         <div class="slick-wrapper">
@@ -381,7 +321,7 @@
     </section>
 
     <section id="contact">
-        <footer class="background-color p-5">
+        <footer class="background-color pt-5 px-5">
             <div class="container">
                 <footer class="py-6">
                     <div class="row">
@@ -410,7 +350,7 @@
                     </div>
 
                     <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-2">
-                        <p>Copy Rights © 2024 - Jinyoung</p>
+                        <p class="p-0 m-0">Copyright © {{ \Carbon\Carbon::now()->format('Y') }} - Sukses Jinyoung Indonesia</p>
                     </div>
                 </footer>
             </div>
