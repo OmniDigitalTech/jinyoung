@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="content">
                                         <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
-                                        <p class="description text-color text-justify">
+                                        <p class="description text-color">
                                             {!! $history->description !!}
                                         </p>
                                     </div>
