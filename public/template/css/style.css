@@ -54,6 +54,11 @@
     letter-spacing: 1px;
     margin: 0;
 }
+
+.main-timeline .content p {
+    text-align: justify;
+}
+
 .main-timeline_one .timeline_one-year{
     font-size: 30px;
     font-weight: 600;
@@ -1571,7 +1576,6 @@ dl, ol, ul {
     align-items: center;
 }
 .production-image-one {
-    background-image: url("../img/BannerProduction.jpg");
     color: #FFFFFF;
     text-align: center;
     background-repeat: no-repeat;
