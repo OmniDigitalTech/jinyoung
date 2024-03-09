@@ -410,7 +410,7 @@
                     </div>
 
                     <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-2">
-    {{--                    <p>© 2024 Copy Rights - Omnitechnology</p>--}}
+                        <p>Copy Rights © 2024 - Jinyoung</p>
                     </div>
                 </footer>
             </div>
