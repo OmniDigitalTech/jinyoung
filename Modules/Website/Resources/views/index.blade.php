@@ -129,7 +129,7 @@
                     <div class="main-timeline">
                         @foreach($histories as $history)
                             <div class="timeline" data-aos="fade-right">
-                                <a href="#" class="timeline-content">
+                                <div class="timeline-content">
                                     <div class="timeline-icon">
                                         @if($history->pictureExist())
                                             <img src="{{ $history->picture->url }}" style="width: 70px; height: 70px">
@@ -139,11 +139,11 @@
                                     </div>
                                     <div class="content">
                                         <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
-                                        <p class="description text-color">
+                                        <p class="description text-color text-justify">
                                             {!! $history->description !!}
                                         </p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         @endforeach
                     </div>
