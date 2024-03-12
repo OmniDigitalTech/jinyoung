@@ -86,11 +86,11 @@
     </section>
     @endif
 
-{{--    <section class="bg-body-tertiary">--}}
-{{--        <div class="embed-responsive embed-responsive-16by9 p-4">--}}
-{{--            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1dfFpyTSW3Nevkv1_Ma3xTTMIuRfrufIO/preview" allowfullscreen></iframe>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+    <section class="bg-body-tertiary">
+        <div class="embed-responsive embed-responsive-16by9 p-4">
+            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1MvB_8f0U0DsAdlo6TjH1BQ8xxUYHXGpq/preview" allowfullscreen allow="autoplay"></iframe>
+        </div>
+    </section>
 
     <section id="vision-mission">
         <div class="container">
