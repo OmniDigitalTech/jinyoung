@@ -16,7 +16,7 @@
         <div class="d-flex bg-primary justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-pills">
                 <li class="dropdown nav-item"><a href="#video-section" class="nav-link nav-link-custom fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
-                    <ul class="dropdown-menu show-about">
+                    <ul class="dropdown-menu show-home">
                         <li><a class="dropdown-item" href="#video-section">{{ ucfirst(__('translation.home')) }}</a></li>
                     </ul>
                 </li>

@@ -256,16 +256,16 @@
     /* pointer-events: none; */
 }
 .show-home{
-    transform: translate(9px, 50px) !important;
+    transform: translate(5px, 50px) !important;
 }
 .show-about{
-    transform: translate(32px, 50px) !important;
+    transform: translate(18px, 50px) !important;
 }
 .show-product{
-    transform: translate(29px, 50px) !important;
+    transform: translate(15px, 50px) !important;
 }
 .show-contact{
-    transform: translate(26px, 50px) !important;
+    transform: translate(13px, 50px) !important;
 }
 .dropdown-item {
     text-align: center;
@@ -364,6 +364,9 @@
     }
     .dropdown-menu {
         --bs-dropdown-min-width: 6rem;
+    }
+    .show-home{
+        transform: translate(-17px, 42px) !important;
     }
     .show-about{
         transform: translate(-8px, 42px) !important;
