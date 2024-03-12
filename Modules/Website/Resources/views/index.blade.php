@@ -264,7 +264,7 @@
     </section>
 
     <section>
-        <div class="slick1">
+        <div class="slick1 justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
             <div class="card">
                 <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
