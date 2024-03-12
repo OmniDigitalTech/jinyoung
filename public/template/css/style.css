@@ -501,6 +501,11 @@
     margin: 0 0 5px 0;
 }
 .timeline-icon{
+    background-image: url("../img/BannerProduction.jpg");
+    color: #FFFFFF;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 210px;
     width: 210px;
     font-size: 186px;

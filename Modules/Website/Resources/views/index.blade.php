@@ -135,7 +135,7 @@
                                         @if($history->pictureExist())
                                             <img src="{{ $history->picture->url }}" style="width: 70px; height: 70px">
                                         @else
-                                            <i class="fa fa-globe"></i>
+{{--                                            <i class="fa fa-globe"></i>--}}
                                         @endif
                                     </div>
                                     <div class="content">
