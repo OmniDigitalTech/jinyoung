@@ -445,7 +445,7 @@
 }
 .main-timeline .timeline{
     margin-bottom: 5px;
-    padding: 60px 0;
+    /*padding: 60px 0;*/
     position: relative;
     z-index: 1;
 }
@@ -501,21 +501,20 @@
     margin: 0 0 5px 0;
 }
 .timeline-icon{
-    background-image: url("../img/BannerProduction.jpg");
     color: #FFFFFF;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 210px;
-    width: 210px;
+    height: 310px;
+    width: 310px;
     font-size: 186px;
     color: #01C0F7;
     text-align: center;
     line-height: 199px;
     background-color: #fff;
-    border: 5px solid #01C0F7;
+    /*border: 5px solid #01C0F7;*/
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
     position: absolute;
     right: 10%;
     top: 50%;
@@ -580,7 +579,7 @@
     .main-timeline:before,
     .main-timeline .timeline:before{display: none;}
     .main-timeline .timeline{
-        padding-top: 180px;
+        /*padding-top: 180px;*/
         margin-bottom: 20px;
     }
     .main-timeline .timeline:nth-child(even):after,
@@ -613,9 +612,9 @@
     }
     .main-timeline .timeline:nth-child(even) .timeline-icon,
     .main-timeline .timeline-icon{
-        right: 50%;
+        /*right: 50%;*/
         top: 2%;
-        transform: translateX(50%) translateY(0);
+        transform: translateX(0) translateY(0);
     }
     .main-timeline .timeline:nth-child(even) .timeline-icon{left: auto;}
 }
@@ -624,20 +623,22 @@
         text-align: center !important;
     }
     .timeline-icon{
-        height: 140px;
-        width: 140px;
+        margin: auto;
+        height: 200px;
+        width: 200px;
         font-size: 70px;
         color: #01C0F7;
         text-align: center;
         line-height: 127px;
         background-color: #fff;
-        border: 5px solid #01C0F7;
+        /*border: 5px solid #01C0F7;*/
         border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        position: absolute;
-        right: 2%;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 0%;
+        /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+        position: relative;
+        /*right: 2%;*/
+        /*top: 50%;*/
+        /*transform: translateY(-50%);*/
     }
 }
 /*.main-timeline{ position: relative; }*/
