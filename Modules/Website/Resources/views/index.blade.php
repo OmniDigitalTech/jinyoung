@@ -5,7 +5,7 @@
         <nav class="navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="320">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="200">
                 </a>
                 <form class="d-flex mb-0 align-items-center p-3" role="search">
                     <a href="en" class="flag us me-2"></a>
@@ -15,8 +15,10 @@
         </nav>
         <div class="d-flex bg-primary justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-pills">
-                <li class="dropdown nav-item">
-                    <a href="#" class="nav-link nav-link-custom fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+                <li class="dropdown nav-item"><a href="#video-section" class="nav-link nav-link-custom fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+                    <ul class="dropdown-menu show-about">
+                        <li><a class="dropdown-item" href="#video-section">{{ ucfirst(__('translation.home')) }}</a></li>
+                    </ul>
                 </li>
                 <li class="dropdown nav-item"><a href="#about" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                     <ul class="dropdown-menu show-about">
@@ -28,7 +30,7 @@
                 <li class="link-none" style="width: 10rem"></li>
                 <li class="dropdown nav-item"><a href="#product" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                     <ul class="dropdown-menu show-product">
-                        <li><a class="dropdown-item" href="#product-processt">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
+                        <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
                         <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
                     </ul>
                 </li>
@@ -40,8 +42,6 @@
             </ul>
         </div>
     </header>
-
-
 
     @if(count($sliders) > 0)
     <section>
@@ -87,7 +87,7 @@
     </section>
     @endif
 
-    <section class="bg-body-tertiary">
+    <section class="bg-body-tertiary" id="video-section">
         <div class="embed-responsive embed-responsive-16by9 p-4">
             <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1MvB_8f0U0DsAdlo6TjH1BQ8xxUYHXGpq/preview" allowfullscreen allow="autoplay"></iframe>
         </div>
