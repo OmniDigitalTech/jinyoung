@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section id="history">
+    <section id="history" class="p-5">
         <div class="container">
             <div class="section-header">
                 <h2>{{ strtoupper(__('translation.history')) }}</h2>
