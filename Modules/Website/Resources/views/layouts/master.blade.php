@@ -83,7 +83,7 @@
     <script>
         window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("navbarSupportedContent");
+        var navbar = document.getElementById("fixed-header");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
