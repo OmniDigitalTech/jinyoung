@@ -131,13 +131,7 @@
                         @foreach($histories as $history)
                             <div class="timeline" data-aos="fade-right">
                                 <div class="timeline-content">
-                                    <div class="timeline-icon">
-                                        @if($history->pictureExist())
-                                            <img src="{{ $history->picture->url }}" style="width: 70px; height: 70px">
-                                        @else
-{{--                                            <i class="fa fa-globe"></i>--}}
-                                        @endif
-                                    </div>
+                                    <div class="timeline-icon" style="background-image: url('{{ $history->picture->url }}');"></div>
                                     <div class="content">
                                         <h3 class="title">{{ $history->year }} {{ $history->title }}</h3>
                                         <p class="description text-color">
