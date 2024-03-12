@@ -474,7 +474,10 @@
     -webkit-clip-path: polygon(10% 0, 0 50%, 10% 100%, 100% 100%, 100% 0);
     clip-path: polygon(10% 0, 0 50%, 10% 100%, 100% 100%, 100% 0);
 }
-.main-timeline .timeline-content{display: block;}
+.main-timeline .timeline-content{
+    min-height: 280px;
+    display: block;
+}
 .main-timeline .timeline-content:hover{text-decoration: none;}
 .main-timeline .timeline-content:after{
     content: '';
@@ -501,13 +504,13 @@
     margin: 0 0 5px 0;
 }
 .timeline-icon{
-    background-image: url("../img/BannerProduction.jpg");
+    /*background-image: url("../img/BannerProduction.jpg");*/
     color: #FFFFFF;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 210px;
-    width: 210px;
+    height: 280px;
+    width: 280px;
     font-size: 186px;
     color: #01C0F7;
     text-align: center;
@@ -515,7 +518,7 @@
     background-color: #fff;
     /*border: 5px solid #01C0F7;*/
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
     position: absolute;
     right: 10%;
     top: 50%;
@@ -620,12 +623,16 @@
     .main-timeline .timeline:nth-child(even) .timeline-icon{left: auto;}
 }
 @media screen and (max-width:540px) {
+    .main-timeline .timeline-content{
+        min-height: 200px;
+    }
+
     .main-timeline .timeline:nth-child(even) .content {
         text-align: center !important;
     }
     .timeline-icon{
-        height: 140px;
-        width: 140px;
+        height: 200px;
+        width: 200px;
         font-size: 70px;
         color: #01C0F7;
         text-align: center;
