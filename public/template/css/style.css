@@ -477,7 +477,7 @@
     clip-path: polygon(10% 0, 0 50%, 10% 100%, 100% 100%, 100% 0);
 }
 .main-timeline .timeline-content{
-    min-height: 280px;
+    min-height: 480px;
     display: block;
 }
 .main-timeline .timeline-content:hover{text-decoration: none;}
@@ -487,6 +487,7 @@
     clear: both;
 }
 .main-timeline .content{
+    transform: translateY(50%);
     display: inline-block;
     float: left;
     width: 40%;
@@ -511,8 +512,8 @@
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 280px;
-    width: 280px;
+    height: 480px;
+    width: 480px;
     font-size: 186px;
     color: #01C0F7;
     text-align: center;
@@ -522,7 +523,7 @@
     border-radius: 15px;
     /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
     position: absolute;
-    right: 10%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -612,6 +613,7 @@
         background: linear-gradient(to bottom,#868686,#868686,transparent,#22237E,#22237E,#22237E,#22237E,#22237E);
     }
     .main-timeline .content{
+        transform: translateY(10%);
         float: none;
         width: 100%;
         text-align: center;
