@@ -45,7 +45,7 @@
 
     @if(count($sliders) > 0)
     <section>
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" style="padding-top: 100px">
 {{--            <div class="carousel-indicators">--}}
 {{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>--}}
 {{--                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>--}}
@@ -57,8 +57,8 @@
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                             <img src="{{ $slider->picture->url }}" class="d-block w-100 h-110" alt="...">
                             <div class="carousel-caption">
-                                <p class="h1 fw-bold text-white" data-aos="fade-up">{{ $slider->title }}</p>
-                                <p class="h5 mb-5 pb-3 text-white" data-aos="fade-down"><em>{{ $slider->subtitle }}</em></p>
+                                <p class="h1 fw-bold text-color" data-aos="fade-up">{{ $slider->title }}</p>
+                                <p class="h5 mb-5 pb-3 text-color" data-aos="fade-down"><em>{{ $slider->subtitle }}</em></p>
                             </div>
                         </div>
                     @else
