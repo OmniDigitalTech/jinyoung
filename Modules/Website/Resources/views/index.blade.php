@@ -1,7 +1,7 @@
 @extends('website::layouts.master')
 
 @section('content')
-    <header id="fixed-header" style="z-index: 2">
+    <header class="fixed-top" style="z-index: 2">
         <nav class="navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">

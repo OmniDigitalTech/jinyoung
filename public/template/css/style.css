@@ -1,11 +1,10 @@
 @charset "utf-8";
-/*html,body*/
-/*{*/
-/*    width: 100%;*/
-/*    margin: 0px;*/
-/*    padding: 0px;*/
-/*    overflow-x: hidden;*/
-/*}*/
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 .main-timeline_one{
     position: relative;
 }
@@ -356,6 +355,12 @@
     }
 }
 @media(max-width:540px) {
+    .carousel-control-next, .carousel-control-prev {
+        top: 100px;
+    }
+    .carousel{
+        padding-top: 80px;
+    }
     .sticky {
         position: sticky;
         top: 0;
@@ -430,7 +435,7 @@
         font-size: 0.8rem;
     }
     .carousel-caption {
-        top: 34%;
+        top: 39%;
     }
     .carousel-caption p {
         font-size: 0.8rem !important;
