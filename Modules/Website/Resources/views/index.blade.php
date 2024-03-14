@@ -250,6 +250,7 @@
                     <div class="product-grid">
                         <div class="product-content product-image">
                             <img src="{{ $product->picture->url }}">
+                            <h3 class="title"><a class="text-decoration-none" href="#">{{ $product->name }}</a></h3>
                         </div>
                     </div>
                 </div>

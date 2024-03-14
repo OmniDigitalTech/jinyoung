@@ -1833,7 +1833,7 @@ dl, ol, ul {
 }
 .p_column p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .product-height-custom{
     height: 50%!important;
