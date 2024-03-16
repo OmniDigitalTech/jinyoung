@@ -93,8 +93,8 @@
         </div>
     </section>
 
-    <section id="vision-mission">
-        <div class="container">
+    <section id="vision-mission" class="visimisi-styleone">
+        <div class="container visimisi-styletwo">
             <div class="row pt-5 pb-5">
                 <div class="col-md-12 pt-5 pb-5 curved">
                     <div class="main-timeline_one pt-5 curved-pt">

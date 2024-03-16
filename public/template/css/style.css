@@ -1920,4 +1920,94 @@ button.slick-disabled {
     opacity: 0.6;
 }
 
+.visimisi-styleone {
+    position: relative;
+    height: 110vh;
+}
+
+.visimisi-styletwo {
+    position: absolute;
+    left: 7.4%;
+}
+
+@media(max-width:540px) {
+    .visimisi-styleone {
+        height: 83vh!important;
+    }
+
+    .visimisi-styletwo {
+        position: absolute;
+        left: 0%;
+    }
+}
+
+/*ASUS ZENBOOK FOLD*/
+@media(device-width:853px) and (device-height: 1280px) {
+    .visimisi-styleone {
+        height: 49vh!important;
+    }
+
+    .visimisi-styletwo {
+        position: absolute;
+        left: 4.4%;
+    }
+}
+
+/*IPAD AIR*/
+@media(device-width:768px) and (device-height: 1024px) {
+    .visimisi-styleone {
+        height: 49vh!important;
+    }
+
+    .visimisi-styletwo {
+        position: absolute;
+        left: 14.4%;
+    }
+}
+
+/*IPAD-MINI*/
+@media(device-width:768px) and (device-height: 1024px){
+    .visimisi-styleone {
+        height: 50vh!important;
+    }
+    .visimisi-styletwo {
+        position: absolute;
+        left: 4.4%;
+    }
+}
+
+/*IPHONE PRO 12 MAX*/
+@media(device-width:430px) and (device-height: 932px){
+    .visimisi-styleone {
+        height: 55vh!important;
+    }
+}
+
+/*IPHONE-XR*/
+@media(device-width:414px) and (device-height: 896px){
+    .visimisi-styleone {
+        height: 61vh!important;
+    }
+}
+
+/*PIXEL 7*/
+@media(device-width:412px) and (device-height: 915px){
+    .visimisi-styleone {
+        height: 58vh!important;
+    }
+}
+
+/*SAMSUNG GALAXY A51*/
+@media(device-width:412px) and (device-height: 914px){
+    .visimisi-styleone {
+        height: 58vh!important;
+    }
+}
+
+/*IPHONE 12 PRO*/
+@media(device-width:390px) and (device-height: 844px){
+    .visimisi-styleone {
+        height: 63vh!important;
+    }
+}
 
