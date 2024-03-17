@@ -1922,7 +1922,7 @@ button.slick-disabled {
 
 .visimisi-styleone {
     position: relative;
-    height: 110vh;
+    height: 87vh;
 }
 
 .visimisi-styletwo {
@@ -1936,7 +1936,7 @@ button.slick-disabled {
 
 @media(max-width:540px) {
     .visimisi-styleone {
-        height: 83vh!important;
+        height: 73vh!important;
     }
 
     .visimisi-styletwo {

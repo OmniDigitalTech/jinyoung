@@ -127,8 +127,8 @@
     <section id="vision-mission" class="visimisi-styleone">
         <div class="container visimisi-styletwo">
             <div class="row pt-5 pb-5">
-                <div class="col-md-12 pt-5 pb-5 curved">
-                    <div class="main-timeline_one pt-5 curved-pt">
+                <div class="col-md-12 pb-5 curved">
+                    <div class="main-timeline_one curved-pt">
                         <div class="timeline_one pb-5">
                             <div class="timeline_one-content">
                                 <h1 class="display-2 fw-bold text-primary" data-aos="fade-right">{{ strtoupper(__('translation.vision')) }}</h1>
