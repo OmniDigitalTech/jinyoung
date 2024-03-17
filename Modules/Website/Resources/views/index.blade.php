@@ -93,6 +93,37 @@
         </div>
     </section>
 
+{{--    <section id="vision-mission">--}}
+{{--        <div class="container" style="position: absolute; z-index: 2">--}}
+{{--            <div class="row pt-5 pb-5">--}}
+{{--                <div class="col-md-12 pt-5 pb-5 text-center">--}}
+{{--                    <div class="main-timeline_one pt-5 curved-pt">--}}
+{{--                        <div class="timeline_one pb-5">--}}
+{{--                            <div class="timeline_one-content">--}}
+{{--                                <h1 class="display-2 fw-bold text-primary" data-aos="fade-right">{{ strtoupper(__('translation.vision')) }}</h1>--}}
+{{--                                <p class="description lead fw-normal" data-aos="fade-up">--}}
+{{--                                    {{ @$visionmission->vision }}--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="timeline_one">--}}
+{{--                            <div href="#" class="timeline_one-content">--}}
+{{--                                <h1 class="display-2 fw-bold" data-aos="fade-left">{{ strtoupper(__('translation.mission')) }}</h1>--}}
+{{--                                <p class="description lead fw-normal" data-aos="fade-up">--}}
+{{--                                    {{ @$visionmission->mission }}--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <video autoplay muted loop id="myVideo" style="position: relative">--}}
+{{--            <source src="{{URL::asset('template/video/video-background.mp4')}}" type="video/mp4">--}}
+{{--            Your browser does not support HTML5 video.--}}
+{{--        </video>--}}
+{{--    </section>--}}
+
     <section id="vision-mission" class="visimisi-styleone">
         <div class="container visimisi-styletwo">
             <div class="row pt-5 pb-5">

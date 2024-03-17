@@ -1930,6 +1930,10 @@ button.slick-disabled {
     left: 7.4%;
 }
 
+#myVideo {
+    width: 100%;
+}
+
 @media(max-width:540px) {
     .visimisi-styleone {
         height: 83vh!important;

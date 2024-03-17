@@ -62,7 +62,7 @@
                     }
                 },
                 "size": {
-                    "value": 3,
+                    "value": 0.5,
                     "random": true,
                     "anim": {
                         "enable": false,
@@ -75,8 +75,8 @@
                     "enable": true,
                     "distance": 150,
                     "color": "#2246f8",
-                    "opacity": 0.4,
-                    "width": 1
+                    "opacity": 0.1,
+                    "width": 0.5
                 },
                 "move": {
                     "enable": true,
