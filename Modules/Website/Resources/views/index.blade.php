@@ -251,24 +251,6 @@
                 </div>
             @endforeach
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="step-modal-grid">
-                            <div class="step-modal-content step-modal-image">
-                                <img id="image-process" src="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section id="product">
@@ -280,8 +262,25 @@
                 <div class="col-md-3 col-sm-6 my-2">
                     <div class="product-grid">
                         <div class="product-content product-image">
-                            <img src="{{ $product->picture->url }}">
+                            <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="{{ $product->picture->url }}">
                             <h3 class="title"><a class="text-decoration-none" href="#">{{ $product->name }}</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="product-content product-image text-center">
+                                    <img style="width: 80%" src="{{ $product->picture->url }}">
+                                    <h5 class="title"><a class="text-decoration-none" href="#">{{ $product->name }}</a></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
