@@ -219,27 +219,82 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-timeline">
-                        @foreach($histories as $history)
-                            <div class="timeline pt-2 pb-2" data-aos="fade-right">
-                                <div class="timeline-content">
-                                    <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
-                                        {{ __('translation.innovation_value') }}
-                                    </div>
-                                    <div class="content-value">
-                                        <card class="card card-custom shadow my-4 bg-primary text-white w-100">
-                                            <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
-                                                <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
-                                            </i>
+                        <div class="timeline pt-2 pb-2" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                    {{ __('translation.innovation_value') }}
+                                </div>
+                                <div class="content-value">
+                                    <card class="card card-custom shadow my-4 bg-primary text-white w-100">
+                                        <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
+                                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
+                                        </i>
 {{--                                            <div class="value-detail pb-0 bg-primary">--}}
 {{--                                                <p class="text-line">--}}
 {{--                                                    {{ __('translation.innovation_value') }}--}}
 {{--                                                </p>--}}
 {{--                                            </div>--}}
-                                        </card>
-                                    </div>
+                                    </card>
                                 </div>
                             </div>
-                        @endforeach
+                        </div>
+                        <div class="timeline pt-2 pb-2" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                    {{ __('translation.transparency_value') }}
+                                </div>
+                                <div class="content-value">
+                                    <card class="card card-custom shadow my-4 bg-primary text-white w-100">
+                                        <i class="card-img-top d-block fas fa-users fa-5x py-3 text-center value-icon-position value-card">
+                                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.transparency')) }}</strong></h5>
+                                        </i>
+{{--                                            <div class="value-detail pb-0 bg-primary">--}}
+{{--                                                <p class="text-line">--}}
+{{--                                                    {{ __('translation.innovation_value') }}--}}
+{{--                                                </p>--}}
+{{--                                            </div>--}}
+                                    </card>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline pt-2 pb-2" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                    {{ __('translation.sustainability_value') }}
+                                </div>
+                                <div class="content-value">
+                                    <card class="card card-custom shadow my-4 bg-primary text-white w-100">
+                                        <i class="card-img-top d-block fas fa-scale-balanced fa-5x py-3 text-center value-icon-position value-card">
+                                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.sustainability')) }}</strong></h5>
+                                        </i>
+{{--                                            <div class="value-detail pb-0 bg-primary">--}}
+{{--                                                <p class="text-line">--}}
+{{--                                                    {{ __('translation.innovation_value') }}--}}
+{{--                                                </p>--}}
+{{--                                            </div>--}}
+                                    </card>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline pt-2 pb-2" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                    {{ __('translation.quality_value') }}
+                                </div>
+                                <div class="content-value">
+                                    <card class="card card-custom shadow my-4 bg-primary text-white w-100">
+                                        <i class="card-img-top d-block fas fa-medal fa-5x py-3 text-center value-icon-position value-card">
+                                            <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.quality')) }}</strong></h5>
+                                        </i>
+{{--                                            <div class="value-detail pb-0 bg-primary">--}}
+{{--                                                <p class="text-line">--}}
+{{--                                                    {{ __('translation.innovation_value') }}--}}
+{{--                                                </p>--}}
+{{--                                            </div>--}}
+                                    </card>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
