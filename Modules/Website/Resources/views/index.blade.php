@@ -43,15 +43,15 @@
         </div>
     </header>
 
-    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 website-nav" style="background-color: white">
+    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 website-nav" style="background-color: white">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li class="p-3 pt-0 pb-0"><a href="#video-section" class="nav-link px-2 link-dark fw-bold">{{ strtoupper(__('translation.home')) }}</a></li>
+            <li class="p-3 pt-0 pb-0"><a href="#video-section" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.home')) }}</a></li>
             <li class="dropdown nav-item p-3 pt-0 pb-0">
-                <a href="#" class="nav-link px-2 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                 <ul class="dropdown-menu show-about">
                     <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>
                     <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>
@@ -59,13 +59,13 @@
                 </ul>
             </li>
             <li class="dropdown nav-item p-3 pt-0 pb-0">
-                <a href="#" class="nav-link px-2 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                 <ul class="dropdown-menu show-product">
                     <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
                     <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
                 </ul>
             </li>
-            <li class="p-3 pt-0 pb-0"><a href="#contact" class="nav-link px-2 link-dark fw-bold">{{ strtoupper(__('translation.contact')) }}</a></li>
+            <li class="p-3 pt-0 pb-0"><a href="#contact" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.contact')) }}</a></li>
         </ul>
 
         <div class="col-md-3 text-end">
