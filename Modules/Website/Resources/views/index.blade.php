@@ -5,7 +5,7 @@
         <nav class="navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="200">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">
                 </a>
                 <form class="d-flex mb-0 align-items-center p-3" role="search">
                     <a href="en" class="flag us me-2"></a>
@@ -49,23 +49,23 @@
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#video-section" class="nav-link px-2 link-dark">{{ strtoupper(__('translation.home')) }}</a></li>
-            <li class="dropdown nav-item">
-                <a href="#" class="nav-link px-2 link-dark" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+            <li class="p-3 pt-0 pb-0"><a href="#video-section" class="nav-link px-2 link-dark fw-bold">{{ strtoupper(__('translation.home')) }}</a></li>
+            <li class="dropdown nav-item p-3 pt-0 pb-0">
+                <a href="#" class="nav-link px-2 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
                 <ul class="dropdown-menu show-about">
                     <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>
                     <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>
                     <li><a class="dropdown-item" href="#value">Value</a></li>
                 </ul>
             </li>
-            <li class="dropdown nav-item">
-                <a href="#" class="nav-link px-2 link-dark" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+            <li class="dropdown nav-item p-3 pt-0 pb-0">
+                <a href="#" class="nav-link px-2 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
                 <ul class="dropdown-menu show-product">
                     <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
                     <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
                 </ul>
             </li>
-            <li><a href="#contact" class="nav-link px-2 link-dark">{{ strtoupper(__('translation.contact')) }}</a></li>
+            <li class="p-3 pt-0 pb-0"><a href="#contact" class="nav-link px-2 link-dark fw-bold">{{ strtoupper(__('translation.contact')) }}</a></li>
         </ul>
 
         <div class="col-md-3 text-end">
@@ -75,6 +75,7 @@
             </form>
         </div>
     </header>
+
     @if(count($sliders) > 0)
     <section>
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" style="padding-top: 100px">
@@ -210,10 +211,10 @@
         </div>
     </section>
 
-    <section id="history" class="p-5 website-nav">
+    <section id="value" class="p-5 website-nav">
         <div class="container">
             <div class="section-header">
-                <h2>{{ strtoupper(__('translation.history')) }}</h2>
+                <h2>VALUE</h2>
             </div>
             <div class="row">
                 <div class="col-md-12">

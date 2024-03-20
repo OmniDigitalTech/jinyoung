@@ -267,11 +267,11 @@ html,body {
 }
 .show-about{
     /*transform: translate(18px, 50px) !important;*/
-    transform: translate(-33px, 50px) !important;
+    transform: translate(-17px, 50px) !important;
 }
 .show-product{
     /*transform: translate(15px, 50px) !important;*/
-    transform: translate(-35px, 50px) !important;
+    transform: translate(-18px, 50px) !important;
 }
 .show-contact{
     transform: translate(13px, 50px) !important;
@@ -529,10 +529,10 @@ html,body {
     color: #01C0F7;
     text-align: justify;
     line-height: 34px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     /* border: 5px solid #01C0F7; */
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
     position: absolute;
     right: 0;
     top: 50%;
