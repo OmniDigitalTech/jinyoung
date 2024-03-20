@@ -221,7 +221,7 @@
                     <div class="main-timeline">
                         <div class="timeline pt-2 pb-2" data-aos="fade-right">
                             <div class="timeline-content">
-                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                <div class="timeline-value text-black">
                                     {{ __('translation.innovation_value') }}
                                 </div>
                                 <div class="content-value">
@@ -240,7 +240,7 @@
                         </div>
                         <div class="timeline pt-2 pb-2" data-aos="fade-right">
                             <div class="timeline-content">
-                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                <div class="timeline-value text-black">
                                     {{ __('translation.transparency_value') }}
                                 </div>
                                 <div class="content-value">
@@ -259,7 +259,7 @@
                         </div>
                         <div class="timeline pt-2 pb-2" data-aos="fade-right">
                             <div class="timeline-content">
-                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                <div class="timeline-value text-black">
                                     {{ __('translation.sustainability_value') }}
                                 </div>
                                 <div class="content-value">
@@ -278,7 +278,7 @@
                         </div>
                         <div class="timeline pt-2 pb-2" data-aos="fade-right">
                             <div class="timeline-content">
-                                <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                <div class="timeline-value text-black">
                                     {{ __('translation.quality_value') }}
                                 </div>
                                 <div class="content-value">
