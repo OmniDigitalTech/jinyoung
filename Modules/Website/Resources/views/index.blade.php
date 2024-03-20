@@ -230,11 +230,11 @@
                                             <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
                                                 <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
                                             </i>
-                                            <div class="value-detail pb-0 bg-primary">
-                                                <p class="text-line">
-                                                    {{ __('translation.innovation_value') }}
-                                                </p>
-                                            </div>
+{{--                                            <div class="value-detail pb-0 bg-primary">--}}
+{{--                                                <p class="text-line">--}}
+{{--                                                    {{ __('translation.innovation_value') }}--}}
+{{--                                                </p>--}}
+{{--                                            </div>--}}
                                         </card>
                                     </div>
                                 </div>
