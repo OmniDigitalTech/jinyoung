@@ -48,24 +48,44 @@
             <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">
         </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li class="p-3 pt-0 pb-0"><a href="#video-section" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.home')) }}</a></li>
-            <li class="dropdown nav-item p-3 pt-0 pb-0">
-                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
-                <ul class="dropdown-menu show-about">
-                    <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>
-                    <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>
-                    <li><a class="dropdown-item" href="#value">Value</a></li>
-                </ul>
+        <ul class="nav nav-links">
+            <li>
+                <a href="#video-section" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.home')) }}</a>
             </li>
-            <li class="dropdown nav-item p-3 pt-0 pb-0">
-                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
-                <ul class="dropdown-menu show-product">
-                    <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
-                    <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
-                </ul>
+            <li>
+                <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.about')) }}</a>
+                <label for="showMega" class="mobile-item">ABOUT</label>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <header><a href="#">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></header>
+                        </div>
+                        <div class="row">
+                            <header><a href="#">{{ ucfirst(__('translation.history')) }}</a></header>
+                        </div>
+                        <div class="row">
+                            <header><a href="#">{{ ucfirst(__('translation.value')) }}</a></header>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="p-3 pt-0 pb-0"><a href="#contact" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.contact')) }}</a></li>
+            <li>
+                <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.product')) }}</a>
+                <label for="showMega" class="mobile-item">PRODUCT</label>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <header><a href="#">{{ ucfirst(__('translation.production_process_flow')) }}</a></header>
+                        </div>
+                        <div class="row">
+                            <header><a href="#">{{ ucfirst(__('translation.product')) }}</a></header>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#contact" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.contact')) }}</a>
+            </li>
         </ul>
 
         <div class="col-md-3 text-end">
@@ -75,6 +95,110 @@
             </form>
         </div>
     </header>
+
+{{--    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 website-nav" style="background-color: white">--}}
+{{--        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">--}}
+{{--            <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">--}}
+{{--        </a>--}}
+
+{{--        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">--}}
+{{--            <li class="p-3 pt-0 pb-0"><a href="#video-section" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.home')) }}</a></li>--}}
+{{--            <li class="dropdown nav-item p-3 pt-0 pb-0">--}}
+{{--                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-about">--}}
+{{--                    <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>--}}
+{{--                    <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>--}}
+{{--                    <li><a class="dropdown-item" href="#value">Value</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="dropdown nav-item p-3 pt-0 pb-0">--}}
+{{--                <a href="#" class="nav-link px-4 link-dark fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>--}}
+{{--                <ul class="dropdown-menu show-product">--}}
+{{--                    <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>--}}
+{{--                    <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="p-3 pt-0 pb-0"><a href="#contact" class="nav-link px-4 link-dark fw-bold">{{ strtoupper(__('translation.contact')) }}</a></li>--}}
+{{--        </ul>--}}
+
+{{--        <div class="col-md-3 text-end">--}}
+{{--            <form class="d-flex mb-0 align-items-center p-3 justify-content-end" role="search">--}}
+{{--                <a href="en" class="flag us me-2"></a>--}}
+{{--                <a href="id" class="flag id me-2"></a>--}}
+{{--            </form>--}}
+{{--        </div>--}}
+{{--    </header>--}}
+
+{{--    <ul class="nav nav-links">--}}
+{{--        <li>--}}
+{{--            <a href="#" class="desktop-item fw-bold text-black">HOME</a>--}}
+{{--            <label for="showMega" class="mobile-item">HOME</label>--}}
+{{--            <div class="mega-box">--}}
+{{--                <div class="content">--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" class="desktop-item fw-bold text-black">ABOUT</a>--}}
+{{--            <label for="showMega" class="mobile-item">ABOUT</label>--}}
+{{--            <div class="mega-box">--}}
+{{--                <div class="content">--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" class="desktop-item fw-bold text-black">PRODUCT</a>--}}
+{{--            <label for="showMega" class="mobile-item">PRODUCT</label>--}}
+{{--            <div class="mega-box">--}}
+{{--                <div class="content">--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" class="desktop-item fw-bold text-black">CONTACT</a>--}}
+{{--            <label for="showMega" class="mobile-item">CONTACT</label>--}}
+{{--            <div class="mega-box">--}}
+{{--                <div class="content">--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <header><a href="#">Lorem Ipsum</a></header>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </li>--}}
+{{--    </ul>--}}
 
     @if(count($sliders) > 0)
     <section>
