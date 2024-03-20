@@ -225,8 +225,8 @@
                                     <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
                                         {{ __('translation.innovation_value') }}
                                     </div>
-                                    <div class="content">
-                                        <card class="card shadow my-4 bg-primary text-white w-100">
+                                    <div class="content-value">
+                                        <card class="card card-custom shadow my-4 bg-primary text-white w-100">
                                             <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
                                                 <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
                                             </i>

@@ -497,6 +497,14 @@ html,body {
     display: block;
     clear: both;
 }
+.main-timeline .content-value{
+    left: 10%;
+    display: inline-block;
+    float: left;
+    width: 23%;
+    color: #909090;
+    position: relative;
+}
 .main-timeline .content{
     display: inline-block;
     float: left;
@@ -568,6 +576,11 @@ html,body {
     right: auto;
     left: 0;
     transform: translateX(0) translateY(-50%) rotate(180deg);
+}
+.main-timeline .timeline:nth-child(even) .content-value{
+    left: -10%;
+    float: right;
+    text-align: end;
 }
 .main-timeline .timeline:nth-child(even) .content{
     float: right;
@@ -1691,6 +1704,9 @@ dl, ol, ul {
     margin-bottom: 0rem;
 }
 
+.card-custom {
+    border-radius: 150px;
+}
 .card {
     transition: .4s all ease-out;
     border: none;
