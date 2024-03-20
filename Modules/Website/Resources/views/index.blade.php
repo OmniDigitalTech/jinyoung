@@ -58,13 +58,13 @@
                 <div class="mega-box">
                     <div class="content">
                         <div class="row">
-                            <header><a href="#">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></header>
+                            <header><a href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></header>
                         </div>
                         <div class="row">
-                            <header><a href="#">{{ ucfirst(__('translation.history')) }}</a></header>
+                            <header><a href="#history">{{ ucfirst(__('translation.history')) }}</a></header>
                         </div>
                         <div class="row">
-                            <header><a href="#">{{ ucfirst(__('translation.value')) }}</a></header>
+                            <header><a href="#value">{{ ucfirst(__('translation.value')) }}</a></header>
                         </div>
                     </div>
                 </div>
@@ -75,10 +75,10 @@
                 <div class="mega-box">
                     <div class="content">
                         <div class="row">
-                            <header><a href="#">{{ ucfirst(__('translation.production_process_flow')) }}</a></header>
+                            <header><a href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></header>
                         </div>
                         <div class="row">
-                            <header><a href="#">{{ ucfirst(__('translation.product')) }}</a></header>
+                            <header><a href="#product">{{ ucfirst(__('translation.product')) }}</a></header>
                         </div>
                     </div>
                 </div>
@@ -535,7 +535,7 @@
 {{--        </div>--}}
 {{--    </section>--}}
 
-    <section>
+    <section id="product">
         <div class="slick1 justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
             <div class="card">
