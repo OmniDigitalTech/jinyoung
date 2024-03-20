@@ -6,7 +6,7 @@
 
     <title>Jinyoung</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/style.css') }}?v1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
     <link rel="shortcut icon" href="{{ URL::asset('template/img/SJI.svg') }}">
     <link rel="stylesheet" href="{{ URL::asset('template/aos/aos.css')}}" type="text/css"/>
