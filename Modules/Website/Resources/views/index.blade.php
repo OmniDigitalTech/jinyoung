@@ -536,6 +536,9 @@
 {{--    </section>--}}
 
     <section id="product">
+        <div class="section-header pt-5 mb-0">
+            <h2>{{ strtoupper(__('translation.product')) }}</h2>
+        </div>
         <div class="slick1 justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
             <div class="card">
