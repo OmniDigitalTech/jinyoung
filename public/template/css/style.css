@@ -2040,6 +2040,15 @@ button.slick-disabled {
 }
 /*ASUS ZENBOOK FOLD*/
 @media(device-width:1920px) and (device-height: 1080px) {
+    .main-timeline .content-value{
+        left: 10%;
+        display: inline-block;
+        float: left;
+        width: 20%;
+        color: #909090;
+        position: relative;
+    }
+
     .visimisi-styleone {
         height: 49vh!important;
     }
