@@ -1,7 +1,7 @@
 @extends('website::layouts.master')
 
 @section('content')
-    <header class="fixed-top" style="z-index: 2">
+    <header class="fixed-top mobile-header" style="z-index: 2">
         <nav class="navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
@@ -15,7 +15,7 @@
         </nav>
         <div class="d-flex bg-primary justify-content-center py-2 bg-nav collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-pills">
-                <li class="dropdown nav-item"><a href="#video-section" class="nav-link nav-link-custom fw-bold" aria-current="page" data-bs-toggle="dropdown">{{ strtoupper(__('translation.home')) }}</a>
+                <li class="dropdown nav-item"><a href="#video-section" class="nav-link nav-link-custom fw-bold" aria-current="page">{{ strtoupper(__('translation.home')) }}</a>
                     <ul class="dropdown-menu show-home">
                         <li><a class="dropdown-item" href="#video-section">{{ ucfirst(__('translation.home')) }}</a></li>
                     </ul>
@@ -34,7 +34,7 @@
                         <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
                     </ul>
                 </li>
-                <li class="dropdown nav-item"><a href="#contact" class="nav-link nav-link-custom fw-bold" data-bs-toggle="dropdown">{{ strtoupper(__('translation.contact')) }}</a>
+                <li class="dropdown nav-item"><a href="#contact" class="nav-link nav-link-custom fw-bold">{{ strtoupper(__('translation.contact')) }}</a>
                     <ul class="dropdown-menu show-contact">
                         <li><a class="dropdown-item" href="#contact">{{ ucfirst(__('translation.contact')) }}</a></li>
                     </ul>
@@ -43,6 +43,38 @@
         </div>
     </header>
 
+    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 website-nav" style="background-color: white">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#video-section" class="nav-link px-2 link-dark">{{ strtoupper(__('translation.home')) }}</a></li>
+            <li class="dropdown nav-item">
+                <a href="#" class="nav-link px-2 link-dark" data-bs-toggle="dropdown">{{ strtoupper(__('translation.about')) }}</a>
+                <ul class="dropdown-menu show-about">
+                    <li><a class="dropdown-item" href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></li>
+                    <li><a class="dropdown-item" href="#history">{{ ucfirst(__('translation.history')) }}</a></li>
+                    <li><a class="dropdown-item" href="#value">Value</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item">
+                <a href="#" class="nav-link px-2 link-dark" data-bs-toggle="dropdown">{{ strtoupper(__('translation.product')) }}</a>
+                <ul class="dropdown-menu show-product">
+                    <li><a class="dropdown-item" href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></li>
+                    <li><a class="dropdown-item" href="#product">{{ ucfirst(__('translation.product')) }}</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact" class="nav-link px-2 link-dark">{{ strtoupper(__('translation.contact')) }}</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <form class="d-flex mb-0 align-items-center p-3 justify-content-end" role="search">
+                <a href="en" class="flag us me-2"></a>
+                <a href="id" class="flag id me-2"></a>
+            </form>
+        </div>
+    </header>
     @if(count($sliders) > 0)
     <section>
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" style="padding-top: 100px">
@@ -178,7 +210,42 @@
         </div>
     </section>
 
-    <section class="bg-light pt-5 pb-5" id="value">
+    <section id="history" class="p-5 website-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>{{ strtoupper(__('translation.history')) }}</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        @foreach($histories as $history)
+                            <div class="timeline pt-2 pb-2" data-aos="fade-right">
+                                <div class="timeline-content">
+                                    <div class="timeline-value" style="background-image: url('{{ $history->picture->url }}');">
+                                        {{ __('translation.innovation_value') }}
+                                    </div>
+                                    <div class="content">
+                                        <card class="card shadow my-4 bg-primary text-white w-100">
+                                            <i class="card-img-top d-block fas fa-lightbulb fa-5x py-3 text-center value-icon-position value-card">
+                                                <h5 class="pt-3 mb-0 text-center"><strong>{{ strtoupper(__('translation.innovation')) }}</strong></h5>
+                                            </i>
+                                            <div class="value-detail pb-0 bg-primary">
+                                                <p class="text-line">
+                                                    {{ __('translation.innovation_value') }}
+                                                </p>
+                                            </div>
+                                        </card>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light pt-5 pb-5 mobile-header" id="value">
         <div class="container">
             <div class="section-header mb-4">
                 <h2>VALUE</h2>
@@ -292,7 +359,7 @@
         <div class="slick1 justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
             <div class="card">
-                <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="380" alt="Card image cap">
+                <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="304" alt="Card image cap">
                 <div class="product-detail">
                     <h5 class="card-title heading text-center">{{ $product->name }}</h5>
                     {{--                        <span class="subheading">BEST GLOVES</span>--}}
