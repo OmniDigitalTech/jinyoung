@@ -55,7 +55,7 @@
             <li>
                 <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.about')) }}</a>
                 <label for="showMega" class="mobile-item">ABOUT</label>
-                <div class="mega-box">
+                <div class="mega-box pt-3">
                     <div class="content">
                         <div class="row">
                             <header><a href="#vision-mission">{{ ucfirst(__('translation.vision')) }} & {{ ucfirst(__('translation.mission')) }}</a></header>
@@ -72,7 +72,7 @@
             <li>
                 <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.product')) }}</a>
                 <label for="showMega" class="mobile-item">PRODUCT</label>
-                <div class="mega-box">
+                <div class="mega-box pt-3">
                     <div class="content">
                         <div class="row">
                             <header><a href="#product-process">{{ ucfirst(__('translation.production_process_flow')) }}</a></header>

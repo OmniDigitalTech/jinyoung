@@ -1519,9 +1519,9 @@ nav .wrapper{
 }
 .mega-box .content{
     text-align: center;
-    position: absolute;
-    left: 0;
-    top: 13px;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 13px;*/
     background: white;
     padding: 3px 20px;
     display: flex;
