@@ -283,6 +283,10 @@ html,body {
     display: none!important;
     flex-wrap: wrap;
 }
+.mobile-value{
+    display: none!important;
+    flex-wrap: wrap;
+}
 
 .content {
     padding: 16px;
@@ -396,7 +400,13 @@ html,body {
     .mobile-header{
         display: flex!important;
     }
+    .mobile-value{
+        display: flex!important;
+    }
     .website-nav{
+        display: none!important;
+    }
+    .website-value{
         display: none!important;
     }
     .carousel > .carousel-inner > .carousel-item > img{
@@ -2068,10 +2078,69 @@ button.slick-disabled {
     }
 }
 
+/*SURFACE PRO*/
+@media(device-width:912px) and (device-height: 1368px) {
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    .website-nav {
+        display: none!important;
+    }
+    .mobile-header {
+        display: flex!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: 0%;
+    }
+    .main-timeline .content-value {
+        left: 0%;
+        width: 37%;
+    }
+    .timeline-value {
+        width: 380px;
+    }
+    .visimisi-styleone {
+        height: 35vh!important;
+    }
+}
+
 /*ASUS ZENBOOK FOLD*/
 @media(device-width:853px) and (device-height: 1280px) {
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    .website-nav {
+        display: none!important;
+    }
+    .mobile-header {
+        display: flex!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: 0%;
+    }
+    .main-timeline .content-value {
+        left: 0%;
+        width: 37%;
+    }
+    .timeline-value {
+        width: 380px;
+    }
     .visimisi-styleone {
-        height: 49vh!important;
+        height: 35vh!important;
     }
 
     .visimisi-styletwo {
@@ -2079,9 +2148,116 @@ button.slick-disabled {
         left: 4.4%;
     }
 }
+/*NEST HUB*/
+@media(device-width:1280px) and (device-height: 800px) {
+    .slick-slide {
+        height: 76% !important;
+    }
+}
+
+/*NEST HUB*/
+@media(device-width:1024px) and (device-height: 600px) {
+    .product-height-custom {
+        height: 39% !important;
+    }
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: -10%;
+    }
+    .main-timeline .content-value {
+        left: 10%;
+        width: 29%;
+    }
+    .timeline-value {
+        width: 455px;
+    }
+    .form-custom{
+        width: 80%;
+    }
+    .nav {
+         padding-left: 30px;
+         flex-wrap: nowrap !important;
+    }
+    .justify-content-md-between {
+         justify-content: normal !important;
+    }
+    .flex-wrap {
+         flex-wrap: nowrap !important;
+    }
+
+}
+
+/*IPAD PRO*/
+@media(device-width:1024px) and (device-height: 1366px) {
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    .website-nav {
+        display: none!important;
+    }
+    .mobile-header {
+        display: flex!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: -10%;
+    }
+    .main-timeline .content-value {
+        left: 10%;
+        width: 29%;
+    }
+    .timeline-value {
+        width: 455px;
+    }
+    .visimisi-styleone {
+        position: relative;
+        height: 38vh;
+    }
+}
 
 /*IPAD AIR*/
-@media(device-width:768px) and (device-height: 1024px) {
+@media(device-width:820px) and (device-height: 1180px) {
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    .website-nav {
+        display: none!important;
+    }
+    .mobile-header {
+        display: flex!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: 0%;
+    }
+    .main-timeline .content-value {
+        left: 0%;
+        width: 39%;
+    }
+    .timeline-value {
+        width: 380px;
+    }
     .visimisi-styleone {
         height: 49vh!important;
     }
@@ -2094,6 +2270,32 @@ button.slick-disabled {
 
 /*IPAD-MINI*/
 @media(device-width:768px) and (device-height: 1024px){
+    .timeline-icon {
+        height: 205px;
+        width: 337px;
+    }
+    .iframe-height{
+        height: 427px!important;
+    }
+    .website-nav {
+        display: none!important;
+    }
+    .mobile-header {
+        display: flex!important;
+    }
+    img[height] {
+        height: 130px;
+    }
+    .main-timeline .timeline:nth-child(even) .content-value {
+        left: 0%;
+    }
+    .main-timeline .content-value {
+        left: 0%;
+        width: 39%;
+    }
+    .timeline-value {
+        width: 380px;
+    }
     .visimisi-styleone {
         height: 50vh!important;
     }

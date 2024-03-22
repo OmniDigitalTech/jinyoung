@@ -54,7 +54,7 @@
             </li>
             <li>
                 <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.about')) }}</a>
-                <label for="showMega" class="mobile-item">ABOUT</label>
+{{--                <label for="showMega" class="mobile-item">ABOUT</label>--}}
                 <div class="mega-box pt-3">
                     <div class="content">
                         <div class="row">
@@ -71,7 +71,7 @@
             </li>
             <li>
                 <a href="#" class="desktop-item fw-bold text-black">{{ strtoupper(__('translation.product')) }}</a>
-                <label for="showMega" class="mobile-item">PRODUCT</label>
+{{--                <label for="showMega" class="mobile-item">PRODUCT</label>--}}
                 <div class="mega-box pt-3">
                     <div class="content">
                         <div class="row">
@@ -89,7 +89,7 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <form class="d-flex mb-0 align-items-center p-3 justify-content-end" role="search">
+            <form class="form-custom d-flex mb-0 align-items-center p-3 justify-content-end" role="search">
                 <a href="en" class="flag us me-2"></a>
                 <a href="id" class="flag id me-2"></a>
             </form>
@@ -246,7 +246,7 @@
 
     <section class="bg-body-tertiary" id="video-section">
         <div class="embed-responsive embed-responsive-16by9 p-4">
-            <iframe class="embed-responsive-item w-100" height="650" src="https://drive.google.com/file/d/1MvB_8f0U0DsAdlo6TjH1BQ8xxUYHXGpq/preview" allowfullscreen allow="autoplay"></iframe>
+            <iframe class="embed-responsive-item w-100 iframe-height" height="650" src="https://drive.google.com/file/d/1MvB_8f0U0DsAdlo6TjH1BQ8xxUYHXGpq/preview" allowfullscreen allow="autoplay"></iframe>
         </div>
     </section>
 
@@ -335,7 +335,7 @@
         </div>
     </section>
 
-    <section id="value" class="p-5 website-nav">
+    <section id="value" class="p-5 website-value">
         <div class="container">
             <div class="section-header">
                 <h2>VALUE</h2>
@@ -425,7 +425,7 @@
         </div>
     </section>
 
-    <section class="bg-light pt-5 pb-5 mobile-header" id="value">
+    <section class="bg-light pt-5 pb-5 mobile-value" id="value">
         <div class="container">
             <div class="section-header mb-4">
                 <h2>VALUE</h2>
