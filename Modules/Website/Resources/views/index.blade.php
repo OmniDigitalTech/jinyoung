@@ -487,16 +487,27 @@
         <div class="section-header pt-5 mb-0">
             <h2>{{ strtoupper(__('translation.production_process_flow')) }}</h2>
         </div>
-        <div class="row pt-3 justify-content-center align-content-center align-items-center">
+        <div class="row px-5 pt-3 justify-content-center align-content-center align-items-center production-padding">
             @foreach($processes as $process)
-                <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3 justify-content-center flex-column align-items-center align-content-center" data-aos="fade-right" data-aos-duration="2000">
-                    {{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
-                    <h3 class="fw-bold">STEP {{ $process->step }}</h3>
-                    <p>{{ $process->description }}</p>
-                    <div class="production-detail production-image-one " style="background-image: url({{ $process->picture->url }});"></div>
-                    {{--                        </a>--}}
+            <div class="col-md-3 col-sm-6 my-2 text-center mt-3 justify-content-center flex-column align-items-center align-content-center">
+                <div class="card">
+                    <div class="card-body p-0 pt-2 bg-primary">
+                        <h5 class="card-title text-white">STEP {{ $process->step }}</h5>
+                    </div>
+                    <div class="production-detail text-white">{{ $process->description }}</div>
+                    <img  src="{{ $process->picture->url }}" height="220">
                 </div>
+            </div>
             @endforeach
+{{--            @foreach($processes as $process)--}}
+{{--                <div class="col-md-3 col-sm-6 my-2 p_column text-center mt-3 justify-content-center flex-column align-items-center align-content-center" data-aos="fade-right" data-aos-duration="2000">--}}
+{{--                    --}}{{--                        <a class="text-decoration-none text-white" id="btnModalProduct" data-image="{{ $process->picture->url }}">--}}
+{{--                    <h3 class="fw-bold">STEP {{ $process->step }}</h3>--}}
+{{--                    <p>{{ $process->description }}</p>--}}
+{{--                    <div class="production-detail production-image-one " style="background-image: url({{ $process->picture->url }});"></div>--}}
+{{--                    --}}{{--                        </a>--}}
+{{--                </div>--}}
+{{--            @endforeach--}}
         </div>
     </section>
 
@@ -542,7 +553,7 @@
         <div class="slick1 justify-content-center align-items-center align-content-center">
             @foreach($products as $product)
             <div class="card">
-                <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" height="304" alt="Card image cap">
+                <img class="card-img-top product-height-custom" src="{{ $product->picture->url }}" alt="Card image cap">
                 <div class="product-detail">
                     <h5 class="card-title heading text-center">{{ $product->name }}</h5>
                     {{--                        <span class="subheading">BEST GLOVES</span>--}}

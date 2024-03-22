@@ -1896,7 +1896,7 @@ dl, ol, ul {
     background-size: cover;
 }
 .production-detail {
-    border-radius: 12px;
+    /*border-radius: 12px;*/
     background-color: dodgerblue;
     width: 100%;
     position: absolute;
@@ -1908,8 +1908,8 @@ dl, ol, ul {
     text-align: center;
     box-sizing: border-box;
 }
-.p_column:hover .production-detail {
-    border-radius: 12px;
+.card:hover .production-detail {
+    /*border-radius: 12px;*/
     height: calc(100%);
     display: flex;
     flex-direction: column;
@@ -1954,6 +1954,12 @@ dl, ol, ul {
     }
 }
 @media(max-width:540px) {
+    .production-padding {
+        padding: 0!important;
+    }
+    img[height] {
+        height: 194px;
+    }
     .value-padding{
         padding: 3rem;
     }
