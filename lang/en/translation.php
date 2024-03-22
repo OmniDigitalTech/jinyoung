@@ -3,6 +3,7 @@ return [
     "home" => "home",
     "about" => "about",
     "product" => "product",
+    "value" => "value",
     "contact" => "contact",
 
     "vision" => "vision",
