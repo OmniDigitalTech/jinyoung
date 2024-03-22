@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jinyoung</title>
+    <title>Sukses Jinyoung Indonesia</title>
+    <meta name="description" content="Menyediakan produk berkualitas tinggi, sehingga meningkatkan pengalaman bermain golf bagi pelanggan, dan berkomitmen terhadap kelestarian lingkungan">
+    <meta name="keywords" content="sarung tangan, produsen sarung tangan, distributor sarung tangan, sarung tangan karet, sarung tangan latex, sarung tangan nitrile, sarung tangan medis, sarung tangan pembersih, sarung tangan kerja, pakaian pelindung, peralatan keselamatan, perlindungan tangan, industri sarung tangan, perlindungan kesehatan, merek sarung tangan, pemasok sarung tangan, pilihan sarung tangan, sarung tangan industri, sarung tangan medis, perlindungan tangan, keamanan kerja, pakaian kerja, perlindungan kerja, perlindungan personal, perusahaan sarung tangan, pengrajin sarung tangan, eksportir sarung tangan, impor sarung tangan, kualitas sarung tangan, inovasi sarung tangan, perlindungan lingkungan, perlindungan kesehatan, kenyamanan sarung tangan">
+
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('template/css/style.css') }}?v1.1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
