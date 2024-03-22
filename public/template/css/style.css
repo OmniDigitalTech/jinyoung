@@ -2022,6 +2022,8 @@ button.slick-disabled {
     margin-right: auto!important;
     left: 0!important;
     right: 0!important;
+    top: 0!important;
+    bottom: 0!important;
     text-align:center!important;
 }
 
