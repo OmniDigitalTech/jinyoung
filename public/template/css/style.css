@@ -148,9 +148,9 @@ html,body {
 }
 
 .curved {
-    background-image: url("https://dentiq-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/07/map.png?id=11067");
     color: #FFFFFF;
     text-align: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -2035,6 +2035,8 @@ button.slick-disabled {
 .visimisi-styleone {
     position: relative;
     height: 77vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .visimisi-styletwo {

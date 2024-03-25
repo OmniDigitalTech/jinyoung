@@ -281,10 +281,10 @@
 {{--        </video>--}}
 {{--    </section>--}}
 
-    <section id="vision-mission" class="visimisi-styleone">
+    <section id="vision-mission" class="visimisi-styleone" style="background-image: url('{{ URL::asset('template/img/map.png') }}');">
         <div class="container d-flex justify-content-center align-content-center align-items-center visimisi-styletwo">
             <div class="row pt-5 pb-5  d-flex justify-content-center align-content-center align-items-center">
-                <div class="col-md-12 pb-5 curved  d-flex justify-content-center align-content-center align-items-center">
+                <div class="col-md-12 pb-5 curved d-flex justify-content-center align-content-center align-items-center">
                     <div class="main-timeline_one curved-pt">
                         <div class="timeline_one pb-5">
                             <div class="timeline_one-content ">
