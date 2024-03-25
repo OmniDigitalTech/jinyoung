@@ -532,6 +532,7 @@ html,body {
     margin: 0;
 }
 .main-timeline .title{
+    text-align: start;
     font-size: 22px;
     font-weight: 600;
     color: #01C0F7;
