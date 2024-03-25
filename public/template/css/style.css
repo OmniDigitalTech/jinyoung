@@ -2062,7 +2062,7 @@ button.slick-disabled {
         left: 0%;
     }
 }
-/*ASUS ZENBOOK FOLD*/
+
 @media(device-width:1920px) and (device-height: 1080px) {
     .main-timeline .content-value{
         left: 10%;
@@ -2074,7 +2074,7 @@ button.slick-disabled {
     }
 
     .visimisi-styleone {
-        height: 49vh!important;
+        height: 47vh!important;
     }
 
     .visimisi-styletwo {
