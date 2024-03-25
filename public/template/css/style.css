@@ -1939,6 +1939,11 @@ dl, ol, ul {
 .product-height-custom{
     height: 50%!important;
 }
+
+.slick-slide img {
+    padding: 10%;
+}
+
 @media(max-width:1180px) {
     .product-height-custom {
         height: 18% !important;
