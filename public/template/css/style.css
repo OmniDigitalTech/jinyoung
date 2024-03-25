@@ -61,6 +61,10 @@ html,body {
     margin: 0;
 }
 
+.content ul li {
+    text-align: left;
+}
+
 .main-timeline .content p {
     text-align: justify;
 }
