@@ -286,16 +286,16 @@
             <div class="row pt-5 pb-5">
                 <div class="col-md-12 pb-5 curved">
                     <div class="main-timeline_one curved-pt">
-                        <div class="timeline_one pb-5">
-                            <div class="timeline_one-content">
+                        <div class="timeline_one pb-5 d-flex justify-content-center align-content-center align-items-center">
+                            <div class="timeline_one-content p-0">
                                 <h1 class="display-2 fw-bold text-primary" data-aos="fade-right">{{ strtoupper(__('translation.vision')) }}</h1>
                                 <p class="description lead fw-normal" data-aos="fade-up">
                                     {{ @$visionmission->vision }}
                                 </p>
                             </div>
                         </div>
-                        <div class="timeline_one">
-                            <div href="#" class="timeline_one-content">
+                        <div class="timeline_one d-flex justify-content-center align-content-center align-items-center">
+                            <div href="#" class="timeline_one-content pt-4 p-0">
                                 <h1 class="display-2 fw-bold" data-aos="fade-left">{{ strtoupper(__('translation.mission')) }}</h1>
                                 <p class="description lead fw-normal" data-aos="fade-up">
                                     {{ @$visionmission->mission }}
