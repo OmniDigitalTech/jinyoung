@@ -5,7 +5,7 @@
         <nav class="navbar nav-head background-color p-0">
             <div class="container-fluid align-content-around">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="250">
+                    <img src="{{ URL::asset('template/img/Logo SJI.svg') }}" width="300">
                 </a>
                 <form class="d-flex mb-0 align-items-center p-3" role="search">
                     <a href="en" class="flag us me-2"></a>
