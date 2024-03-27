@@ -1776,10 +1776,10 @@ dl, ol, ul {
     font-style: italic;
     font-size: 1em;
 }
-.card:hover .product-detail {
-    height: calc(100%);
-    padding-top: 100px;
-}
+/*.card:hover .product-detail {*/
+/*    height: calc(100%);*/
+/*    padding-top: 100px;*/
+/*}*/
 
 .u-loading {
     width: 128px;
