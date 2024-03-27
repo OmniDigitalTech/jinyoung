@@ -22,9 +22,9 @@ class WebsiteController extends Controller
      */
     public function index(Request $request)
     {
-        if (in_array($request->segment(1), ['en', 'id'])){
-            session(['locale' => $request->segment(1)]);
-            return  redirect()->route('website');
+        if (in_array($request->lang, ['en', 'id'])){
+            session(['locale' => $request->lang]);
+            return redirect()->route('website');
         }
 
         if ($request->session()->exists('locale')) {

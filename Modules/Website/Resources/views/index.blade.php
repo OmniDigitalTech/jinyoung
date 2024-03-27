@@ -90,8 +90,8 @@
 
         <div class="col-md-3 text-end">
             <form class="form-custom d-flex mb-0 align-items-center p-3 justify-content-end" role="search">
-                <a href="en" class="flag us me-2"></a>
-                <a href="id" class="flag id me-2"></a>
+                <a href="?lang=en" class="flag us me-2"></a>
+                <a href="?lang=id" class="flag id me-2"></a>
             </form>
         </div>
     </header>
