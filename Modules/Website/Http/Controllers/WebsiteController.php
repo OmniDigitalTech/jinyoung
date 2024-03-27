@@ -24,6 +24,7 @@ class WebsiteController extends Controller
     {
         if (in_array($request->segment(1), ['en', 'id'])){
             session(['locale' => $request->segment(1)]);
+            return  redirect()->route('website');
         }
 
         if ($request->session()->exists('locale')) {

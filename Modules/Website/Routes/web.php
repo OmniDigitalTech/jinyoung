@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'WebsiteController@index');
+Route::get('/', 'WebsiteController@index')->name('website');
 Route::post('/ask', 'WebsiteController@ask')->name('website.ask');
