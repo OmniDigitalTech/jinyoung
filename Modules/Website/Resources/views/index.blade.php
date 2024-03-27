@@ -296,7 +296,7 @@
                         </div>
                         <div class="timeline_one">
                             <div href="#" class="timeline_one-content">
-                                <h1 class="display-2 fw-bold" data-aos="fade-left">{{ strtoupper(__('translation.mission')) }}</h1>
+                                <h1 class="display-2 fw-bold text-primary" data-aos="fade-left">{{ strtoupper(__('translation.mission')) }}</h1>
                                 <p class="description lead fw-normal" data-aos="fade-up">
                                     {{ @$visionmission->mission }}
                                 </p>
