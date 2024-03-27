@@ -17,16 +17,6 @@
                             <td>: {{ $question->email }}</td>
                         </tr>
                         <tr>
-                            <td>Produk</td>
-                            <td>:
-                                <ol>
-                                    @foreach(json_decode($question->products) as $product)
-                                        <li>{{ $product->name }}</li>
-                                    @endforeach
-                                </ol>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>Pesan</td>
                             <td>: {{ $question->message }}</td>
                         </tr>

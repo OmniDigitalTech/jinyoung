@@ -14,7 +14,6 @@
                                 <th>#</th>
                                 <th>Nama</th>
                                 <th>Email</th>
-                                <th>Produk</th>
                                 <th>Pesan</th>
                                 <th>Aksi</th>
                             </tr>
@@ -23,13 +22,6 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $question->name }}</td>
                                     <td>{{ $question->email }}</td>
-                                    <td>
-                                        <ol>
-                                            @foreach(json_decode($question->products) as $product)
-                                                <li>{{ $product->name }}</li>
-                                            @endforeach
-                                        </ol>
-                                    </td>
                                     <td>{{ substr($question->message, 0, 100) }} ...</td>
                                     <td>
                                         <a href="{{ route('management.question.show', $question) }}" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
