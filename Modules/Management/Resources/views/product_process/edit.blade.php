@@ -25,7 +25,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Step</label>
-                                <input name="step" type="text" class="form-control" required value="{{ $process->step }}">
+                                <input name="step" type="number" class="form-control" required value="{{ $process->step }}">
                             </div>
                         </div>
                         <div class="col-md-7">
