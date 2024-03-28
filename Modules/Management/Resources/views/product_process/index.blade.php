@@ -93,7 +93,7 @@
                                     <td>
                                         <img src="{{ $process->picture->url }}" class="menu-img img-fluid" style="height: 75px"></a>
                                     </td>
-                                    <td>{{ $process->Language }}</td>
+                                    <td>{{ $process->language }}</td>
                                     <td>{{ $process->step }}</td>
                                     <td>{{ $process->title }}</td>
                                     <td>{{ $process->description }}</td>
