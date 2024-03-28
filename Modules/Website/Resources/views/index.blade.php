@@ -492,7 +492,7 @@
             <div class="col-md-3 col-sm-6 my-2 text-center mt-3 justify-content-center flex-column align-items-center align-content-center">
                 <div class="card">
                     <div class="card-body p-0 pt-2 bg-primary">
-                        <h5 class="card-title text-white">STEP {{ $process->step }}</h5>
+                        <h5 class="card-title text-white">STEP {{ $process->step }} - {{ $process->title }}</h5>
                     </div>
                     <div class="production-detail text-white">{{ $process->description }}</div>
                     <img  src="{{ $process->picture->url }}" height="220">
