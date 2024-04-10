@@ -2,6 +2,7 @@
 
 namespace Modules\Website\Http\Controllers;
 
+use App\Mail\SendMail;
 use App\Models\History;
 use App\Models\Product;
 use App\Models\ProductProcess;
@@ -13,6 +14,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
 {
@@ -130,6 +132,8 @@ class WebsiteController extends Controller
     }
 
     public function ask(Request $request){
+        Mail::to(env('MAIL_SEND_TO'))->send(new SendMail($request));
+
         $request->merge([
             'product' => json_encode($request->products)
         ]);
