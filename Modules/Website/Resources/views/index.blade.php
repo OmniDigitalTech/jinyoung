@@ -246,7 +246,7 @@
 
     <section class="bg-body-tertiary" id="video-section">
         <div class="embed-responsive embed-responsive-16by9 p-4">
-            <iframe class="embed-responsive-item w-100 iframe-height" height="650" src="https://drive.google.com/file/d/1MvB_8f0U0DsAdlo6TjH1BQ8xxUYHXGpq/preview" allowfullscreen allow="autoplay"></iframe>
+            <iframe class="embed-responsive-item w-100 iframe-height" height="520" src="https://drive.google.com/file/d/1GYIkONDKRYVJKIkjxRZGTgAgFCNjDheA/preview" allowfullscreen allow="autoplay"></iframe>
         </div>
     </section>
 
