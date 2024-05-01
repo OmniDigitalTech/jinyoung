@@ -32,7 +32,7 @@ class WebsiteController extends Controller
         if ($request->session()->exists('locale')) {
             App::setLocale(session('locale'));
         }else{
-            session(['locale' => 'id']);
+            session(['locale' => 'en']);
             App::setLocale(session('locale'));
         }
 
