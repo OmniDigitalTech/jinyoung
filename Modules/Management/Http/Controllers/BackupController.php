@@ -16,6 +16,6 @@ class BackupController extends Controller
     }
 
     public function download(Picture $picture){
-        return response()->download($picture->url);
+        return response()->download('storage/'.$picture->path.'/'.$picture->file_name);
     }
 }
