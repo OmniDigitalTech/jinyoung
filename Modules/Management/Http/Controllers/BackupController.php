@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller;
 class BackupController extends Controller
 {
     public function picture(){
-        $pictures = Picture::latest()->get();
+        $pictures = Picture::latest()->get()->unique('file_name');
 
         return view('management::backup.picture', compact('pictures'));
     }
