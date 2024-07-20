@@ -18,7 +18,7 @@
                             @foreach($pictures as $picture)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td><a href="{{ route($picture->url) }}">{{ $picture->file_name }}</a></td>
+                                    <td><a href="{{ route(@$picture->url) }}">{{ $picture->file_name }}</a></td>
                                     <td>
                                         <a href="{{ route('management.backup.download-picture', $picture) }}">Download</a>
                                     </td>
