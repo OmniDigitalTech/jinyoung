@@ -14,6 +14,7 @@
             <li class="{{ @$active == 'product' ? 'active' : '' }}"><a class="nav-link" href="{{ route('management.product.index') }}"><i class="fas fa-brands fa-product-hunt"></i><span>Produk</span></a></li>
             <li class="{{ @$active == 'question' ? 'active' : '' }}"><a class="nav-link" href="{{ route('management.question.index') }}"><i class="fas fa-question"></i><span>Pertanyaan</span></a></li>
             <li class="{{ @$active == 'contact' ? 'active' : '' }}"><a class="nav-link" href="{{ route('management.contact.index') }}"><i class="fas fa-address-book"></i><span>Kontak</span></a></li>
+            <li class="{{ @$active == 'contact' ? 'active' : '' }}"><a class="nav-link" href="{{ route('management.backup.picture') }}"><i class="fas fa-address-book"></i><span>Backup</span></a></li>
         </ul>
 
 {{--        <div class="mt-4 mb-4 p-3 hide-sidebar-mini">--}}

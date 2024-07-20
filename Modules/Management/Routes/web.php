@@ -70,4 +70,9 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
             Route::post('/update', 'ContactController@update')->name('management.contact.update');
         });
     });
+
+    Route::prefix('backup')->group(function (){
+        Route::get('picture', 'BackupController@picture')->name('management.backup.picture');
+        Route::get('download-picture', 'BackupController@download')->name('management.backup.download-picture');
+    });
 });
